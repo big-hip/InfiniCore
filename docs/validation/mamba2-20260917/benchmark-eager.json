@@ -1,0 +1,107 @@
+{
+  "device": "C500, 50% compute, 32000 MiB slice",
+  "tp": 1,
+  "activation_dtype": "bfloat16",
+  "state_dtype": "float32",
+  "decode_graph": false,
+  "timing": "Wall time through CPU availability of every greedy token; excludes tokenization, loading and graph capture.",
+  "load_and_capture_seconds": 0.2595038659637794,
+  "device_free_bytes_after_cases": 31360811008,
+  "device_total_bytes": 33118224384,
+  "memory_note": "Device-wide free memory, not a process allocation peak.",
+  "records": [
+    {
+      "prompt": 128,
+      "output": 128,
+      "batch": 1,
+      "measurements": [
+        {
+          "repeat": 0,
+          "ttft_ms": 18.14291498158127,
+          "mean_itl_ms": 12.53789900820409,
+          "total_ms": 1610.4560890235007,
+          "output_tokens_per_second": 79.48058992258072,
+          "output_sha256": "73b43c3d3d86eab345a289696ca20eef1afa1272c4ac4c938a4a4a56f2797afe"
+        },
+        {
+          "repeat": 1,
+          "ttft_ms": 18.427909933961928,
+          "mean_itl_ms": 12.589084929566626,
+          "total_ms": 1617.2416959889233,
+          "output_tokens_per_second": 79.14710603706614,
+          "output_sha256": "73b43c3d3d86eab345a289696ca20eef1afa1272c4ac4c938a4a4a56f2797afe"
+        },
+        {
+          "repeat": 2,
+          "ttft_ms": 18.32931104581803,
+          "mean_itl_ms": 12.482491732523666,
+          "total_ms": 1603.6057610763237,
+          "output_tokens_per_second": 79.82011732989018,
+          "output_sha256": "73b43c3d3d86eab345a289696ca20eef1afa1272c4ac4c938a4a4a56f2797afe"
+        }
+      ]
+    },
+    {
+      "prompt": 2048,
+      "output": 128,
+      "batch": 1,
+      "measurements": [
+        {
+          "repeat": 0,
+          "ttft_ms": 133.07316694408655,
+          "mean_itl_ms": 12.542668882185433,
+          "total_ms": 1725.9921149816364,
+          "output_tokens_per_second": 74.1602460920639,
+          "output_sha256": "a6677fa0024aaffdaa16469e3c9e0667c5c0234464f406a7c169cd68ce6ab00d"
+        },
+        {
+          "repeat": 1,
+          "ttft_ms": 133.14074103254825,
+          "mean_itl_ms": 12.606602196955658,
+          "total_ms": 1734.1792200459167,
+          "output_tokens_per_second": 73.8101336473233,
+          "output_sha256": "a6677fa0024aaffdaa16469e3c9e0667c5c0234464f406a7c169cd68ce6ab00d"
+        },
+        {
+          "repeat": 2,
+          "ttft_ms": 133.3659659139812,
+          "mean_itl_ms": 12.592952260307557,
+          "total_ms": 1732.670902973041,
+          "output_tokens_per_second": 73.87438652104588,
+          "output_sha256": "a6677fa0024aaffdaa16469e3c9e0667c5c0234464f406a7c169cd68ce6ab00d"
+        }
+      ]
+    },
+    {
+      "prompt": 512,
+      "output": 128,
+      "batch": 4,
+      "measurements": [
+        {
+          "repeat": 0,
+          "ttft_ms": 127.08550901152194,
+          "mean_itl_ms": 8.017567849872032,
+          "total_ms": 1145.31662594527,
+          "output_tokens_per_second": 447.03795300048876,
+          "output_sha256": "40f5ac1449a25dd283fd38be6b7ecc8ec3497fa1c55d8e7ab964188e7367447f"
+        },
+        {
+          "repeat": 1,
+          "ttft_ms": 127.83538294024765,
+          "mean_itl_ms": 8.262521558895882,
+          "total_ms": 1177.1756209200248,
+          "output_tokens_per_second": 434.93935051071225,
+          "output_sha256": "40f5ac1449a25dd283fd38be6b7ecc8ec3497fa1c55d8e7ab964188e7367447f"
+        },
+        {
+          "repeat": 2,
+          "ttft_ms": 128.17211798392236,
+          "mean_itl_ms": 8.289061928549268,
+          "total_ms": 1180.8829829096794,
+          "output_tokens_per_second": 433.573865835918,
+          "output_sha256": "40f5ac1449a25dd283fd38be6b7ecc8ec3497fa1c55d8e7ab964188e7367447f"
+        }
+      ]
+    }
+  ]
+}

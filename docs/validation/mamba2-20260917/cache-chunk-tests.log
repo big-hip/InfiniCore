@@ -1,0 +1,15 @@
+.............................................................Insufficient KV cache blocks for request too-large, deferring.
+..Insufficient KV cache blocks for request touch-a, deferring.
+.....Request failed... failed: None
+Request timeout... timed out: None
+..Insufficient KV cache blocks for request too-large, deferring.
+.Failed to allocate KV cache blocks for request: allocation-failed
+..Insufficient KV cache blocks for request touch-a, deferring.
+..Insufficient KV cache blocks for request rejected, deferring.
+.....Request failed... failed: None
+Request timeout... timed out: None
+...
+----------------------------------------------------------------------
+Ran 83 tests in 0.251s
+
+OK

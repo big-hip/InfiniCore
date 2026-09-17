@@ -1,0 +1,31 @@
+{
+  "infinilm_module": "python/infinilm/__init__.py",
+  "core_libraries": [
+    {
+      "path": "libinfinicore_cpp_api.so",
+      "sha256": "63c2c6a101a7b723a7feaf6ba91c7ea3b337b76ab0c90e0032f1180eec906021"
+    }
+  ],
+  "tests": {
+    "test_adaptation.py": "4c460955b5090f7245a383c5aa91087e0d95e93356e7b2cae1136bca7a539082",
+    "test_service.py": "14480c1ac2b270044a89ac283401098a1235d260bd79593fe0d49a4616c3e1d6"
+  },
+  "source": {
+    "core_combined": "4ef5d4e3",
+    "core_branches": {
+      "fix/graph-replay-lifetimes": "2c342137",
+      "fix/metax-fp32-gemm": "bac2de5b",
+      "feat/mamba2-device-scan": "42dbfd16"
+    },
+    "lm": "d337a05f",
+    "lm_cache_chunk": "cb243d9a",
+    "note": "Production sources match the validated snapshot. The three Core diffs are disjoint and their union equals the combined source. These binaries were not fresh standalone builds of each split branch."
+  },
+  "attachments_sha256": {
+    "cache-chunk-tests.log": "274a189bdc86c493fb41da05d1a1f2764bd742a7cc5f38a0746e5ab8f40e40f5",
+    "core-graph-and-precision.log": "46a5375fd208aa8b398bde126ff8631b1a138f368427bb9319080cc641303cf4",
+    "mamba-bf16-retained-tests.log": "64205d4f32c037f48933a27ff0a10e4ca05553fe77af0da160ee3d12bad217d3",
+    "benchmark-eager.json": "48a653865d6952cd3cac03b4746b74cde44b5b5df5e5f912d57ce226b5a27c2b",
+    "benchmark-graph.json": "c79e10f74454c8edb8b71122e86c129c57d14949afc14c01f501f122252265e7"
+  }
+}
