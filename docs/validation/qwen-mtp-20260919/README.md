@@ -36,7 +36,8 @@ PR does not include #1560 and does not depend on Mamba scan PR #1562.
 Tiny fixture uses FP8 E4M3 block weights with BF16 activations and FP32 recurrent
 states, hidden size 256, 2 target layers (GDN/full attention), 1 MTP layer.
 Configuration and SHA256 manifest are included; no model weights are published.
-Qwen2 compatibility regression builds its own CPU fixture in pytest.
+Qwen2 compatibility regression creates synthetic weights on CPU but executes
+model inference on NVIDIA. It does not validate CPU model inference.
 GPU MTP tests skip without `INFINILM_QWEN_MTP_TEST_MODEL`; full supported tests
 were run with it set. Core NCCL standalone check is included as an evidence script.
 
@@ -122,3 +123,21 @@ Not claimed: random sampling, multimodal/MoE/PP, multi-layer MTP, K>1/batched gr
 partial prefixes, TP2 snapshots, remote recurrent state transfer, vendor-wide MTP.
 Other accelerator environments were unavailable. These limits are also explicit
 in the runtime validation and user-facing README.
+
+## Follow-up compatibility audit
+
+The MTP flag disables the MTP head and runner, but does not restore every
+pre-PR code path. Vocabulary-parallel Qwen output projection, the shared GDN
+short-sequence route, weight postprocessing order, cache completion cleanup and
+asynchronous engine shutdown also affect non-MTP users. Their effects require
+review independently of MTP acceptance correctness.
+
+The existing `test/models/qwen3_5_moe/test_adaptation.py` additionally passed
+6 CPU-side configuration/remapping checks in 5.28 s. This is not full MoE model
+inference coverage. Existing model tests on the new branch are not an exhaustive
+before/after comparison against the upstream target for every model/backend.
+
+Exact-prompt snapshots, draft graphs and vocabulary parallelism are useful
+extensions, not prerequisites for a correct MTP implementation. LM PR #584
+is returned to draft while its scope and non-MTP compatibility are addressed.
+No production feature has been removed as part of this audit.
