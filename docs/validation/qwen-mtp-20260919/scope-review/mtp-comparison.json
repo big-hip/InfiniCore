@@ -1,0 +1,60 @@
+{
+  "TP": 1,
+  "K": 2,
+  "rows": [
+    {
+      "prompt_tokens": 4,
+      "output_tokens": 32,
+      "repeats": 3,
+      "tokens_exact": true,
+      "before": {
+        "seconds": 0.9272133996710181,
+        "ttft": 0.056887270882725716,
+        "decode_tps": 35.61883180866879,
+        "accepted": 17,
+        "proposals": 28
+      },
+      "current": {
+        "seconds": 0.9120614537969232,
+        "ttft": 0.05830760579556227,
+        "decode_tps": 36.31023165818936,
+        "accepted": 17,
+        "proposals": 28
+      },
+      "decode_change_percent": 1.9411075950904744
+    },
+    {
+      "prompt_tokens": 63,
+      "output_tokens": 32,
+      "repeats": 3,
+      "tokens_exact": true,
+      "before": {
+        "seconds": 0.8219627654179931,
+        "ttft": 0.14347749296575785,
+        "decode_tps": 45.665341939004456,
+        "accepted": 20,
+        "proposals": 21
+      },
+      "current": {
+        "seconds": 0.8065724866464734,
+        "ttft": 0.1399301253259182,
+        "decode_tps": 46.500872599037365,
+        "accepted": 20,
+        "proposals": 21
+      },
+      "decode_change_percent": 1.829682259138532
+    }
+  ],
+  "resident_mib": [
+    [
+      42404
+    ],
+    [
+      42404
+    ]
+  ],
+  "sampled_peak_mib": [
+    43282,
+    43254
+  ]
+}

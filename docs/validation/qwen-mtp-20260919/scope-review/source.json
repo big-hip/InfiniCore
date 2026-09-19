@@ -1,0 +1,33 @@
+{
+  "feature_commit": "86208ae1",
+  "before_commit": "9f262aa9",
+  "upstream_commit": "270feb3e",
+  "checkpoint": "tiny-verify-model (FP8 block/Marlin, BF16 activations, FP32 state)",
+  "core_unchanged": true,
+  "checksums": {
+    "REVIEW.md": "65a3bc08b598a42868e7ed9e8851709ce565496b891839cd172abd555b975173",
+    "ordinary_probe.py": "06ea830e61069521b20205361bb224f5ff4fbae7f6cda9324fa25d228fd99fb5",
+    "mtp_perf.py": "df532b8352f3a1483cf4e1e12344f5808ead01927c7111ca0d6e7e5a71876ec4",
+    "run_comparison.py": "a2ec75062e1d19199ce40e25618a26db6fa6f569aa668ee85a977a7c499daac3",
+    "tp1-final.log": "27bbb71eedd1b980f1c00fbcbe722d18d75871905a6ea612f0a83d3818374c6c",
+    "tp2-final.log": "f48f07a8eba6f07bc1a0e2287dc2081971bf48c8c0567f598d9ed9b905672819",
+    "build-final.log": "86cd5c6fdd649dd91375324351601e9e16619fc16dc250c8b5f36734f7146469",
+    "format-check.log": "a31bfc8682f28a6f4ad0b7e1f6cf6a7f8b1cd038a9cc0cd31ff21241794b6df8",
+    "ordinary-comparison.json": "18175217ac62480090d9ea7a5d9e95bdafd632489034f41aeb9907eb50b59ab1",
+    "ordinary-steady-comparison.json": "c5d38c2348f9d147aef23cce0704d8a9c63b1e4f93ed3aece34bee474c90ebd4",
+    "mtp-comparison.json": "98ed0a7a795487b42d98b7805052c6e66f184ed9ed1ef889c8f0ec515db02c18",
+    "steady-current-llama-graph-repeat.json": "c73aa0fc6e3495b6646e8a5243bab83b4f7423b37d4703f1fbb7a4b41283dafe",
+    "steady-current-llama-graph.json": "1adf78f946d526d6ed9135359659b4dea42d1f75220d646a27ba316795f24c38",
+    "steady-upstream-qwen2-eager.json": "82a99500f8656738d94306f69cf710f38c909a05d73c8e104c1341c7fd433af9",
+    "steady-upstream-qwen2-graph.json": "304475e81e7aa685b0e03ef1e83e170a13cbdac5f0e41f536f3524643251d155",
+    "steady-upstream-llama-graph.json": "57860ccfb1ddfc2ffa3635ecf8fb9224420e8d16aa5a82ed69eeae70a601ffcd",
+    "steady-current-llama-eager.json": "b1388b7590d4db0f1900ce3f97c8fc819ba3431614c32c155f37105859bcb23d",
+    "steady-current-qwen2-eager.json": "9c0d2b43fd597fccb28e203140799b38c95294cb1fc782fe613ba096df886731",
+    "steady-current-qwen2-graph.json": "16d83374a393a679cf5817ff387c20ddb33ef349ff72c11916c8abaa1d6583e3",
+    "steady-upstream-llama-eager.json": "6be396576102b005f93b74f32589aaa88563106e23abd6e45ad42ead028aab1e",
+    "before-mtp-k2.json": "682cf46bb018efcedb87d280463d75ebeca30f301aa81aa1fc9c9cc4e1610590",
+    "current-mtp-k2.json": "ba816635237ae733b395ab4112729ccfd469a3d940588740462ec455e1e8c95a",
+    "before-mtp-k2.memory.json": "ddf0a09895078204a07eecc4842eb2a074c2da6b68c25426da13185bfbd0ea42",
+    "current-mtp-k2.memory.json": "59468b40a7ef46c5ec23b71d90caa7f5c7c337255eaa36d3f67b52ac26d39ae0"
+  }
+}

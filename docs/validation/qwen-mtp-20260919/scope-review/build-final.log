@@ -1,0 +1,6 @@
+[0m[38;5;2;1m[ 58%]:[0m [38;5;5;1m<_infinilm>[0m cache compiling.release csrc/models/qwen3_next/qwen3_next_gated_deltanet.cpp[0m
+[0m[38;5;2;1m[ 93%]:[0m [38;5;5;1m<_infinilm>[0m [38;5;5;1mlinking.release _infinilm.cpython-311-x86_64-linux-gnu.so[0m
+[0m[38;5;2;1m[100%]:[0m [38;5;2;1mbuild ok, spent 29.508s[0m
+installing _infinilm ..
+installing _infinilm to python/infinilm ..
+[0m[38;5;2;1minstall ok![0m
