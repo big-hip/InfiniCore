@@ -1,0 +1,11 @@
+[ 12%]: <_infinilm> cache compiling.release csrc/layers/quantization/fp8_block.cpp
+[ 19%]: <_infinilm> cache compiling.release csrc/layers/linear/vocab_parallel.cpp
+[ 57%]: <_infinilm> cache compiling.release csrc/models/qwen3_next/qwen3_next_gated_deltanet.cpp
+[ 64%]: <_infinilm> cache compiling.release csrc/models/qwen3_5_moe/qwen3_5_moe_for_causal_lm.cpp
+[ 70%]: <_infinilm> cache compiling.release csrc/models/qwen3_5/qwen3_5_mtp.cpp
+[ 71%]: <_infinilm> cache compiling.release csrc/models/qwen3_5/qwen3_5_for_causal_lm.cpp
+[ 88%]: <_infinilm> cache compiling.release csrc/engine/infer_engine.cpp
+[ 89%]: <_infinilm> cache compiling.release csrc/engine/rank_worker.cpp
+[ 90%]: <_infinilm> cache compiling.release csrc/pybind11/bindings.cc
+[ 93%]: <_infinilm> linking.release _infinilm.cpython-311-x86_64-linux-gnu.so
+[100%]: build ok, spent 33.123s

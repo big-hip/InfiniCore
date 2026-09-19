@@ -1,0 +1,37 @@
+{
+  "pid": "redacted",
+  "command": [
+    "python",
+    "research/2026-09-19-mtp-tp2-profile/validate_service.py",
+    "--tp",
+    "2",
+    "--k",
+    "2",
+    "--output",
+    "research/2026-09-19-mtp-pr-final-review/tp2-service.json"
+  ],
+  "exit_code": 0,
+  "sample_interval_ms": 100,
+  "boundary_padding_ms": 100,
+  "overall_peak_mib": {
+    "GPU0": 24258,
+    "GPU1": 24258
+  },
+  "phases": {
+    "load": {
+      "seconds": 31.934943675994873,
+      "sampled_peak_mib": {
+        "GPU0": 24258,
+        "GPU1": 24258
+      }
+    },
+    "steady": {
+      "seconds": 5.31222128868103,
+      "sampled_peak_mib": {
+        "GPU0": 24150,
+        "GPU1": 24132
+      }
+    }
+  },
+  "captures": []
+}

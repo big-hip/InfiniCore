@@ -1,0 +1,189 @@
+
+============================================================
+Testing PagedAttentionPrefill on NVIDIA
+============================================================
+TestCase(PagedAttentionPrefill_Round_0_float16 - inputs=[in_0: tensortorch.Size([16, 1, 128]), float16; in_1: tensortorch.Size([2, 1, 8, 128]), float16; in_2: tensortorch.Size([2, 1, 8, 128]), float16; in_3: tensortorch.Size([1, 2]), int32; in_4: tensortorch.Size([1]), int32; in_5: tensortorch.Size([2]), int32], kwargs={scale=0.08838834764831845; out=tensor(16, 1, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_float16 - inputs=[in_0: tensortorch.Size([16, 1, 128]), float16; in_1: tensortorch.Size([2, 1, 8, 128]), float16; in_2: tensortorch.Size([2, 1, 8, 128]), float16; in_3: tensortorch.Size([1, 2]), int64; in_4: tensortorch.Size([1]), int64; in_5: tensortorch.Size([2]), int64], kwargs={scale=0.08838834764831845; out=tensor(16, 1, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_bfloat16 - inputs=[in_0: tensortorch.Size([16, 1, 128]), bfloat16; in_1: tensortorch.Size([2, 1, 8, 128]), bfloat16; in_2: tensortorch.Size([2, 1, 8, 128]), bfloat16; in_3: tensortorch.Size([1, 2]), int32; in_4: tensortorch.Size([1]), int32; in_5: tensortorch.Size([2]), int32], kwargs={scale=0.08838834764831845; out=tensor(16, 1, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_bfloat16 - inputs=[in_0: tensortorch.Size([16, 1, 128]), bfloat16; in_1: tensortorch.Size([2, 1, 8, 128]), bfloat16; in_2: tensortorch.Size([2, 1, 8, 128]), bfloat16; in_3: tensortorch.Size([1, 2]), int64; in_4: tensortorch.Size([1]), int64; in_5: tensortorch.Size([2]), int64], kwargs={scale=0.08838834764831845; out=tensor(16, 1, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_float16 - inputs=[in_0: tensortorch.Size([8, 4, 128]), float16; in_1: tensortorch.Size([8, 4, 8, 128]), float16; in_2: tensortorch.Size([8, 4, 8, 128]), float16; in_3: tensortorch.Size([1, 1]), int32; in_4: tensortorch.Size([1]), int32; in_5: tensortorch.Size([2]), int32], kwargs={scale=0.08838834764831845; out=tensor(8, 4, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_float16 - inputs=[in_0: tensortorch.Size([8, 4, 128]), float16; in_1: tensortorch.Size([8, 4, 8, 128]), float16; in_2: tensortorch.Size([8, 4, 8, 128]), float16; in_3: tensortorch.Size([1, 1]), int64; in_4: tensortorch.Size([1]), int64; in_5: tensortorch.Size([2]), int64], kwargs={scale=0.08838834764831845; out=tensor(8, 4, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_bfloat16 - inputs=[in_0: tensortorch.Size([8, 4, 128]), bfloat16; in_1: tensortorch.Size([8, 4, 8, 128]), bfloat16; in_2: tensortorch.Size([8, 4, 8, 128]), bfloat16; in_3: tensortorch.Size([1, 1]), int32; in_4: tensortorch.Size([1]), int32; in_5: tensortorch.Size([2]), int32], kwargs={scale=0.08838834764831845; out=tensor(8, 4, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_bfloat16 - inputs=[in_0: tensortorch.Size([8, 4, 128]), bfloat16; in_1: tensortorch.Size([8, 4, 8, 128]), bfloat16; in_2: tensortorch.Size([8, 4, 8, 128]), bfloat16; in_3: tensortorch.Size([1, 1]), int64; in_4: tensortorch.Size([1]), int64; in_5: tensortorch.Size([2]), int64], kwargs={scale=0.08838834764831845; out=tensor(8, 4, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_1_float16 - inputs=[in_0: tensortorch.Size([13, 4, 128]), float16; in_1: tensortorch.Size([8, 4, 8, 128]), float16; in_2: tensortorch.Size([8, 4, 8, 128]), float16; in_3: tensortorch.Size([1, 3]), int32; in_4: tensortorch.Size([1]), int32; in_5: tensortorch.Size([2]), int32], kwargs={scale=0.08838834764831845; out=tensor(13, 4, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_1_float16 - inputs=[in_0: tensortorch.Size([13, 4, 128]), float16; in_1: tensortorch.Size([8, 4, 8, 128]), float16; in_2: tensortorch.Size([8, 4, 8, 128]), float16; in_3: tensortorch.Size([1, 3]), int64; in_4: tensortorch.Size([1]), int64; in_5: tensortorch.Size([2]), int64], kwargs={scale=0.08838834764831845; out=tensor(13, 4, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_1_bfloat16 - inputs=[in_0: tensortorch.Size([13, 4, 128]), bfloat16; in_1: tensortorch.Size([8, 4, 8, 128]), bfloat16; in_2: tensortorch.Size([8, 4, 8, 128]), bfloat16; in_3: tensortorch.Size([1, 3]), int32; in_4: tensortorch.Size([1]), int32; in_5: tensortorch.Size([2]), int32], kwargs={scale=0.08838834764831845; out=tensor(13, 4, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_1_bfloat16 - inputs=[in_0: tensortorch.Size([13, 4, 128]), bfloat16; in_1: tensortorch.Size([8, 4, 8, 128]), bfloat16; in_2: tensortorch.Size([8, 4, 8, 128]), bfloat16; in_3: tensortorch.Size([1, 3]), int64; in_4: tensortorch.Size([1]), int64; in_5: tensortorch.Size([2]), int64], kwargs={scale=0.08838834764831845; out=tensor(13, 4, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_2_float16 - inputs=[in_0: tensortorch.Size([5, 4, 128]), float16; in_1: tensortorch.Size([8, 4, 8, 128]), float16; in_2: tensortorch.Size([8, 4, 8, 128]), float16; in_3: tensortorch.Size([1, 4]), int32; in_4: tensortorch.Size([1]), int32; in_5: tensortorch.Size([2]), int32], kwargs={scale=0.08838834764831845; out=tensor(5, 4, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_2_float16 - inputs=[in_0: tensortorch.Size([5, 4, 128]), float16; in_1: tensortorch.Size([8, 4, 8, 128]), float16; in_2: tensortorch.Size([8, 4, 8, 128]), float16; in_3: tensortorch.Size([1, 4]), int64; in_4: tensortorch.Size([1]), int64; in_5: tensortorch.Size([2]), int64], kwargs={scale=0.08838834764831845; out=tensor(5, 4, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_2_bfloat16 - inputs=[in_0: tensortorch.Size([5, 4, 128]), bfloat16; in_1: tensortorch.Size([8, 4, 8, 128]), bfloat16; in_2: tensortorch.Size([8, 4, 8, 128]), bfloat16; in_3: tensortorch.Size([1, 4]), int32; in_4: tensortorch.Size([1]), int32; in_5: tensortorch.Size([2]), int32], kwargs={scale=0.08838834764831845; out=tensor(5, 4, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_2_bfloat16 - inputs=[in_0: tensortorch.Size([5, 4, 128]), bfloat16; in_1: tensortorch.Size([8, 4, 8, 128]), bfloat16; in_2: tensortorch.Size([8, 4, 8, 128]), bfloat16; in_3: tensortorch.Size([1, 4]), int64; in_4: tensortorch.Size([1]), int64; in_5: tensortorch.Size([2]), int64], kwargs={scale=0.08838834764831845; out=tensor(5, 4, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_3_float16 - inputs=[in_0: tensortorch.Size([1, 4, 128]), float16; in_1: tensortorch.Size([8, 4, 8, 128]), float16; in_2: tensortorch.Size([8, 4, 8, 128]), float16; in_3: tensortorch.Size([1, 4]), int32; in_4: tensortorch.Size([1]), int32; in_5: tensortorch.Size([2]), int32], kwargs={scale=0.08838834764831845; out=tensor(1, 4, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_3_float16 - inputs=[in_0: tensortorch.Size([1, 4, 128]), float16; in_1: tensortorch.Size([8, 4, 8, 128]), float16; in_2: tensortorch.Size([8, 4, 8, 128]), float16; in_3: tensortorch.Size([1, 4]), int64; in_4: tensortorch.Size([1]), int64; in_5: tensortorch.Size([2]), int64], kwargs={scale=0.08838834764831845; out=tensor(1, 4, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_3_bfloat16 - inputs=[in_0: tensortorch.Size([1, 4, 128]), bfloat16; in_1: tensortorch.Size([8, 4, 8, 128]), bfloat16; in_2: tensortorch.Size([8, 4, 8, 128]), bfloat16; in_3: tensortorch.Size([1, 4]), int32; in_4: tensortorch.Size([1]), int32; in_5: tensortorch.Size([2]), int32], kwargs={scale=0.08838834764831845; out=tensor(1, 4, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_3_bfloat16 - inputs=[in_0: tensortorch.Size([1, 4, 128]), bfloat16; in_1: tensortorch.Size([8, 4, 8, 128]), bfloat16; in_2: tensortorch.Size([8, 4, 8, 128]), bfloat16; in_3: tensortorch.Size([1, 4]), int64; in_4: tensortorch.Size([1]), int64; in_5: tensortorch.Size([2]), int64], kwargs={scale=0.08838834764831845; out=tensor(1, 4, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_float16 - inputs=[in_0: tensortorch.Size([40, 8, 128]), float16; in_1: tensortorch.Size([8, 8, 16, 128]), float16; in_2: tensortorch.Size([8, 8, 16, 128]), float16; in_3: tensortorch.Size([2, 2]), int32; in_4: tensortorch.Size([2]), int32; in_5: tensortorch.Size([3]), int32], kwargs={scale=0.08838834764831845; out=tensor(40, 8, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_float16 - inputs=[in_0: tensortorch.Size([40, 8, 128]), float16; in_1: tensortorch.Size([8, 8, 16, 128]), float16; in_2: tensortorch.Size([8, 8, 16, 128]), float16; in_3: tensortorch.Size([2, 2]), int64; in_4: tensortorch.Size([2]), int64; in_5: tensortorch.Size([3]), int64], kwargs={scale=0.08838834764831845; out=tensor(40, 8, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_bfloat16 - inputs=[in_0: tensortorch.Size([40, 8, 128]), bfloat16; in_1: tensortorch.Size([8, 8, 16, 128]), bfloat16; in_2: tensortorch.Size([8, 8, 16, 128]), bfloat16; in_3: tensortorch.Size([2, 2]), int32; in_4: tensortorch.Size([2]), int32; in_5: tensortorch.Size([3]), int32], kwargs={scale=0.08838834764831845; out=tensor(40, 8, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_bfloat16 - inputs=[in_0: tensortorch.Size([40, 8, 128]), bfloat16; in_1: tensortorch.Size([8, 8, 16, 128]), bfloat16; in_2: tensortorch.Size([8, 8, 16, 128]), bfloat16; in_3: tensortorch.Size([2, 2]), int64; in_4: tensortorch.Size([2]), int64; in_5: tensortorch.Size([3]), int64], kwargs={scale=0.08838834764831845; out=tensor(40, 8, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_1_float16 - inputs=[in_0: tensortorch.Size([37, 8, 128]), float16; in_1: tensortorch.Size([8, 8, 16, 128]), float16; in_2: tensortorch.Size([8, 8, 16, 128]), float16; in_3: tensortorch.Size([2, 3]), int32; in_4: tensortorch.Size([2]), int32; in_5: tensortorch.Size([3]), int32], kwargs={scale=0.08838834764831845; out=tensor(37, 8, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_1_float16 - inputs=[in_0: tensortorch.Size([37, 8, 128]), float16; in_1: tensortorch.Size([8, 8, 16, 128]), float16; in_2: tensortorch.Size([8, 8, 16, 128]), float16; in_3: tensortorch.Size([2, 3]), int64; in_4: tensortorch.Size([2]), int64; in_5: tensortorch.Size([3]), int64], kwargs={scale=0.08838834764831845; out=tensor(37, 8, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_1_bfloat16 - inputs=[in_0: tensortorch.Size([37, 8, 128]), bfloat16; in_1: tensortorch.Size([8, 8, 16, 128]), bfloat16; in_2: tensortorch.Size([8, 8, 16, 128]), bfloat16; in_3: tensortorch.Size([2, 3]), int32; in_4: tensortorch.Size([2]), int32; in_5: tensortorch.Size([3]), int32], kwargs={scale=0.08838834764831845; out=tensor(37, 8, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_1_bfloat16 - inputs=[in_0: tensortorch.Size([37, 8, 128]), bfloat16; in_1: tensortorch.Size([8, 8, 16, 128]), bfloat16; in_2: tensortorch.Size([8, 8, 16, 128]), bfloat16; in_3: tensortorch.Size([2, 3]), int64; in_4: tensortorch.Size([2]), int64; in_5: tensortorch.Size([3]), int64], kwargs={scale=0.08838834764831845; out=tensor(37, 8, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_float16 - inputs=[in_0: tensortorch.Size([135, 16, 128]), float16; in_1: tensortorch.Size([96, 16, 8, 128]), float16; in_2: tensortorch.Size([96, 16, 8, 128]), float16; in_3: tensortorch.Size([4, 5]), int32; in_4: tensortorch.Size([4]), int32; in_5: tensortorch.Size([5]), int32], kwargs={scale=0.08838834764831845; out=tensor(135, 16, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_float16 - inputs=[in_0: tensortorch.Size([135, 16, 128]), float16; in_1: tensortorch.Size([96, 16, 8, 128]), float16; in_2: tensortorch.Size([96, 16, 8, 128]), float16; in_3: tensortorch.Size([4, 5]), int64; in_4: tensortorch.Size([4]), int64; in_5: tensortorch.Size([5]), int64], kwargs={scale=0.08838834764831845; out=tensor(135, 16, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_bfloat16 - inputs=[in_0: tensortorch.Size([135, 16, 128]), bfloat16; in_1: tensortorch.Size([96, 16, 8, 128]), bfloat16; in_2: tensortorch.Size([96, 16, 8, 128]), bfloat16; in_3: tensortorch.Size([4, 5]), int32; in_4: tensortorch.Size([4]), int32; in_5: tensortorch.Size([5]), int32], kwargs={scale=0.08838834764831845; out=tensor(135, 16, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_bfloat16 - inputs=[in_0: tensortorch.Size([135, 16, 128]), bfloat16; in_1: tensortorch.Size([96, 16, 8, 128]), bfloat16; in_2: tensortorch.Size([96, 16, 8, 128]), bfloat16; in_3: tensortorch.Size([4, 5]), int64; in_4: tensortorch.Size([4]), int64; in_5: tensortorch.Size([5]), int64], kwargs={scale=0.08838834764831845; out=tensor(135, 16, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_1_float16 - inputs=[in_0: tensortorch.Size([134, 16, 128]), float16; in_1: tensortorch.Size([96, 16, 8, 128]), float16; in_2: tensortorch.Size([96, 16, 8, 128]), float16; in_3: tensortorch.Size([4, 12]), int32; in_4: tensortorch.Size([4]), int32; in_5: tensortorch.Size([5]), int32], kwargs={scale=0.08838834764831845; out=tensor(134, 16, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_1_float16 - inputs=[in_0: tensortorch.Size([134, 16, 128]), float16; in_1: tensortorch.Size([96, 16, 8, 128]), float16; in_2: tensortorch.Size([96, 16, 8, 128]), float16; in_3: tensortorch.Size([4, 12]), int64; in_4: tensortorch.Size([4]), int64; in_5: tensortorch.Size([5]), int64], kwargs={scale=0.08838834764831845; out=tensor(134, 16, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_1_bfloat16 - inputs=[in_0: tensortorch.Size([134, 16, 128]), bfloat16; in_1: tensortorch.Size([96, 16, 8, 128]), bfloat16; in_2: tensortorch.Size([96, 16, 8, 128]), bfloat16; in_3: tensortorch.Size([4, 12]), int32; in_4: tensortorch.Size([4]), int32; in_5: tensortorch.Size([5]), int32], kwargs={scale=0.08838834764831845; out=tensor(134, 16, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_1_bfloat16 - inputs=[in_0: tensortorch.Size([134, 16, 128]), bfloat16; in_1: tensortorch.Size([96, 16, 8, 128]), bfloat16; in_2: tensortorch.Size([96, 16, 8, 128]), bfloat16; in_3: tensortorch.Size([4, 12]), int64; in_4: tensortorch.Size([4]), int64; in_5: tensortorch.Size([5]), int64], kwargs={scale=0.08838834764831845; out=tensor(134, 16, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_2_float16 - inputs=[in_0: tensortorch.Size([143, 16, 128]), float16; in_1: tensortorch.Size([96, 16, 8, 128]), float16; in_2: tensortorch.Size([96, 16, 8, 128]), float16; in_3: tensortorch.Size([4, 16]), int32; in_4: tensortorch.Size([4]), int32; in_5: tensortorch.Size([5]), int32], kwargs={scale=0.08838834764831845; out=tensor(143, 16, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_2_float16 - inputs=[in_0: tensortorch.Size([143, 16, 128]), float16; in_1: tensortorch.Size([96, 16, 8, 128]), float16; in_2: tensortorch.Size([96, 16, 8, 128]), float16; in_3: tensortorch.Size([4, 16]), int64; in_4: tensortorch.Size([4]), int64; in_5: tensortorch.Size([5]), int64], kwargs={scale=0.08838834764831845; out=tensor(143, 16, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_2_bfloat16 - inputs=[in_0: tensortorch.Size([143, 16, 128]), bfloat16; in_1: tensortorch.Size([96, 16, 8, 128]), bfloat16; in_2: tensortorch.Size([96, 16, 8, 128]), bfloat16; in_3: tensortorch.Size([4, 16]), int32; in_4: tensortorch.Size([4]), int32; in_5: tensortorch.Size([5]), int32], kwargs={scale=0.08838834764831845; out=tensor(143, 16, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_2_bfloat16 - inputs=[in_0: tensortorch.Size([143, 16, 128]), bfloat16; in_1: tensortorch.Size([96, 16, 8, 128]), bfloat16; in_2: tensortorch.Size([96, 16, 8, 128]), bfloat16; in_3: tensortorch.Size([4, 16]), int64; in_4: tensortorch.Size([4]), int64; in_5: tensortorch.Size([5]), int64], kwargs={scale=0.08838834764831845; out=tensor(143, 16, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_float16 - inputs=[in_0: tensortorch.Size([74, 64, 128]), float16; in_1: tensortorch.Size([80, 64, 8, 128]), float16; in_2: tensortorch.Size([80, 64, 8, 128]), float16; in_3: tensortorch.Size([8, 2]), int32; in_4: tensortorch.Size([8]), int32; in_5: tensortorch.Size([9]), int32], kwargs={scale=0.08838834764831845; out=tensor(74, 64, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_float16 - inputs=[in_0: tensortorch.Size([74, 64, 128]), float16; in_1: tensortorch.Size([80, 64, 8, 128]), float16; in_2: tensortorch.Size([80, 64, 8, 128]), float16; in_3: tensortorch.Size([8, 2]), int64; in_4: tensortorch.Size([8]), int64; in_5: tensortorch.Size([9]), int64], kwargs={scale=0.08838834764831845; out=tensor(74, 64, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_bfloat16 - inputs=[in_0: tensortorch.Size([74, 64, 128]), bfloat16; in_1: tensortorch.Size([80, 64, 8, 128]), bfloat16; in_2: tensortorch.Size([80, 64, 8, 128]), bfloat16; in_3: tensortorch.Size([8, 2]), int32; in_4: tensortorch.Size([8]), int32; in_5: tensortorch.Size([9]), int32], kwargs={scale=0.08838834764831845; out=tensor(74, 64, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_bfloat16 - inputs=[in_0: tensortorch.Size([74, 64, 128]), bfloat16; in_1: tensortorch.Size([80, 64, 8, 128]), bfloat16; in_2: tensortorch.Size([80, 64, 8, 128]), bfloat16; in_3: tensortorch.Size([8, 2]), int64; in_4: tensortorch.Size([8]), int64; in_5: tensortorch.Size([9]), int64], kwargs={scale=0.08838834764831845; out=tensor(74, 64, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_1_float16 - inputs=[in_0: tensortorch.Size([60, 64, 128]), float16; in_1: tensortorch.Size([80, 64, 8, 128]), float16; in_2: tensortorch.Size([80, 64, 8, 128]), float16; in_3: tensortorch.Size([8, 4]), int32; in_4: tensortorch.Size([8]), int32; in_5: tensortorch.Size([9]), int32], kwargs={scale=0.08838834764831845; out=tensor(60, 64, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_1_float16 - inputs=[in_0: tensortorch.Size([60, 64, 128]), float16; in_1: tensortorch.Size([80, 64, 8, 128]), float16; in_2: tensortorch.Size([80, 64, 8, 128]), float16; in_3: tensortorch.Size([8, 4]), int64; in_4: tensortorch.Size([8]), int64; in_5: tensortorch.Size([9]), int64], kwargs={scale=0.08838834764831845; out=tensor(60, 64, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_1_bfloat16 - inputs=[in_0: tensortorch.Size([60, 64, 128]), bfloat16; in_1: tensortorch.Size([80, 64, 8, 128]), bfloat16; in_2: tensortorch.Size([80, 64, 8, 128]), bfloat16; in_3: tensortorch.Size([8, 4]), int32; in_4: tensortorch.Size([8]), int32; in_5: tensortorch.Size([9]), int32], kwargs={scale=0.08838834764831845; out=tensor(60, 64, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_1_bfloat16 - inputs=[in_0: tensortorch.Size([60, 64, 128]), bfloat16; in_1: tensortorch.Size([80, 64, 8, 128]), bfloat16; in_2: tensortorch.Size([80, 64, 8, 128]), bfloat16; in_3: tensortorch.Size([8, 4]), int64; in_4: tensortorch.Size([8]), int64; in_5: tensortorch.Size([9]), int64], kwargs={scale=0.08838834764831845; out=tensor(60, 64, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_2_float16 - inputs=[in_0: tensortorch.Size([51, 64, 128]), float16; in_1: tensortorch.Size([80, 64, 8, 128]), float16; in_2: tensortorch.Size([80, 64, 8, 128]), float16; in_3: tensortorch.Size([8, 4]), int32; in_4: tensortorch.Size([8]), int32; in_5: tensortorch.Size([9]), int32], kwargs={scale=0.08838834764831845; out=tensor(51, 64, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_2_float16 - inputs=[in_0: tensortorch.Size([51, 64, 128]), float16; in_1: tensortorch.Size([80, 64, 8, 128]), float16; in_2: tensortorch.Size([80, 64, 8, 128]), float16; in_3: tensortorch.Size([8, 4]), int64; in_4: tensortorch.Size([8]), int64; in_5: tensortorch.Size([9]), int64], kwargs={scale=0.08838834764831845; out=tensor(51, 64, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_2_bfloat16 - inputs=[in_0: tensortorch.Size([51, 64, 128]), bfloat16; in_1: tensortorch.Size([80, 64, 8, 128]), bfloat16; in_2: tensortorch.Size([80, 64, 8, 128]), bfloat16; in_3: tensortorch.Size([8, 4]), int32; in_4: tensortorch.Size([8]), int32; in_5: tensortorch.Size([9]), int32], kwargs={scale=0.08838834764831845; out=tensor(51, 64, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_2_bfloat16 - inputs=[in_0: tensortorch.Size([51, 64, 128]), bfloat16; in_1: tensortorch.Size([80, 64, 8, 128]), bfloat16; in_2: tensortorch.Size([80, 64, 8, 128]), bfloat16; in_3: tensortorch.Size([8, 4]), int64; in_4: tensortorch.Size([8]), int64; in_5: tensortorch.Size([9]), int64], kwargs={scale=0.08838834764831845; out=tensor(51, 64, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_3_float16 - inputs=[in_0: tensortorch.Size([63, 64, 128]), float16; in_1: tensortorch.Size([80, 64, 8, 128]), float16; in_2: tensortorch.Size([80, 64, 8, 128]), float16; in_3: tensortorch.Size([8, 5]), int32; in_4: tensortorch.Size([8]), int32; in_5: tensortorch.Size([9]), int32], kwargs={scale=0.08838834764831845; out=tensor(63, 64, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_3_float16 - inputs=[in_0: tensortorch.Size([63, 64, 128]), float16; in_1: tensortorch.Size([80, 64, 8, 128]), float16; in_2: tensortorch.Size([80, 64, 8, 128]), float16; in_3: tensortorch.Size([8, 5]), int64; in_4: tensortorch.Size([8]), int64; in_5: tensortorch.Size([9]), int64], kwargs={scale=0.08838834764831845; out=tensor(63, 64, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_3_bfloat16 - inputs=[in_0: tensortorch.Size([63, 64, 128]), bfloat16; in_1: tensortorch.Size([80, 64, 8, 128]), bfloat16; in_2: tensortorch.Size([80, 64, 8, 128]), bfloat16; in_3: tensortorch.Size([8, 5]), int32; in_4: tensortorch.Size([8]), int32; in_5: tensortorch.Size([9]), int32], kwargs={scale=0.08838834764831845; out=tensor(63, 64, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_3_bfloat16 - inputs=[in_0: tensortorch.Size([63, 64, 128]), bfloat16; in_1: tensortorch.Size([80, 64, 8, 128]), bfloat16; in_2: tensortorch.Size([80, 64, 8, 128]), bfloat16; in_3: tensortorch.Size([8, 5]), int64; in_4: tensortorch.Size([8]), int64; in_5: tensortorch.Size([9]), int64], kwargs={scale=0.08838834764831845; out=tensor(63, 64, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_4_float16 - inputs=[in_0: tensortorch.Size([73, 64, 128]), float16; in_1: tensortorch.Size([80, 64, 8, 128]), float16; in_2: tensortorch.Size([80, 64, 8, 128]), float16; in_3: tensortorch.Size([8, 6]), int32; in_4: tensortorch.Size([8]), int32; in_5: tensortorch.Size([9]), int32], kwargs={scale=0.08838834764831845; out=tensor(73, 64, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_4_float16 - inputs=[in_0: tensortorch.Size([73, 64, 128]), float16; in_1: tensortorch.Size([80, 64, 8, 128]), float16; in_2: tensortorch.Size([80, 64, 8, 128]), float16; in_3: tensortorch.Size([8, 6]), int64; in_4: tensortorch.Size([8]), int64; in_5: tensortorch.Size([9]), int64], kwargs={scale=0.08838834764831845; out=tensor(73, 64, 128), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_4_bfloat16 - inputs=[in_0: tensortorch.Size([73, 64, 128]), bfloat16; in_1: tensortorch.Size([80, 64, 8, 128]), bfloat16; in_2: tensortorch.Size([80, 64, 8, 128]), bfloat16; in_3: tensortorch.Size([8, 6]), int32; in_4: tensortorch.Size([8]), int32; in_5: tensortorch.Size([9]), int32], kwargs={scale=0.08838834764831845; out=tensor(73, 64, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_4_bfloat16 - inputs=[in_0: tensortorch.Size([73, 64, 128]), bfloat16; in_1: tensortorch.Size([80, 64, 8, 128]), bfloat16; in_2: tensortorch.Size([80, 64, 8, 128]), bfloat16; in_3: tensortorch.Size([8, 6]), int64; in_4: tensortorch.Size([8]), int64; in_5: tensortorch.Size([9]), int64], kwargs={scale=0.08838834764831845; out=tensor(73, 64, 128), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_float16 - inputs=[in_0: tensortorch.Size([1, 24, 256]), float16; in_1: tensortorch.Size([1, 4, 8, 256]), float16; in_2: tensortorch.Size([1, 4, 8, 256]), float16; in_3: tensortorch.Size([1, 1]), int32; in_4: tensortorch.Size([1]), int32; in_5: tensortorch.Size([2]), int32], kwargs={scale=0.0625; out=tensor(1, 24, 256), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_float16 - inputs=[in_0: tensortorch.Size([1, 24, 256]), float16; in_1: tensortorch.Size([1, 4, 8, 256]), float16; in_2: tensortorch.Size([1, 4, 8, 256]), float16; in_3: tensortorch.Size([1, 1]), int64; in_4: tensortorch.Size([1]), int64; in_5: tensortorch.Size([2]), int64], kwargs={scale=0.0625; out=tensor(1, 24, 256), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_bfloat16 - inputs=[in_0: tensortorch.Size([1, 24, 256]), bfloat16; in_1: tensortorch.Size([1, 4, 8, 256]), bfloat16; in_2: tensortorch.Size([1, 4, 8, 256]), bfloat16; in_3: tensortorch.Size([1, 1]), int32; in_4: tensortorch.Size([1]), int32; in_5: tensortorch.Size([2]), int32], kwargs={scale=0.0625; out=tensor(1, 24, 256), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_bfloat16 - inputs=[in_0: tensortorch.Size([1, 24, 256]), bfloat16; in_1: tensortorch.Size([1, 4, 8, 256]), bfloat16; in_2: tensortorch.Size([1, 4, 8, 256]), bfloat16; in_3: tensortorch.Size([1, 1]), int64; in_4: tensortorch.Size([1]), int64; in_5: tensortorch.Size([2]), int64], kwargs={scale=0.0625; out=tensor(1, 24, 256), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_float16 - inputs=[in_0: tensortorch.Size([1, 12, 256]), float16; in_1: tensortorch.Size([1, 2, 8, 256]), float16; in_2: tensortorch.Size([1, 2, 8, 256]), float16; in_3: tensortorch.Size([1, 1]), int32; in_4: tensortorch.Size([1]), int32; in_5: tensortorch.Size([2]), int32], kwargs={scale=0.0625; out=tensor(1, 12, 256), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_float16 - inputs=[in_0: tensortorch.Size([1, 12, 256]), float16; in_1: tensortorch.Size([1, 2, 8, 256]), float16; in_2: tensortorch.Size([1, 2, 8, 256]), float16; in_3: tensortorch.Size([1, 1]), int64; in_4: tensortorch.Size([1]), int64; in_5: tensortorch.Size([2]), int64], kwargs={scale=0.0625; out=tensor(1, 12, 256), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_bfloat16 - inputs=[in_0: tensortorch.Size([1, 12, 256]), bfloat16; in_1: tensortorch.Size([1, 2, 8, 256]), bfloat16; in_2: tensortorch.Size([1, 2, 8, 256]), bfloat16; in_3: tensortorch.Size([1, 1]), int32; in_4: tensortorch.Size([1]), int32; in_5: tensortorch.Size([2]), int32], kwargs={scale=0.0625; out=tensor(1, 12, 256), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_bfloat16 - inputs=[in_0: tensortorch.Size([1, 12, 256]), bfloat16; in_1: tensortorch.Size([1, 2, 8, 256]), bfloat16; in_2: tensortorch.Size([1, 2, 8, 256]), bfloat16; in_3: tensortorch.Size([1, 1]), int64; in_4: tensortorch.Size([1]), int64; in_5: tensortorch.Size([2]), int64], kwargs={scale=0.0625; out=tensor(1, 12, 256), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_float16 - inputs=[in_0: tensortorch.Size([1, 6, 256]), float16; in_1: tensortorch.Size([1, 1, 8, 256]), float16; in_2: tensortorch.Size([1, 1, 8, 256]), float16; in_3: tensortorch.Size([1, 1]), int32; in_4: tensortorch.Size([1]), int32; in_5: tensortorch.Size([2]), int32], kwargs={scale=0.0625; out=tensor(1, 6, 256), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_float16 - inputs=[in_0: tensortorch.Size([1, 6, 256]), float16; in_1: tensortorch.Size([1, 1, 8, 256]), float16; in_2: tensortorch.Size([1, 1, 8, 256]), float16; in_3: tensortorch.Size([1, 1]), int64; in_4: tensortorch.Size([1]), int64; in_5: tensortorch.Size([2]), int64], kwargs={scale=0.0625; out=tensor(1, 6, 256), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_bfloat16 - inputs=[in_0: tensortorch.Size([1, 6, 256]), bfloat16; in_1: tensortorch.Size([1, 1, 8, 256]), bfloat16; in_2: tensortorch.Size([1, 1, 8, 256]), bfloat16; in_3: tensortorch.Size([1, 1]), int32; in_4: tensortorch.Size([1]), int32; in_5: tensortorch.Size([2]), int32], kwargs={scale=0.0625; out=tensor(1, 6, 256), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_bfloat16 - inputs=[in_0: tensortorch.Size([1, 6, 256]), bfloat16; in_1: tensortorch.Size([1, 1, 8, 256]), bfloat16; in_2: tensortorch.Size([1, 1, 8, 256]), bfloat16; in_3: tensortorch.Size([1, 1]), int64; in_4: tensortorch.Size([1]), int64; in_5: tensortorch.Size([2]), int64], kwargs={scale=0.0625; out=tensor(1, 6, 256), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_float16 - inputs=[in_0: tensortorch.Size([101, 12, 256]), float16; in_1: tensortorch.Size([8, 2, 64, 256]), float16; in_2: tensortorch.Size([8, 2, 64, 256]), float16; in_3: tensortorch.Size([2, 2]), int32; in_4: tensortorch.Size([2]), int32; in_5: tensortorch.Size([3]), int32], kwargs={scale=0.0625; out=tensor(101, 12, 256), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_float16 - inputs=[in_0: tensortorch.Size([101, 12, 256]), float16; in_1: tensortorch.Size([8, 2, 64, 256]), float16; in_2: tensortorch.Size([8, 2, 64, 256]), float16; in_3: tensortorch.Size([2, 2]), int64; in_4: tensortorch.Size([2]), int64; in_5: tensortorch.Size([3]), int64], kwargs={scale=0.0625; out=tensor(101, 12, 256), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_bfloat16 - inputs=[in_0: tensortorch.Size([101, 12, 256]), bfloat16; in_1: tensortorch.Size([8, 2, 64, 256]), bfloat16; in_2: tensortorch.Size([8, 2, 64, 256]), bfloat16; in_3: tensortorch.Size([2, 2]), int32; in_4: tensortorch.Size([2]), int32; in_5: tensortorch.Size([3]), int32], kwargs={scale=0.0625; out=tensor(101, 12, 256), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_bfloat16 - inputs=[in_0: tensortorch.Size([101, 12, 256]), bfloat16; in_1: tensortorch.Size([8, 2, 64, 256]), bfloat16; in_2: tensortorch.Size([8, 2, 64, 256]), bfloat16; in_3: tensortorch.Size([2, 2]), int64; in_4: tensortorch.Size([2]), int64; in_5: tensortorch.Size([3]), int64], kwargs={scale=0.0625; out=tensor(101, 12, 256), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_1_float16 - inputs=[in_0: tensortorch.Size([233, 12, 256]), float16; in_1: tensortorch.Size([8, 2, 64, 256]), float16; in_2: tensortorch.Size([8, 2, 64, 256]), float16; in_3: tensortorch.Size([2, 3]), int32; in_4: tensortorch.Size([2]), int32; in_5: tensortorch.Size([3]), int32], kwargs={scale=0.0625; out=tensor(233, 12, 256), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_1_float16 - inputs=[in_0: tensortorch.Size([233, 12, 256]), float16; in_1: tensortorch.Size([8, 2, 64, 256]), float16; in_2: tensortorch.Size([8, 2, 64, 256]), float16; in_3: tensortorch.Size([2, 3]), int64; in_4: tensortorch.Size([2]), int64; in_5: tensortorch.Size([3]), int64], kwargs={scale=0.0625; out=tensor(233, 12, 256), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_1_bfloat16 - inputs=[in_0: tensortorch.Size([233, 12, 256]), bfloat16; in_1: tensortorch.Size([8, 2, 64, 256]), bfloat16; in_2: tensortorch.Size([8, 2, 64, 256]), bfloat16; in_3: tensortorch.Size([2, 3]), int32; in_4: tensortorch.Size([2]), int32; in_5: tensortorch.Size([3]), int32], kwargs={scale=0.0625; out=tensor(233, 12, 256), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_1_bfloat16 - inputs=[in_0: tensortorch.Size([233, 12, 256]), bfloat16; in_1: tensortorch.Size([8, 2, 64, 256]), bfloat16; in_2: tensortorch.Size([8, 2, 64, 256]), bfloat16; in_3: tensortorch.Size([2, 3]), int64; in_4: tensortorch.Size([2]), int64; in_5: tensortorch.Size([3]), int64], kwargs={scale=0.0625; out=tensor(233, 12, 256), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_float16 - inputs=[in_0: tensortorch.Size([755, 24, 256]), float16; in_1: tensortorch.Size([16, 4, 64, 256]), float16; in_2: tensortorch.Size([16, 4, 64, 256]), float16; in_3: tensortorch.Size([1, 12]), int32; in_4: tensortorch.Size([1]), int32; in_5: tensortorch.Size([2]), int32], kwargs={scale=0.0625; out=tensor(755, 24, 256), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_float16 - inputs=[in_0: tensortorch.Size([755, 24, 256]), float16; in_1: tensortorch.Size([16, 4, 64, 256]), float16; in_2: tensortorch.Size([16, 4, 64, 256]), float16; in_3: tensortorch.Size([1, 12]), int64; in_4: tensortorch.Size([1]), int64; in_5: tensortorch.Size([2]), int64], kwargs={scale=0.0625; out=tensor(755, 24, 256), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_bfloat16 - inputs=[in_0: tensortorch.Size([755, 24, 256]), bfloat16; in_1: tensortorch.Size([16, 4, 64, 256]), bfloat16; in_2: tensortorch.Size([16, 4, 64, 256]), bfloat16; in_3: tensortorch.Size([1, 12]), int32; in_4: tensortorch.Size([1]), int32; in_5: tensortorch.Size([2]), int32], kwargs={scale=0.0625; out=tensor(755, 24, 256), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_bfloat16 - inputs=[in_0: tensortorch.Size([755, 24, 256]), bfloat16; in_1: tensortorch.Size([16, 4, 64, 256]), bfloat16; in_2: tensortorch.Size([16, 4, 64, 256]), bfloat16; in_3: tensortorch.Size([1, 12]), int64; in_4: tensortorch.Size([1]), int64; in_5: tensortorch.Size([2]), int64], kwargs={scale=0.0625; out=tensor(755, 24, 256), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_float16 - inputs=[in_0: tensortorch.Size([1, 16, 576]), float16; in_1: tensortorch.Size([1, 1, 8, 576]), float16; in_2: tensortorch.Size([1, 1, 8, 512]), float16; in_3: tensortorch.Size([1, 1]), int32; in_4: tensortorch.Size([1]), int32; in_5: tensortorch.Size([2]), int32], kwargs={scale=0.041666666666666664; out=tensor(1, 16, 512), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_float16 - inputs=[in_0: tensortorch.Size([1, 16, 576]), float16; in_1: tensortorch.Size([1, 1, 8, 576]), float16; in_2: tensortorch.Size([1, 1, 8, 512]), float16; in_3: tensortorch.Size([1, 1]), int64; in_4: tensortorch.Size([1]), int64; in_5: tensortorch.Size([2]), int64], kwargs={scale=0.041666666666666664; out=tensor(1, 16, 512), float16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_bfloat16 - inputs=[in_0: tensortorch.Size([1, 16, 576]), bfloat16; in_1: tensortorch.Size([1, 1, 8, 576]), bfloat16; in_2: tensortorch.Size([1, 1, 8, 512]), bfloat16; in_3: tensortorch.Size([1, 1]), int32; in_4: tensortorch.Size([1]), int32; in_5: tensortorch.Size([2]), int32], kwargs={scale=0.041666666666666664; out=tensor(1, 16, 512), bfloat16})
+✓ Passed
+TestCase(PagedAttentionPrefill_Round_0_bfloat16 - inputs=[in_0: tensortorch.Size([1, 16, 576]), bfloat16; in_1: tensortorch.Size([1, 1, 8, 576]), bfloat16; in_2: tensortorch.Size([1, 1, 8, 512]), bfloat16; in_3: tensortorch.Size([1, 1]), int64; in_4: tensortorch.Size([1]), int64; in_5: tensortorch.Size([2]), int64], kwargs={scale=0.041666666666666664; out=tensor(1, 16, 512), bfloat16})
+✓ Passed
+
+============================================================
+TEST SUMMARY
+Total tests: 88
+Passed: 88
+Success rate: 100.0%
+
+All tests passed!
+============================================================

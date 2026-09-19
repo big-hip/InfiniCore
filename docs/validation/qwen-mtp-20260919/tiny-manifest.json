@@ -1,0 +1,18 @@
+{
+  "config.json": {
+    "bytes": 1777,
+    "sha256": "f6c221e5ec3589c91c1ed0128ff488769193ca7def5296bf9ee5ddd0d79d0180"
+  },
+  "model.safetensors": {
+    "bytes": 3106712,
+    "sha256": "ea33010d837442e29a2106b803d1eabd4c1697b6ef40318ecd5a8e9a05c3dfd4"
+  },
+  "tokenizer.json": {
+    "bytes": 12809320,
+    "sha256": "0997f410c57a1f4e53b09e4be8f4a172d90edd9564368fb0847030937229b9f3"
+  },
+  "tokenizer_config.json": {
+    "bytes": 17928,
+    "sha256": "b11349aafa7cdc6a320767cf7ceb29ed82f7eda5d65e8e0819e76f0ce947bf27"
+  }
+}

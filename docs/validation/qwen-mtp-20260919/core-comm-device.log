@@ -1,0 +1,2 @@
+PASS: 2 TP2 communicator groups; caller device 0/1 preserved after every destroy
+NCCL version 2.27.5+cuda12.9

@@ -1,0 +1,502 @@
+{
+  "single_tp2": [
+    {
+      "case": "zh",
+      "prompt_tokens": 63,
+      "output_tokens": 64,
+      "strict_match": true,
+      "graph_tps": 33.914020917054465,
+      "k2_tps": 49.574680982753634,
+      "gain_pct": 46.177538499493686,
+      "accepted": 80,
+      "proposed": 92,
+      "acceptance_rate": 0.8695652173913043
+    },
+    {
+      "case": "code",
+      "prompt_tokens": 127,
+      "output_tokens": 64,
+      "strict_match": true,
+      "graph_tps": 33.480965428366744,
+      "k2_tps": 53.28775479557169,
+      "gain_pct": 59.158357932007675,
+      "accepted": 82,
+      "proposed": 84,
+      "acceptance_rate": 0.9761904761904762
+    },
+    {
+      "case": "summary",
+      "prompt_tokens": 1023,
+      "output_tokens": 55,
+      "strict_match": true,
+      "graph_tps": 30.026257514690354,
+      "k2_tps": 48.61306675307736,
+      "gain_pct": 61.90185116907563,
+      "accepted": 68,
+      "proposed": 80,
+      "acceptance_rate": 0.85
+    }
+  ],
+  "draft_batching": {
+    "TP1": {
+      "zh+summary": {
+        "before": {
+          "trials": 2,
+          "decode_tps": 58.177518763173715,
+          "trial_tps": [
+            58.00589827651329,
+            58.35015780120427
+          ],
+          "accepted": [
+            39,
+            39
+          ],
+          "proposed": [
+            44,
+            44
+          ],
+          "draft_calls": [
+            42,
+            42
+          ]
+        },
+        "after": {
+          "trials": 2,
+          "decode_tps": 62.86936902657797,
+          "trial_tps": [
+            62.52476604483862,
+            63.21779159350893
+          ],
+          "accepted": [
+            39,
+            39
+          ],
+          "proposed": [
+            44,
+            44
+          ],
+          "draft_calls": [
+            22,
+            22
+          ]
+        },
+        "gain_pct": 8.064713592381988
+      }
+    },
+    "TP2_initial": {
+      "zh+code": {
+        "before": {
+          "trials": 2,
+          "decode_tps": 78.99498468180388,
+          "trial_tps": [
+            82.65620308788642,
+            75.644352944902
+          ],
+          "accepted": [
+            40,
+            40
+          ],
+          "proposed": [
+            42,
+            42
+          ],
+          "draft_calls": [
+            40,
+            40
+          ]
+        },
+        "after": {
+          "trials": 2,
+          "decode_tps": 70.55100212586527,
+          "trial_tps": [
+            64.81223456274456,
+            77.40476952956536
+          ],
+          "accepted": [
+            40,
+            40
+          ],
+          "proposed": [
+            42,
+            42
+          ],
+          "draft_calls": [
+            20,
+            20
+          ]
+        },
+        "gain_pct": -10.689264122211606
+      },
+      "zh+summary": {
+        "before": {
+          "trials": 2,
+          "decode_tps": 73.77391249659506,
+          "trial_tps": [
+            72.99730980674342,
+            74.567217092644
+          ],
+          "accepted": [
+            39,
+            39
+          ],
+          "proposed": [
+            44,
+            44
+          ],
+          "draft_calls": [
+            42,
+            42
+          ]
+        },
+        "after": {
+          "trials": 2,
+          "decode_tps": 76.97127466117111,
+          "trial_tps": [
+            78.74594899501146,
+            75.27482796295968
+          ],
+          "accepted": [
+            39,
+            39
+          ],
+          "proposed": [
+            44,
+            44
+          ],
+          "draft_calls": [
+            22,
+            22
+          ]
+        },
+        "gain_pct": 4.334001080291916
+      }
+    },
+    "TP2_repeat": {
+      "zh+code": {
+        "before": {
+          "trials": 4,
+          "decode_tps": 85.16078731625525,
+          "trial_tps": [
+            86.9316740188917,
+            93.53766442570603,
+            85.09594739456236,
+            76.77917013882966
+          ],
+          "accepted": [
+            40,
+            40,
+            40,
+            40
+          ],
+          "proposed": [
+            42,
+            42,
+            42,
+            42
+          ],
+          "draft_calls": [
+            40,
+            40,
+            40,
+            40
+          ]
+        },
+        "after": {
+          "trials": 4,
+          "decode_tps": 80.99550130241235,
+          "trial_tps": [
+            88.08694053319918,
+            74.34758409364342,
+            86.37895206664305,
+            76.88872676328843
+          ],
+          "accepted": [
+            40,
+            40,
+            40,
+            40
+          ],
+          "proposed": [
+            42,
+            42,
+            42,
+            42
+          ],
+          "draft_calls": [
+            20,
+            20,
+            20,
+            20
+          ]
+        },
+        "gain_pct": -4.89108443581503
+      },
+      "zh+summary": {
+        "before": {
+          "trials": 4,
+          "decode_tps": 79.2394251903987,
+          "trial_tps": [
+            84.91902318468668,
+            83.81241304997882,
+            81.42054892129765,
+            69.00987928376263
+          ],
+          "accepted": [
+            39,
+            39,
+            39,
+            39
+          ],
+          "proposed": [
+            44,
+            44,
+            44,
+            44
+          ],
+          "draft_calls": [
+            42,
+            42,
+            42,
+            42
+          ]
+        },
+        "after": {
+          "trials": 4,
+          "decode_tps": 76.1920698909568,
+          "trial_tps": [
+            86.92215646768761,
+            86.87841793502314,
+            63.4015995877048,
+            72.93124671009896
+          ],
+          "accepted": [
+            39,
+            39,
+            39,
+            39
+          ],
+          "proposed": [
+            44,
+            44,
+            44,
+            44
+          ],
+          "draft_calls": [
+            22,
+            22,
+            22,
+            22
+          ]
+        },
+        "gain_pct": -3.8457564427299085
+      }
+    },
+    "TP2_all": {
+      "zh+code": {
+        "before": {
+          "trials": 6,
+          "decode_tps": 83.00128506359373,
+          "trial_tps": [
+            82.65620308788642,
+            75.644352944902,
+            86.9316740188917,
+            93.53766442570603,
+            85.09594739456236,
+            76.77917013882966
+          ],
+          "accepted": [
+            40,
+            40,
+            40,
+            40,
+            40,
+            40
+          ],
+          "proposed": [
+            42,
+            42,
+            42,
+            42,
+            42,
+            42
+          ],
+          "draft_calls": [
+            40,
+            40,
+            40,
+            40,
+            40,
+            40
+          ]
+        },
+        "after": {
+          "trials": 6,
+          "decode_tps": 77.18655511660822,
+          "trial_tps": [
+            64.81223456274456,
+            77.40476952956536,
+            88.08694053319918,
+            74.34758409364342,
+            86.37895206664305,
+            76.88872676328843
+          ],
+          "accepted": [
+            40,
+            40,
+            40,
+            40,
+            40,
+            40
+          ],
+          "proposed": [
+            42,
+            42,
+            42,
+            42,
+            42,
+            42
+          ],
+          "draft_calls": [
+            20,
+            20,
+            20,
+            20,
+            20,
+            20
+          ]
+        },
+        "gain_pct": -7.0055902658981655
+      },
+      "zh+summary": {
+        "before": {
+          "trials": 6,
+          "decode_tps": 77.32977601974542,
+          "trial_tps": [
+            72.99730980674342,
+            74.567217092644,
+            84.91902318468668,
+            83.81241304997882,
+            81.42054892129765,
+            69.00987928376263
+          ],
+          "accepted": [
+            39,
+            39,
+            39,
+            39,
+            39,
+            39
+          ],
+          "proposed": [
+            44,
+            44,
+            44,
+            44,
+            44,
+            44
+          ],
+          "draft_calls": [
+            42,
+            42,
+            42,
+            42,
+            42,
+            42
+          ]
+        },
+        "after": {
+          "trials": 6,
+          "decode_tps": 76.45004595954867,
+          "trial_tps": [
+            78.74594899501146,
+            75.27482796295968,
+            86.92215646768761,
+            86.87841793502314,
+            63.4015995877048,
+            72.93124671009896
+          ],
+          "accepted": [
+            39,
+            39,
+            39,
+            39,
+            39,
+            39
+          ],
+          "proposed": [
+            44,
+            44,
+            44,
+            44,
+            44,
+            44
+          ],
+          "draft_calls": [
+            22,
+            22,
+            22,
+            22,
+            22,
+            22
+          ]
+        },
+        "gain_pct": -1.137634305279922
+      }
+    }
+  },
+  "draft_gpu": {
+    "after": {
+      "0": {
+        "TP communication": 2.763402000000001,
+        "other device kernels": 0.6690499999999999,
+        "normalization": 0.5528299999999999,
+        "other GEMM / projection": 39.095364000000004,
+        "FP8 weight GEMM": 5.903699000000001,
+        "Attention": 5.1887,
+        "sampling / reduction": 0.35343800000000003,
+        "memcpy kind=1": 0.08854399999999996,
+        "memcpy kind=8": 0.00992,
+        "total_ms": 54.624947000000006
+      },
+      "1": {
+        "TP communication": 4.559318,
+        "other device kernels": 0.6792890000000003,
+        "normalization": 0.5576929999999999,
+        "other GEMM / projection": 39.129248,
+        "FP8 weight GEMM": 5.919944000000001,
+        "Attention": 5.2266390000000005,
+        "sampling / reduction": 0.35846100000000003,
+        "memcpy kind=1": 0.08780499999999995,
+        "memcpy kind=8": 0.0072,
+        "total_ms": 56.525597
+      }
+    },
+    "before": {
+      "1": {
+        "TP communication": 9.312170000000002,
+        "other device kernels": 0.9516380000000001,
+        "normalization": 1.050198,
+        "other GEMM / projection": 74.261075,
+        "FP8 weight GEMM": 11.237889,
+        "Attention": 2.879011,
+        "sampling / reduction": 0.38981900000000025,
+        "memcpy kind=1": 0.18716800000000003,
+        "memcpy kind=8": 0.18466999999999997,
+        "total_ms": 100.45363800000001
+      },
+      "0": {
+        "TP communication": 6.412372000000002,
+        "other device kernels": 0.9385869999999996,
+        "normalization": 1.0408529999999996,
+        "other GEMM / projection": 74.19378899999998,
+        "FP8 weight GEMM": 11.209102999999999,
+        "Attention": 2.8635650000000004,
+        "sampling / reduction": 0.38767800000000024,
+        "memcpy kind=8": 0.23414100000000004,
+        "memcpy kind=1": 0.18303800000000003,
+        "total_ms": 97.46312599999999
+      }
+    }
+  },
+  "decision": "Enable draft batching on TP1 only; TP2 uses separate draft calls."
+}

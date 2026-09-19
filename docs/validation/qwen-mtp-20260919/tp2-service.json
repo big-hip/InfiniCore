@@ -1,0 +1,211 @@
+{
+  "args": {
+    "tp": 2,
+    "k": 2,
+    "output": "research/2026-09-19-mtp-pr-final-review/tp2-service.json"
+  },
+  "events": [
+    {
+      "event": "load_begin",
+      "unix": 1789822284.416581,
+      "pid": "redacted"
+    },
+    {
+      "event": "model_ready",
+      "unix": 1789822316.3515246,
+      "pid": "redacted"
+    },
+    {
+      "event": "steady_begin",
+      "unix": 1789822316.4634664,
+      "pid": "redacted"
+    },
+    {
+      "event": "steady_end",
+      "unix": 1789822321.7756877,
+      "pid": "redacted"
+    },
+    {
+      "event": "close",
+      "unix": 1789822321.8747697,
+      "pid": "redacted"
+    }
+  ],
+  "runs": [
+    {
+      "kind": "packed",
+      "exact": [
+        true,
+        true
+      ],
+      "seconds": 2.561163774691522,
+      "accepted": 39,
+      "proposals": 44,
+      "calls": [
+        {
+          "requests": 2,
+          "tokens": 1086,
+          "verify": false
+        },
+        {
+          "requests": 2,
+          "tokens": 6,
+          "verify": true
+        },
+        {
+          "requests": 2,
+          "tokens": 6,
+          "verify": true
+        },
+        {
+          "requests": 2,
+          "tokens": 6,
+          "verify": true
+        },
+        {
+          "requests": 2,
+          "tokens": 6,
+          "verify": true
+        },
+        {
+          "requests": 2,
+          "tokens": 6,
+          "verify": true
+        },
+        {
+          "requests": 2,
+          "tokens": 6,
+          "verify": true
+        },
+        {
+          "requests": 2,
+          "tokens": 6,
+          "verify": true
+        },
+        {
+          "requests": 2,
+          "tokens": 6,
+          "verify": true
+        },
+        {
+          "requests": 2,
+          "tokens": 6,
+          "verify": true
+        },
+        {
+          "requests": 2,
+          "tokens": 6,
+          "verify": true
+        },
+        {
+          "requests": 2,
+          "tokens": 5,
+          "verify": true
+        },
+        {
+          "requests": 1,
+          "tokens": 2,
+          "verify": true
+        }
+      ],
+      "output_ids": [
+        [
+          96212,
+          104885,
+          97266,
+          100253,
+          96956,
+          96976,
+          9616,
+          96646,
+          96212,
+          96011,
+          98617,
+          7313,
+          100033,
+          96336,
+          332,
+          119177,
+          5205,
+          101786,
+          95793,
+          99519,
+          120747,
+          99494,
+          98304,
+          97795,
+          98617,
+          332,
+          102080,
+          1710,
+          271,
+          134083,
+          4960,
+          271
+        ],
+        [
+          111734,
+          105426,
+          98853,
+          131601,
+          97909,
+          108695,
+          97792,
+          3709,
+          99131,
+          97489,
+          96961,
+          98453,
+          1710,
+          99121,
+          111734,
+          102005,
+          97322,
+          101671,
+          98674,
+          3709,
+          99973,
+          143805,
+          97423,
+          100667,
+          111667,
+          5205,
+          137572,
+          96128,
+          96547,
+          96458,
+          110790,
+          96024
+        ]
+      ]
+    },
+    {
+      "kind": "cancel_then_arrive",
+      "exact": [
+        true,
+        true
+      ],
+      "canceled_status": "CANCELED",
+      "owned_rows_before": [
+        1,
+        3,
+        4,
+        7
+      ],
+      "owned_pages_before": [
+        19,
+        36
+      ],
+      "released": true
+    }
+  ],
+  "ready_resident_mib": {
+    "GPU0": 23776,
+    "GPU1": 23776
+  },
+  "steady_resident_mib": {
+    "GPU0": 24150,
+    "GPU1": 24132
+  },
+  "success": true
+}

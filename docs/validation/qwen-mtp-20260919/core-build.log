@@ -1,0 +1,25 @@
+[ 91%]: <infinicore_cpp_api> cache compiling.release src/infinicore/ops/moe_topk_vendor/iluvatar/moe_topk_vendor_iluvatar.cc
+[ 91%]: <infinicore_cpp_api> cache compiling.release src/infinicore/ops/concat_and_cache_mla_int8/iluvatar/concat_and_cache_mla_int8_iluvatar.cc
+[ 91%]: <infinicore_cpp_api> cache compiling.release src/infinicore/ops/grouped_topk_vendor/iluvatar/grouped_topk_vendor_iluvatar.cc
+[ 91%]: <infinicore_cpp_api> cache compiling.release src/infinicore/ops/dsa/iluvatar/dsa_iluvatar.cc
+[ 91%]: <infinicore_cpp_api> cache compiling.release src/infinicore/ops/quant/dynamic_scaled_int8_quant/iluvatar/dynamic_scaled_int8_quant_iluvatar.cc
+[ 91%]: <infinicore_cpp_api> cache compiling.release src/utils/custom_types.cc
+[ 92%]: <infinicore_cpp_api> cache compiling.release src/utils/rearrange.cc
+[ 92%]: <infini-utils> archiving.release libinfini-utils.a
+[ 92%]: <infinirt-cpu> archiving.release libinfinirt-cpu.a
+[ 92%]: <infinirt-nvidia> devlinking.release infinirt-nvidia_gpucode.cu.o
+[ 92%]: <infiniop-cpu> archiving.release libinfiniop-cpu.a
+[ 92%]: <infiniop-nvidia> devlinking.release infiniop-nvidia_gpucode.cu.o
+[ 92%]: <infinirt-nvidia> archiving.release libinfinirt-nvidia.a
+[ 93%]: <infiniop-nvidia> archiving.release libinfiniop-nvidia.a
+[ 93%]: <infinirt> linking.release libinfinirt.so
+[ 93%]: <infiniop> linking.release libinfiniop.so
+[ 93%]: <infiniccl-nvidia> devlinking.release infiniccl-nvidia_gpucode.cu.o
+[ 93%]: <infiniccl-nvidia> archiving.release libinfiniccl-nvidia.a
+[ 93%]: <infiniccl> linking.release libinfiniccl.so
+[ 94%]: <infinicore_cpp_api> linking.release libinfinicore_cpp_api.so
+[ 94%]: <_infinicore> linking.release _infinicore.cpython-311-x86_64-linux-gnu.so
+[Congratulations!] Now you can install the libraries with "xmake install"
+[100%]: build ok, spent 1707.595s
+warning: deprecated: please use add_rules("python.module") instead of add_rules("python.library")
+warning: add -v for getting more warnings ..

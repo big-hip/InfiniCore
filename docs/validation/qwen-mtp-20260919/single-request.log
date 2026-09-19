@@ -1,0 +1,35 @@
+2026-09-19 12:57:27,990 - infinilm.llm.model_runner.model_runner - INFO - kv_transfer_config: None
+2026-09-19 12:57:27,991 - infinilm.llm.model_runner.model_runner - INFO - Using Paged KV Cache with num_blocks=40
+ load weights ......
+No index file found. Scanning all safetensors files...
+
+Processing files:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                       
+
+Processing files:   0%|          | 0/1 [00:00<?, ?it/s]
+Processing files: 100%|██████████| 1/1 [00:00<00:00,  5.09it/s]
+Processing files: 100%|██████████| 1/1 [00:00<00:00,  5.08it/s]
+2026-09-19 12:57:34,429 - infinilm.llm.llm - INFO - Using Paged KV Cache with num_blocks=40
+2026-09-19 12:57:34,429 - infinilm.llm.llm - INFO - Using Mamba cache with num_blocks=5, zero_state_index=0
+2026-09-19 12:57:34,430 - infinilm.llm.llm - INFO - LLMEngine initialized with model at $WORKSPACE/research/2026-09-18-qwen38-mtp-service/tiny-model on device cuda, enable_graph=False
+Processing: model.safetensors
+ load weights over! 5512.811660766602 ms 
+
+=================== start generate ====================
+
+Generating:   0%|          | 0/1 [00:00<?, ?it/s]
+Generating: 100%|██████████| 1/1 [00:00<00:00,  4.42it/s]
+Generating: 100%|██████████| 1/1 [00:00<00:00,  4.42it/s]
+Resquest 0:
+===Query===
+<|im_start|>system
+Reasoning effort is set to xhigh. Please think carefully through the task, validate key assumptions, consider plausible alternatives, and prioritize correctness, consistency, and clarity in the final answer.<|im_end|>
+<|im_start|>user
+How are you<|im_end|>
+<|im_start|>assistant
+<think>
+
+===Response===
+!>RNNNNN
+
+total_time: 276.26 ms

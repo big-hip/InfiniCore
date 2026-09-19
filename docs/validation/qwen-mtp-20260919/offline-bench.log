@@ -1,0 +1,29 @@
+2026-09-19 12:57:41,385 - infinilm.llm.model_runner.model_runner - INFO - kv_transfer_config: None
+2026-09-19 12:57:41,385 - infinilm.llm.model_runner.model_runner - INFO - Using Paged KV Cache with num_blocks=3
+MoE EP backend: disabled  TP=1  DP=1  EP=1
+ load weights ......
+No index file found. Scanning all safetensors files...
+
+Processing files:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                       
+
+Processing files:   0%|          | 0/1 [00:00<?, ?it/s]
+Processing files: 100%|██████████| 1/1 [00:00<00:00,  6.84it/s]
+Processing files: 100%|██████████| 1/1 [00:00<00:00,  6.83it/s]
+2026-09-19 12:57:46,415 - infinilm.llm.llm - INFO - Using Paged KV Cache with num_blocks=3
+2026-09-19 12:57:46,416 - infinilm.llm.llm - INFO - Using Mamba cache with num_blocks=5, zero_state_index=0
+2026-09-19 12:57:46,416 - infinilm.llm.llm - INFO - LLMEngine initialized with model at $WORKSPACE/research/2026-09-18-qwen38-mtp-service/tiny-model on device cuda, enable_graph=False
+Processing: model.safetensors
+ load weights over! 4306.927919387817 ms 
+
+
+Processing cases:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                       
+
+Processing cases:   0%|          | 0/1 [00:00<?, ?it/s]
+Processing cases: 100%|██████████| 1/1 [00:00<00:00,  4.96it/s]
+Processing cases: 100%|██████████| 1/1 [00:00<00:00,  4.96it/s]
+Processing : {'idx': 0, 'batch_size': 1, 'input_len': 63, 'output_len': 8, 'data_type': 'bfloat16', 'kvcache_memory': 0.0}
+=================== start generate ====================
+!>RNNNNN
+total_time: 200.89 ms

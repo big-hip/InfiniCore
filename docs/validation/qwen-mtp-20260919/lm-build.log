@@ -1,0 +1,25 @@
+[ 75%]: <_infinilm> cache compiling.release csrc/models/qwen3/qwen3_for_causal_lm.cpp
+[ 75%]: <_infinilm> cache compiling.release csrc/models/gpt2/gpt2_for_causal_lm.cpp
+[ 76%]: <_infinilm> cache compiling.release csrc/models/qwen3_moe/qwen3_moe_experts.cpp
+[ 77%]: <_infinilm> cache compiling.release csrc/models/qwen3_moe/qwen3_moe_sparse_moe_block.cpp
+[ 77%]: <_infinilm> cache compiling.release csrc/models/qwen3_moe/qwen3_moe_topk_router.cpp
+[ 78%]: <_infinilm> cache compiling.release csrc/models/qwen3_moe/qwen3_moe_for_causal_lm.cpp
+[ 79%]: <_infinilm> cache compiling.release csrc/models/ernie4_5_vl/ernie4_5_model.cpp
+[ 80%]: <_infinilm> cache compiling.release csrc/models/ernie4_5_vl/ernie4_5_decoder_layer.cpp
+[ 80%]: <_infinilm> cache compiling.release csrc/models/ernie4_5_vl/ernie4_5_attention.cpp
+[ 81%]: <_infinilm> cache compiling.release csrc/models/ernie4_5_vl/ernie4_5_for_causal_lm.cpp
+[ 82%]: <_infinilm> cache compiling.release csrc/models/ernie4_5_vl/ernie4_5_vision.cpp
+[ 82%]: <_infinilm> cache compiling.release csrc/models/ernie4_5_vl/ernie4_5_moe.cpp
+[ 83%]: <_infinilm> cache compiling.release csrc/models/qwen3_vl/qwen3_vl_for_conditional_generation.cpp
+[ 84%]: <_infinilm> cache compiling.release csrc/engine/compiler/general_compiler.cpp
+[ 85%]: <_infinilm> cache compiling.release csrc/engine/compiler/paged_compiler.cpp
+[ 85%]: <_infinilm> cache compiling.release csrc/engine/compiler/static_batching_compiler.cpp
+[ 86%]: <_infinilm> cache compiling.release csrc/engine/distributed/communication_group.cpp
+[ 87%]: <_infinilm> cache compiling.release csrc/engine/distributed/tcp_rendezvous.cpp
+[ 87%]: <_infinilm> cache compiling.release csrc/engine/distributed/dist_config.cpp
+[ 88%]: <_infinilm> cache compiling.release csrc/engine/infer_engine.cpp
+[ 89%]: <_infinilm> cache compiling.release csrc/engine/rank_barrier.cpp
+[ 89%]: <_infinilm> cache compiling.release csrc/engine/rank_worker.cpp
+[ 90%]: <_infinilm> cache compiling.release csrc/pybind11/bindings.cc
+[ 93%]: <_infinilm> linking.release _infinilm.cpython-311-x86_64-linux-gnu.so
+[100%]: build ok, spent 300.0s

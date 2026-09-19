@@ -1,0 +1,102 @@
+
+============================================================
+STEP 1: LOADING DATASET
+============================================================
+
+
+============================================================
+Loading dataset for subject: abstract_algebra
+============================================================
+
+Loading MMLU dataset (subject: abstract_algebra)...
+Loaded 5 samples for subject: abstract_algebra
+Limited to 2 samples for evaluation (from 5 total)
+
+============================================================
+STEP 2: LOADING MODEL
+============================================================
+
+Loading model with InfiniLM backend...
+Graph compilation: disabled
+Attention backend: paged-attn
+ load weights ......
+No index file found. Scanning all safetensors files...
+
+Processing files:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                       
+
+Processing files:   0%|          | 0/1 [00:00<?, ?it/s]
+Processing files: 100%|██████████| 1/1 [00:00<00:00,  6.73it/s]
+Processing files: 100%|██████████| 1/1 [00:00<00:00,  6.72it/s]
+Processing: model.safetensors
+ load weights over! 4913.950443267822 ms 
+
+InfiniLM model loaded successfully
+
+============================================================
+STEP 3: EVALUATING
+============================================================
+
+
+============================================================
+Evaluating subject: abstract_algebra
+============================================================
+
+<|im_start|>system
+Reasoning effort is set to xhigh. Please think carefully through the task, validate key assumptions, consider plausible alternatives, and prioritize correctness, consistency, and clarity in the final answer.
+
+You are a multiple-choice question solver. Select the correct option and respond with only the letter A, B, C, or D.<|im_end|>
+<|im_start|>user
+Find the degree for the given field extension Q(sqrt(2), sqrt(3), sqrt(18)) over Q.
+A. 0
+B. 4
+C. 2
+D. 6<|im_end|>
+<|im_start|>assistant
+<think>
+The answer is: !>R]
+
+Total time: 161.82 ms
+Input tokens: 130
+New tokens: 4
+Total tokens processed: 134
+Throughput: 828.07 tok/s
+Sample 0: Correct answer: B (1), Predicted: ? (None)
+<|im_start|>system
+Reasoning effort is set to xhigh. Please think carefully through the task, validate key assumptions, consider plausible alternatives, and prioritize correctness, consistency, and clarity in the final answer.
+
+You are a multiple-choice question solver. Select the correct option and respond with only the letter A, B, C, or D.<|im_end|>
+<|im_start|>user
+Let p = (1, 2, 5, 4)(2, 3) in S_5 . Find the index of <p> in S_5.
+A. 8
+B. 2
+C. 24
+D. 120<|im_end|>
+<|im_start|>assistant
+<think>
+The answer is: !!!!
+
+Total time: 9.92 ms
+Input tokens: 145
+New tokens: 4
+Total tokens processed: 149
+Throughput: 15025.03 tok/s
+Sample 1: Correct answer: C (2), Predicted: ? (None)
+id 0: Wrong (correct: B, predicted: ?)
+id 1: Wrong (correct: C, predicted: ?)
+Accuracy: 0/2 = 0.00%
+
+Subject 'abstract_algebra' completed: 0/2 = 0.00%
+InfiniLM model destroyed
+
+============================================================
+OVERALL RESULTS
+============================================================
+============================================================
+Overall Accuracy: 0/2 = 0.00%
+Total Latency: 0.17 seconds
+Total Tokens Processed: 283 tokens
+Overall Throughput: 1647.85 tokens/s
+
+Writing results to CSV: $WORKSPACE/research/2026-09-19-mtp-pr-final-review/sanity.csv
+CSV file written successfully: $WORKSPACE/research/2026-09-19-mtp-pr-final-review/sanity.csv
