@@ -1,0 +1,79 @@
+[
+  {
+    "source": "fix/graph-replay-lifetimes",
+    "destination": "infinicore-consolidate-runtime",
+    "path": "src/infinicore-test/memory_test.cc",
+    "identical_to_original_pr": true,
+    "identical_to_existing_runtime_source": true
+  },
+  {
+    "source": "fix/graph-replay-lifetimes",
+    "destination": "infinicore-consolidate-runtime",
+    "path": "src/infinicore/context/allocators/pinnable_block_allocator.cc",
+    "identical_to_original_pr": true,
+    "identical_to_existing_runtime_source": true
+  },
+  {
+    "source": "fix/graph-replay-lifetimes",
+    "destination": "infinicore-consolidate-runtime",
+    "path": "src/infinicore/ops/cat/cat.cc",
+    "identical_to_original_pr": true,
+    "identical_to_existing_runtime_source": true
+  },
+  {
+    "source": "fix/graph-replay-lifetimes",
+    "destination": "infinicore-consolidate-runtime",
+    "path": "src/infinicore/ops/float_power/float_power.cc",
+    "identical_to_original_pr": true,
+    "identical_to_existing_runtime_source": true
+  },
+  {
+    "source": "fix/graph-replay-lifetimes",
+    "destination": "infinicore-consolidate-runtime",
+    "path": "src/infinicore/ops/sum/sum_infiniop.cc",
+    "identical_to_original_pr": true,
+    "identical_to_existing_runtime_source": true
+  },
+  {
+    "source": "fix/graph-replay-lifetimes",
+    "destination": "infinicore-consolidate-runtime",
+    "path": "src/infiniop/ops/sum/nvidia/sum_nvidia.cu",
+    "identical_to_original_pr": true,
+    "identical_to_existing_runtime_source": true
+  },
+  {
+    "source": "fix/graph-replay-lifetimes",
+    "destination": "infinicore-consolidate-runtime",
+    "path": "test/infinicore/graph/test_cat.py",
+    "identical_to_original_pr": true,
+    "identical_to_existing_runtime_source": true
+  },
+  {
+    "source": "fix/graph-replay-lifetimes",
+    "destination": "infinicore-consolidate-runtime",
+    "path": "test/infinicore/graph/test_sum_scalar_power.py",
+    "identical_to_original_pr": true,
+    "identical_to_existing_runtime_source": true
+  },
+  {
+    "source": "fix/metax-fp32-gemm",
+    "destination": "infinicore-consolidate-mamba",
+    "path": "README.md",
+    "identical_to_original_pr": true,
+    "identical_to_existing_runtime_source": true
+  },
+  {
+    "source": "fix/metax-fp32-gemm",
+    "destination": "infinicore-consolidate-mamba",
+    "path": "src/infiniop/ops/gemm/metax/gemm_metax.cc",
+    "identical_to_original_pr": true,
+    "identical_to_existing_runtime_source": true
+  },
+  {
+    "source": "fix/metax-fp32-gemm",
+    "destination": "infinicore-consolidate-mamba",
+    "path": "test/infinicore/ops/test_metax_gemm_precision.py",
+    "identical_to_original_pr": true,
+    "identical_to_existing_runtime_source": true
+  }
+]
