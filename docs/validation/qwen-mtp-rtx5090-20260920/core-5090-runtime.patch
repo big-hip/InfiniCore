@@ -1,0 +1,180 @@
+diff --git a/src/infinicore-test/memory_test.cc b/src/infinicore-test/memory_test.cc
+index 2029e0a8..59f753ba 100644
+--- a/src/infinicore-test/memory_test.cc
++++ b/src/infinicore-test/memory_test.cc
+@@ -1,0 +2 @@
++#include "../infinicore/context/allocators/pinnable_block_allocator.hpp"
+@@ -80,0 +82,21 @@ TestResult BasicMemoryTest::run() {
++            PinnableBlockAllocator allocator(current_device);
++            auto reinstantiated = allocator.allocate(1024);
++            allocator.deallocate(reinstantiated);
++            allocator.mark_in_use_(reinstantiated, true);
++            allocator.trim();
++            allocator.deallocate(reinstantiated);
++            allocator.trim();
++
++            auto captured = allocator.allocate(1024);
++            allocator.deallocate(captured);
++            allocator.set_pin_mode(true);
++            if (allocator.allocate(1024) != captured) {
++                return false;
++            }
++            allocator.deallocate(captured);
++            allocator.set_pin_mode(false);
++            allocator.trim();
++            // A graph may reinstantiate storage after its temporary owner expires.
++            allocator.mark_in_use_(captured, true);
++            allocator.deallocate(captured);
++
+diff --git a/src/infinicore/context/allocators/pinnable_block_allocator.cc b/src/infinicore/context/allocators/pinnable_block_allocator.cc
+index 32e5c5e9..a4f2f727 100644
+--- a/src/infinicore/context/allocators/pinnable_block_allocator.cc
++++ b/src/infinicore/context/allocators/pinnable_block_allocator.cc
+@@ -66,0 +67 @@ std::byte *PinnableBlockAllocator::allocate(size_t size) {
++                    block->frozen = block->frozen || pinned_mode_;
+@@ -153,0 +155,10 @@ size_t PinnableBlockAllocator::mark_in_use_(void *ptr, bool in_use) {
++        if (!block->in_use) {
++            // Reinstantiated graph storage is no longer available for trimming.
++            for (auto &cls : size_classes_) {
++                if (block->size == cls.block_size) {
++                    auto &free = cls.free_blocks;
++                    free.erase(std::remove(free.begin(), free.end(), block), free.end());
++                    break;
++                }
++            }
++        }
+@@ -169 +180 @@ void PinnableBlockAllocator::trim() {
+-            if (!(*it)->frozen) {
++            if (!(*it)->frozen && !(*it)->in_use) {
+diff --git a/src/infinicore/ops/cat/cat.cc b/src/infinicore/ops/cat/cat.cc
+index 217ac7ec..c48e4871 100644
+--- a/src/infinicore/ops/cat/cat.cc
++++ b/src/infinicore/ops/cat/cat.cc
+@@ -14,0 +15 @@ bool use_slice_copy_cat(Device::Type device_type, int dim, int ndim) {
++            || device_type == Device::Type::METAX
+@@ -175 +176,2 @@ void cat_(Tensor out, std::vector<Tensor> tensors, int dim) {
+-        // rearrange kernel per input tensor on CUDA-like backends.
++        // rearrange kernel per input tensor on CUDA-like backends. Unlike
++        // direct memcpy calls, these copies are also recorded for graph replay.
+diff --git a/src/infinicore/ops/float_power/float_power.cc b/src/infinicore/ops/float_power/float_power.cc
+index c3bf5003..a8e17b51 100644
+--- a/src/infinicore/ops/float_power/float_power.cc
++++ b/src/infinicore/ops/float_power/float_power.cc
+@@ -1,0 +2 @@
++#include "infinicore/graph/graph.hpp"
+@@ -4,0 +6,17 @@ namespace infinicore::op {
++namespace {
++
++class RecordedScalarPower final : public graph::GraphOperator {
++public:
++    RecordedScalarPower(Tensor output, Tensor input, double exponent)
++        : output_(output), input_(input), exponent_(exponent) {}
++
++    void run() const override {
++        FloatPower::dispatcher_scalar().lookup(input_->device().getType())(output_, input_, exponent_);
++    }
++
++private:
++    graph::GraphTensor output_, input_;
++    double exponent_;
++};
++
++} // namespace
+@@ -24,0 +43,4 @@ void FloatPower::execute(Tensor output, Tensor input, double exponent) {
++    if (context::isGraphRecording()) {
++        context::addGraphOperator(std::make_shared<RecordedScalarPower>(output, input, exponent));
++        return;
++    }
+diff --git a/src/infinicore/ops/sum/sum_infiniop.cc b/src/infinicore/ops/sum/sum_infiniop.cc
+index 700ab04f..c1f96095 100644
+--- a/src/infinicore/ops/sum/sum_infiniop.cc
++++ b/src/infinicore/ops/sum/sum_infiniop.cc
+@@ -1,3 +1,2 @@
+-#include "../../utils.hpp"
+-#include "infinicore/common/hash.hpp"
+-#include "infinicore/ops/common/cache.hpp"
++#include "../infiniop_impl.hpp"
++#include "infinicore/graph/graph.hpp"
+@@ -5 +3,0 @@
+-#include <infiniop.h>
+@@ -9,14 +7 @@ namespace infinicore::op::sum_impl::infiniop {
+-thread_local common::OpCache<size_t, infiniopSumDescriptor_t> caches(
+-    100, // capacity
+-    [](infiniopSumDescriptor_t &desc) {
+-        if (desc != nullptr) {
+-            INFINICORE_CHECK_ERROR(infiniopDestroySumDescriptor(desc));
+-            desc = nullptr;
+-        }
+-    });
+-
+-void calculate(Tensor output, Tensor input, std::vector<size_t> dim, bool keepdim) {
+-    size_t seed = hash_combine(output, input, dim.size(), keepdim);
+-
+-    auto device_type = context::getDevice().getType();
+-    auto device_index = context::getDevice().getIndex();
++INFINIOP_CACHABLE_DESCRIPTOR(Descriptor, Sum, 100);
+@@ -24,4 +9,15 @@ void calculate(Tensor output, Tensor input, std::vector<size_t> dim, bool keepdi
+-    auto &cache = caches.getCache(device_type, device_index);
+-
+-    auto desc_opt = cache.get(seed);
+-    infiniopSumDescriptor_t desc = nullptr;
++class RecordedSum final : public graph::GraphOperator {
++public:
++    RecordedSum(Tensor output, Tensor input, std::vector<size_t> dim, bool keepdim)
++        : output_(output), input_(input), dim_(std::move(dim)), keepdim_(keepdim) {
++        size_t seed = hash_combine(output, input, dim_.size(), keepdim_);
++        for (auto axis : dim_) {
++            hash_combine(seed, axis);
++        }
++        INFINIOP_CACHABLE_DESCRIPTOR_GET_OR_CREATE(
++            Descriptor, descriptor, Sum, seed,
++            output->desc(), input->desc(), dim_.data(), dim_.size(), keepdim_);
++        INFINIOP_WORKSPACE_TENSOR(workspace, Sum, descriptor);
++        descriptor_ = std::move(descriptor);
++        workspace_ = std::make_unique<graph::GraphTensor>(workspace);
++    }
+@@ -29,7 +25,5 @@ void calculate(Tensor output, Tensor input, std::vector<size_t> dim, bool keepdi
+-    if (!desc_opt) {
+-        INFINICORE_CHECK_ERROR(infiniopCreateSumDescriptor(
+-            context::getInfiniopHandle(output->device()), &desc,
+-            output->desc(), input->desc(), dim.data(), dim.size(), keepdim));
+-        cache.put(seed, desc);
+-    } else {
+-        desc = *desc_opt;
++    void run() const override {
++        auto output = output_;
++        INFINICORE_CHECK_ERROR(infiniopSum(
++            descriptor_->desc, (*workspace_)->data(), (*workspace_)->numel(),
++            output->data(), input_->data(), dim_.data(), dim_.size(), keepdim_, context::getStream()));
+@@ -38,3 +32,7 @@ void calculate(Tensor output, Tensor input, std::vector<size_t> dim, bool keepdi
+-    size_t workspace_size = 0;
+-    INFINICORE_CHECK_ERROR(infiniopGetSumWorkspaceSize(desc, &workspace_size));
+-    std::shared_ptr<Memory> workspace = context::allocateMemory(workspace_size);
++private:
++    graph::GraphTensor output_, input_;
++    mutable std::vector<size_t> dim_;
++    bool keepdim_;
++    std::shared_ptr<Descriptor> descriptor_;
++    std::unique_ptr<graph::GraphTensor> workspace_;
++};
+@@ -42,3 +40,2 @@ void calculate(Tensor output, Tensor input, std::vector<size_t> dim, bool keepdi
+-    INFINICORE_CHECK_ERROR(infiniopSum(
+-        desc, workspace->data(), workspace_size,
+-        output->data(), input->data(), dim.data(), dim.size(), keepdim, context::getStream()));
++void calculate(Tensor output, Tensor input, std::vector<size_t> dim, bool keepdim) {
++    INFINICORE_GRAPH_OP_RECORD_OR_RUN(RecordedSum, output, input, std::move(dim), keepdim);
+diff --git a/src/infiniop/ops/sum/nvidia/sum_nvidia.cu b/src/infiniop/ops/sum/nvidia/sum_nvidia.cu
+index 9f165d27..224a57f6 100644
+--- a/src/infiniop/ops/sum/nvidia/sum_nvidia.cu
++++ b/src/infiniop/ops/sum/nvidia/sum_nvidia.cu
+@@ -62,2 +62 @@ infiniStatus_t launchKernel(
+-        T zero = static_cast<T>(0.0f);
+-        CHECK_CUDA(cudaMemcpyAsync(output, &zero, sizeof(T), cudaMemcpyHostToDevice, stream));
++        CHECK_CUDA(cudaMemsetAsync(output, 0, sizeof(T), stream));
+diff --git a/xmake.lua b/xmake.lua
+index 56841028..a8a82d68 100644
+--- a/xmake.lua
++++ b/xmake.lua
+@@ -95 +95 @@ option("cuda_arch")
+-    set_values("sm_50", "sm_60", "sm_70", "sm_75", "sm_80", "sm_86", "sm_89", "sm_90", "sm_90a")
++    set_values("sm_50", "sm_60", "sm_70", "sm_75", "sm_80", "sm_86", "sm_89", "sm_90", "sm_90a", "sm_120")

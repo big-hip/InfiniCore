@@ -1,0 +1,1219 @@
+{
+  "date": "2026-09-20",
+  "status": "experiments_finished_with_unresolved_failures",
+  "throughput_definition": "(output_tokens-1)/(request_time-TTFT)",
+  "repeats": 3,
+  "configurations": {
+    "infinilm-eager": {
+      "cases": {
+        "zh": {
+          "prompt_tokens": 63,
+          "output_tokens": 64,
+          "median_decode_tps": 62.907480714380824,
+          "min_max_decode_tps": [
+            62.8357585704928,
+            62.976012305579275
+          ],
+          "median_ttft_ms": 97.70244685932994,
+          "repeated_ids_equal": true,
+          "matches_reference": [
+            true,
+            true,
+            true
+          ],
+          "accepted_proposed_per_request": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        "code": {
+          "prompt_tokens": 127,
+          "output_tokens": 64,
+          "median_decode_tps": 62.79769805124433,
+          "min_max_decode_tps": [
+            62.67758469143538,
+            62.861398853984795
+          ],
+          "median_ttft_ms": 184.79795241728425,
+          "repeated_ids_equal": true,
+          "matches_reference": [
+            true,
+            true,
+            true
+          ],
+          "accepted_proposed_per_request": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        "summary": {
+          "prompt_tokens": 1023,
+          "output_tokens": 64,
+          "median_decode_tps": 52.44202225945577,
+          "min_max_decode_tps": [
+            52.359639735194484,
+            52.45236040883221
+          ],
+          "median_ttft_ms": 1364.5339109934866,
+          "repeated_ids_equal": true,
+          "matches_reference": [
+            true,
+            true,
+            true
+          ],
+          "accepted_proposed_per_request": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "memory": {
+        "exit_code": 0,
+        "command": [
+          "/root/infini-mtp-5090/venv/bin/python",
+          "scripts/model_benchmark.py",
+          "--model",
+          "models/Qwen3.8-27B-FP8-marlin",
+          "--mode",
+          "eager",
+          "--output",
+          "logs/infinilm-eager.json",
+          "--reference",
+          "logs/infinilm-graph.json"
+        ],
+        "sample_interval_ms": 100,
+        "scope": "Total device usage on two dedicated GPUs; includes all vLLM worker processes, not only parent PID",
+        "initial_mib": [
+          2,
+          2
+        ],
+        "overall_peak_mib": {
+          "0": 23774,
+          "1": 23776
+        },
+        "phases": {
+          "load_and_initial_capture": {
+            "seconds": 25.751686573028564,
+            "sampled_peak_mib": {
+              "0": 23774,
+              "1": 23776
+            }
+          },
+          "warmup": {
+            "seconds": 1.7924566268920898,
+            "sampled_peak_mib": {
+              "0": 23648,
+              "1": 23648
+            }
+          },
+          "steady": {
+            "seconds": 14.575348377227783,
+            "sampled_peak_mib": {
+              "0": 23656,
+              "1": 23656
+            }
+          }
+        }
+      }
+    },
+    "infinilm-graph": {
+      "cases": {
+        "zh": {
+          "prompt_tokens": 63,
+          "output_tokens": 64,
+          "median_decode_tps": 63.209798878869755,
+          "min_max_decode_tps": [
+            62.95556136097545,
+            63.23949732395689
+          ],
+          "median_ttft_ms": 98.3821009285748,
+          "repeated_ids_equal": true,
+          "matches_reference": [
+            null,
+            null,
+            null
+          ],
+          "accepted_proposed_per_request": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        "code": {
+          "prompt_tokens": 127,
+          "output_tokens": 64,
+          "median_decode_tps": 62.42932171008003,
+          "min_max_decode_tps": [
+            62.241039792215986,
+            62.46063820412243
+          ],
+          "median_ttft_ms": 185.75994484126568,
+          "repeated_ids_equal": true,
+          "matches_reference": [
+            null,
+            null,
+            null
+          ],
+          "accepted_proposed_per_request": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        "summary": {
+          "prompt_tokens": 1023,
+          "output_tokens": 64,
+          "median_decode_tps": 52.15591060160008,
+          "min_max_decode_tps": [
+            51.98617191764931,
+            52.179337359620924
+          ],
+          "median_ttft_ms": 1363.8691869564354,
+          "repeated_ids_equal": true,
+          "matches_reference": [
+            null,
+            null,
+            null
+          ],
+          "accepted_proposed_per_request": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "memory": {
+        "exit_code": 0,
+        "command": [
+          "python",
+          "scripts/model_benchmark.py",
+          "--model",
+          "models/Qwen3.8-27B-FP8-marlin",
+          "--mode",
+          "graph",
+          "--output",
+          "logs/infinilm-graph.json"
+        ],
+        "sample_interval_ms": 100,
+        "scope": "Total device usage on two dedicated GPUs; includes all vLLM worker processes, not only parent PID",
+        "initial_mib": [
+          2,
+          2
+        ],
+        "overall_peak_mib": {
+          "0": 23766,
+          "1": 23774
+        },
+        "phases": {
+          "load_and_initial_capture": {
+            "seconds": 32.848307847976685,
+            "sampled_peak_mib": {
+              "0": 23766,
+              "1": 23774
+            }
+          },
+          "warmup": {
+            "seconds": 1.6104483604431152,
+            "sampled_peak_mib": {
+              "0": 23758,
+              "1": 23756
+            }
+          },
+          "steady": {
+            "seconds": 14.613271474838257,
+            "sampled_peak_mib": {
+              "0": 23758,
+              "1": 23756
+            }
+          }
+        }
+      }
+    },
+    "infinilm-k1": {
+      "cases": {
+        "zh": {
+          "prompt_tokens": 63,
+          "output_tokens": 64,
+          "median_decode_tps": 89.40031173772715,
+          "min_max_decode_tps": [
+            88.97121805197234,
+            89.72862387141342
+          ],
+          "median_ttft_ms": 99.21467583626509,
+          "repeated_ids_equal": true,
+          "matches_reference": [
+            true,
+            true,
+            true
+          ],
+          "accepted_proposed_per_request": [
+            [
+              30,
+              33
+            ],
+            [
+              30,
+              33
+            ],
+            [
+              30,
+              33
+            ]
+          ]
+        },
+        "code": {
+          "prompt_tokens": 127,
+          "output_tokens": 64,
+          "median_decode_tps": 92.1963621997716,
+          "min_max_decode_tps": [
+            91.94528258329377,
+            92.52695165546793
+          ],
+          "median_ttft_ms": 186.62632489576936,
+          "repeated_ids_equal": true,
+          "matches_reference": [
+            true,
+            true,
+            true
+          ],
+          "accepted_proposed_per_request": [
+            [
+              31,
+              32
+            ],
+            [
+              31,
+              32
+            ],
+            [
+              31,
+              32
+            ]
+          ]
+        },
+        "summary": {
+          "prompt_tokens": 1023,
+          "output_tokens": 64,
+          "median_decode_tps": 78.93376648536761,
+          "min_max_decode_tps": [
+            78.50137613349513,
+            79.11803912314296
+          ],
+          "median_ttft_ms": 1368.6491488479078,
+          "repeated_ids_equal": true,
+          "matches_reference": [
+            true,
+            true,
+            true
+          ],
+          "accepted_proposed_per_request": [
+            [
+              26,
+              36
+            ],
+            [
+              26,
+              36
+            ],
+            [
+              26,
+              36
+            ]
+          ]
+        }
+      },
+      "memory": {
+        "exit_code": 0,
+        "command": [
+          "/root/infini-mtp-5090/venv/bin/python",
+          "scripts/model_benchmark.py",
+          "--model",
+          "models/Qwen3.8-27B-FP8-marlin",
+          "--mode",
+          "mtp",
+          "--candidates",
+          "1",
+          "--output",
+          "logs/infinilm-k1.json",
+          "--reference",
+          "logs/infinilm-graph.json"
+        ],
+        "sample_interval_ms": 100,
+        "scope": "Total device usage on two dedicated GPUs; includes all vLLM worker processes, not only parent PID",
+        "initial_mib": [
+          2,
+          2
+        ],
+        "overall_peak_mib": {
+          "0": 24396,
+          "1": 24394
+        },
+        "phases": {
+          "load_and_initial_capture": {
+            "seconds": 30.622283697128296,
+            "sampled_peak_mib": {
+              "0": 24396,
+              "1": 24394
+            }
+          },
+          "warmup": {
+            "seconds": 1.798279047012329,
+            "sampled_peak_mib": {
+              "0": 24326,
+              "1": 24326
+            }
+          },
+          "steady": {
+            "seconds": 11.547094583511353,
+            "sampled_peak_mib": {
+              "0": 24340,
+              "1": 24340
+            }
+          }
+        }
+      }
+    },
+    "infinilm-k1-graph": {
+      "cases": {
+        "zh": {
+          "prompt_tokens": 63,
+          "output_tokens": 64,
+          "median_decode_tps": 89.12881612863859,
+          "min_max_decode_tps": [
+            85.81946325650166,
+            89.3880860150357
+          ],
+          "median_ttft_ms": 99.11013441160321,
+          "repeated_ids_equal": true,
+          "matches_reference": [
+            true,
+            true,
+            true
+          ],
+          "accepted_proposed_per_request": [
+            [
+              30,
+              33
+            ],
+            [
+              30,
+              33
+            ],
+            [
+              30,
+              33
+            ]
+          ]
+        },
+        "code": {
+          "prompt_tokens": 127,
+          "output_tokens": 64,
+          "median_decode_tps": 92.08598006879322,
+          "min_max_decode_tps": [
+            91.5815677253485,
+            92.18249236728364
+          ],
+          "median_ttft_ms": 187.23070714622736,
+          "repeated_ids_equal": true,
+          "matches_reference": [
+            true,
+            true,
+            true
+          ],
+          "accepted_proposed_per_request": [
+            [
+              31,
+              32
+            ],
+            [
+              31,
+              32
+            ],
+            [
+              31,
+              32
+            ]
+          ]
+        },
+        "summary": {
+          "prompt_tokens": 1023,
+          "output_tokens": 64,
+          "median_decode_tps": 78.26412244201637,
+          "min_max_decode_tps": [
+            78.11387672897759,
+            78.35312233229853
+          ],
+          "median_ttft_ms": 1366.4493639953434,
+          "repeated_ids_equal": true,
+          "matches_reference": [
+            true,
+            true,
+            true
+          ],
+          "accepted_proposed_per_request": [
+            [
+              26,
+              36
+            ],
+            [
+              26,
+              36
+            ],
+            [
+              26,
+              36
+            ]
+          ]
+        }
+      },
+      "memory": {
+        "exit_code": 0,
+        "command": [
+          "python",
+          "scripts/model_benchmark.py",
+          "--model",
+          "models/Qwen3.8-27B-FP8-marlin",
+          "--mode",
+          "mtp-graph",
+          "--candidates",
+          "1",
+          "--output",
+          "logs/infinilm-k1-graph.json",
+          "--reference",
+          "logs/infinilm-graph.json"
+        ],
+        "sample_interval_ms": 100,
+        "scope": "Total device usage on two dedicated GPUs; includes all vLLM worker processes, not only parent PID",
+        "initial_mib": [
+          2,
+          2
+        ],
+        "overall_peak_mib": {
+          "0": 24440,
+          "1": 24440
+        },
+        "phases": {
+          "load_and_initial_capture": {
+            "seconds": 32.58118462562561,
+            "sampled_peak_mib": {
+              "0": 24394,
+              "1": 24394
+            }
+          },
+          "warmup": {
+            "seconds": 1.6018152236938477,
+            "sampled_peak_mib": {
+              "0": 24436,
+              "1": 24436
+            }
+          },
+          "steady": {
+            "seconds": 11.591589212417603,
+            "sampled_peak_mib": {
+              "0": 24440,
+              "1": 24440
+            }
+          }
+        }
+      }
+    },
+    "infinilm-k2": {
+      "cases": {
+        "zh": {
+          "prompt_tokens": 63,
+          "output_tokens": 64,
+          "median_decode_tps": 107.24580219528353,
+          "min_max_decode_tps": [
+            103.8030092470052,
+            110.46655066849546
+          ],
+          "median_ttft_ms": 99.32591626420617,
+          "repeated_ids_equal": true,
+          "matches_reference": [
+            true,
+            true,
+            true
+          ],
+          "accepted_proposed_per_request": [
+            [
+              40,
+              46
+            ],
+            [
+              40,
+              46
+            ],
+            [
+              40,
+              46
+            ]
+          ]
+        },
+        "code": {
+          "prompt_tokens": 127,
+          "output_tokens": 64,
+          "median_decode_tps": 116.49774339330577,
+          "min_max_decode_tps": [
+            113.5844742905129,
+            117.08738356585016
+          ],
+          "median_ttft_ms": 186.46664591506124,
+          "repeated_ids_equal": true,
+          "matches_reference": [
+            true,
+            true,
+            true
+          ],
+          "accepted_proposed_per_request": [
+            [
+              41,
+              42
+            ],
+            [
+              41,
+              42
+            ],
+            [
+              41,
+              42
+            ]
+          ]
+        },
+        "summary": {
+          "prompt_tokens": 1023,
+          "output_tokens": 64,
+          "median_decode_tps": 86.79469998583431,
+          "min_max_decode_tps": [
+            86.08433251481271,
+            88.32041733170568
+          ],
+          "median_ttft_ms": 1369.4084831513464,
+          "repeated_ids_equal": true,
+          "matches_reference": [
+            true,
+            true,
+            true
+          ],
+          "accepted_proposed_per_request": [
+            [
+              35,
+              56
+            ],
+            [
+              35,
+              56
+            ],
+            [
+              35,
+              56
+            ]
+          ]
+        }
+      },
+      "memory": {
+        "exit_code": 0,
+        "command": [
+          "python",
+          "scripts/model_benchmark.py",
+          "--model",
+          "models/Qwen3.8-27B-FP8-marlin",
+          "--mode",
+          "mtp",
+          "--candidates",
+          "2",
+          "--output",
+          "logs/infinilm-k2.json",
+          "--reference",
+          "logs/infinilm-graph.json"
+        ],
+        "sample_interval_ms": 100,
+        "scope": "Total device usage on two dedicated GPUs; includes all vLLM worker processes, not only parent PID",
+        "initial_mib": [
+          2,
+          2
+        ],
+        "overall_peak_mib": {
+          "0": 24394,
+          "1": 24398
+        },
+        "phases": {
+          "load_and_initial_capture": {
+            "seconds": 32.90754842758179,
+            "sampled_peak_mib": {
+              "0": 24394,
+              "1": 24398
+            }
+          },
+          "warmup": {
+            "seconds": 1.769275426864624,
+            "sampled_peak_mib": {
+              "0": 24326,
+              "1": 24326
+            }
+          },
+          "steady": {
+            "seconds": 10.553800106048584,
+            "sampled_peak_mib": {
+              "0": 24340,
+              "1": 24340
+            }
+          }
+        }
+      }
+    },
+    "infinilm-k4": {
+      "cases": {
+        "zh": {
+          "prompt_tokens": 63,
+          "output_tokens": 64,
+          "median_decode_tps": 114.69035156210431,
+          "min_max_decode_tps": [
+            111.47153993555209,
+            115.11276345070115
+          ],
+          "median_ttft_ms": 98.94707426428795,
+          "repeated_ids_equal": true,
+          "matches_reference": [
+            true,
+            true,
+            true
+          ],
+          "accepted_proposed_per_request": [
+            [
+              45,
+              68
+            ],
+            [
+              45,
+              68
+            ],
+            [
+              45,
+              68
+            ]
+          ]
+        },
+        "code": {
+          "prompt_tokens": 127,
+          "output_tokens": 64,
+          "median_decode_tps": 143.02111310149337,
+          "min_max_decode_tps": [
+            140.3901229302706,
+            146.32893242754952
+          ],
+          "median_ttft_ms": 186.66606908664107,
+          "repeated_ids_equal": true,
+          "matches_reference": [
+            true,
+            true,
+            true
+          ],
+          "accepted_proposed_per_request": [
+            [
+              49,
+              54
+            ],
+            [
+              49,
+              54
+            ],
+            [
+              49,
+              54
+            ]
+          ]
+        },
+        "summary": {
+          "prompt_tokens": 1023,
+          "output_tokens": 64,
+          "median_decode_tps": 88.16511498043346,
+          "min_max_decode_tps": [
+            87.53807139994437,
+            89.71702670844348
+          ],
+          "median_ttft_ms": 1366.4359883405268,
+          "repeated_ids_equal": true,
+          "matches_reference": [
+            true,
+            true,
+            true
+          ],
+          "accepted_proposed_per_request": [
+            [
+              41,
+              85
+            ],
+            [
+              41,
+              85
+            ],
+            [
+              41,
+              85
+            ]
+          ]
+        }
+      },
+      "memory": {
+        "exit_code": 0,
+        "command": [
+          "python",
+          "scripts/model_benchmark.py",
+          "--model",
+          "models/Qwen3.8-27B-FP8-marlin",
+          "--mode",
+          "mtp",
+          "--candidates",
+          "4",
+          "--output",
+          "logs/infinilm-k4.json",
+          "--reference",
+          "logs/infinilm-graph.json"
+        ],
+        "sample_interval_ms": 100,
+        "scope": "Total device usage on two dedicated GPUs; includes all vLLM worker processes, not only parent PID",
+        "initial_mib": [
+          2,
+          2
+        ],
+        "overall_peak_mib": {
+          "0": 24774,
+          "1": 24766
+        },
+        "phases": {
+          "load_and_initial_capture": {
+            "seconds": 30.94833278656006,
+            "sampled_peak_mib": {
+              "0": 24774,
+              "1": 24766
+            }
+          },
+          "warmup": {
+            "seconds": 1.7489259243011475,
+            "sampled_peak_mib": {
+              "0": 24710,
+              "1": 24710
+            }
+          },
+          "steady": {
+            "seconds": 10.088075876235962,
+            "sampled_peak_mib": {
+              "0": 24726,
+              "1": 24724
+            }
+          }
+        }
+      }
+    },
+    "infinilm-long-graph": {
+      "cases": {
+        "math": {
+          "prompt_tokens": 256,
+          "output_tokens": 128,
+          "median_decode_tps": 60.29197064606147,
+          "min_max_decode_tps": [
+            60.20393086617966,
+            60.34274712040883
+          ],
+          "median_ttft_ms": 349.48230581358075,
+          "repeated_ids_equal": true,
+          "matches_reference": [
+            null,
+            null,
+            null
+          ],
+          "accepted_proposed_per_request": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        "english": {
+          "prompt_tokens": 2047,
+          "output_tokens": 128,
+          "median_decode_tps": 43.62969332341665,
+          "min_max_decode_tps": [
+            43.62003804886222,
+            43.680762266771765
+          ],
+          "median_ttft_ms": 2777.1957241930068,
+          "repeated_ids_equal": true,
+          "matches_reference": [
+            null,
+            null,
+            null
+          ],
+          "accepted_proposed_per_request": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "memory": {
+        "exit_code": 0,
+        "command": [
+          "/root/infini-mtp-5090/venv/bin/python",
+          "scripts/model_benchmark.py",
+          "--model",
+          "models/Qwen3.8-27B-FP8-marlin",
+          "--mode",
+          "graph",
+          "--tokens",
+          "128",
+          "--case",
+          "math",
+          "--case",
+          "english",
+          "--output",
+          "logs/infinilm-long-graph.json"
+        ],
+        "sample_interval_ms": 100,
+        "scope": "Total device usage on two dedicated GPUs; includes all vLLM worker processes, not only parent PID",
+        "initial_mib": [
+          2,
+          2
+        ],
+        "overall_peak_mib": {
+          "0": 23974,
+          "1": 23974
+        },
+        "phases": {
+          "load_and_initial_capture": {
+            "seconds": 32.07240891456604,
+            "sampled_peak_mib": {
+              "0": 23778,
+              "1": 23784
+            }
+          },
+          "warmup": {
+            "seconds": 3.2785322666168213,
+            "sampled_peak_mib": {
+              "0": 23974,
+              "1": 23974
+            }
+          },
+          "steady": {
+            "seconds": 24.442382335662842,
+            "sampled_peak_mib": {
+              "0": 23974,
+              "1": 23974
+            }
+          }
+        }
+      }
+    },
+    "infinilm-long-k4": {
+      "cases": {
+        "math": {
+          "prompt_tokens": 256,
+          "output_tokens": 128,
+          "median_decode_tps": 112.23167013618281,
+          "min_max_decode_tps": [
+            111.56879210919703,
+            112.81085077068032
+          ],
+          "median_ttft_ms": 350.71487398818135,
+          "repeated_ids_equal": true,
+          "matches_reference": [
+            true,
+            true,
+            true
+          ],
+          "accepted_proposed_per_request": [
+            [
+              92,
+              136
+            ],
+            [
+              92,
+              136
+            ],
+            [
+              92,
+              136
+            ]
+          ]
+        },
+        "english": {
+          "prompt_tokens": 2047,
+          "output_tokens": 128,
+          "median_decode_tps": 94.92408375470012,
+          "min_max_decode_tps": [
+            93.83119292838062,
+            94.97740978403576
+          ],
+          "median_ttft_ms": 2780.162683222443,
+          "repeated_ids_equal": true,
+          "matches_reference": [
+            true,
+            true,
+            true
+          ],
+          "accepted_proposed_per_request": [
+            [
+              88,
+              154
+            ],
+            [
+              88,
+              154
+            ],
+            [
+              88,
+              154
+            ]
+          ]
+        }
+      },
+      "memory": {
+        "exit_code": 0,
+        "command": [
+          "/root/infini-mtp-5090/venv/bin/python",
+          "scripts/model_benchmark.py",
+          "--model",
+          "models/Qwen3.8-27B-FP8-marlin",
+          "--mode",
+          "mtp",
+          "--candidates",
+          "4",
+          "--tokens",
+          "128",
+          "--case",
+          "math",
+          "--case",
+          "english",
+          "--output",
+          "logs/infinilm-long-k4.json",
+          "--reference",
+          "logs/infinilm-long-graph.json"
+        ],
+        "sample_interval_ms": 100,
+        "scope": "Total device usage on two dedicated GPUs; includes all vLLM worker processes, not only parent PID",
+        "initial_mib": [
+          2,
+          2
+        ],
+        "overall_peak_mib": {
+          "0": 25012,
+          "1": 25012
+        },
+        "phases": {
+          "load_and_initial_capture": {
+            "seconds": 32.061567068099976,
+            "sampled_peak_mib": {
+              "0": 24764,
+              "1": 24774
+            }
+          },
+          "warmup": {
+            "seconds": 3.429299831390381,
+            "sampled_peak_mib": {
+              "0": 25012,
+              "1": 25012
+            }
+          },
+          "steady": {
+            "seconds": 16.82248568534851,
+            "sampled_peak_mib": {
+              "0": 25012,
+              "1": 25012
+            }
+          }
+        }
+      }
+    },
+    "vllm-graph": {
+      "cases": {
+        "zh": {
+          "prompt_tokens": 63,
+          "output_tokens": 64,
+          "median_decode_tps": 73.2956775363111,
+          "min_max_decode_tps": [
+            73.18946132868491,
+            73.30912777232614
+          ],
+          "median_ttft_ms": 63.19075031206012,
+          "repeated_ids_equal": true,
+          "matches_reference": [
+            null,
+            null,
+            null
+          ]
+        },
+        "code": {
+          "prompt_tokens": 127,
+          "output_tokens": 64,
+          "median_decode_tps": 73.29304144604143,
+          "min_max_decode_tps": [
+            73.25197255486266,
+            73.31095195292778
+          ],
+          "median_ttft_ms": 67.72950384765863,
+          "repeated_ids_equal": true,
+          "matches_reference": [
+            null,
+            null,
+            null
+          ]
+        },
+        "summary": {
+          "prompt_tokens": 1023,
+          "output_tokens": 64,
+          "median_decode_tps": 73.40400991348662,
+          "min_max_decode_tps": [
+            73.39280778901048,
+            73.4251586332938
+          ],
+          "median_ttft_ms": 155.85303911939263,
+          "repeated_ids_equal": true,
+          "matches_reference": [
+            null,
+            null,
+            null
+          ]
+        }
+      },
+      "memory": {
+        "exit_code": 0,
+        "command": [
+          "/root/infini-mtp-5090/venv/bin/python",
+          "scripts/model_benchmark.py",
+          "--framework",
+          "vllm",
+          "--model",
+          "models/Qwen3.8-27B-FP8",
+          "--mode",
+          "graph",
+          "--output",
+          "logs/vllm-graph.json"
+        ],
+        "sample_interval_ms": 100,
+        "scope": "Total device usage on two dedicated GPUs; includes all vLLM worker processes, not only parent PID",
+        "initial_mib": [
+          2,
+          2
+        ],
+        "overall_peak_mib": {
+          "0": 27104,
+          "1": 27104
+        },
+        "phases": {
+          "load_and_initial_capture": {
+            "seconds": 261.4661765098572,
+            "sampled_peak_mib": {
+              "0": 26982,
+              "1": 26982
+            }
+          },
+          "warmup": {
+            "seconds": 1.549302101135254,
+            "sampled_peak_mib": {
+              "0": 27104,
+              "1": 27104
+            }
+          },
+          "steady": {
+            "seconds": 8.650219678878784,
+            "sampled_peak_mib": {
+              "0": 27104,
+              "1": 27104
+            }
+          }
+        }
+      }
+    }
+  },
+  "failures": [
+    "InfiniLM dynamic cancel/re-admit exact token mismatch",
+    "vLLM K2 first-token mismatch",
+    "Marlin synthetic strict pointwise oracle comparison, one shape",
+    "Forced reference Prefill dispatch, combined strided/multi-request/ALiBi cases"
+  ],
+  "production_source_changed": false,
+  "k2_gain_vs_graph_pct": {
+    "zh": 69.66641896899701,
+    "code": 86.60741491685258,
+    "summary": 66.41392890026843
+  },
+  "k2_gain_vs_faster_ordinary_mode_pct": {
+    "zh": 69.66641896899701,
+    "code": 85.51276083120275,
+    "summary": 65.50601263318836
+  }
+}
