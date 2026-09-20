@@ -1,0 +1,26 @@
+[
+  {
+    "path": "/user/tangchengxiang/workspace/infini-projects/.worktrees/infinilm-mamba2/python/infinilm/lib/_infinilm.cpython-311-x86_64-linux-gnu.so",
+    "sha256": "f320a3455ffec3a7da72ff146aa9ddc24e43dd3f54fc72dc0befd6725f91d7f7"
+  },
+  {
+    "path": "/user/tangchengxiang/workspace/infini-projects/.worktrees/mamba2-review-core/python/infinicore/lib/_infinicore.cpython-311-x86_64-linux-gnu.so",
+    "sha256": "6bd7bfeb492375c52255917f119e6874373ed8c347748ce585abfded6813fbf0"
+  },
+  {
+    "path": "/user/tangchengxiang/workspace/infini-projects/.worktrees/mamba2-review-install/lib/libinfiniccl.so",
+    "sha256": "e5de631972a831a11d4dcc287e776f4d10987d291300b43df347c72c8c8dde88"
+  },
+  {
+    "path": "/user/tangchengxiang/workspace/infini-projects/.worktrees/mamba2-review-install/lib/libinfinicore_cpp_api.so",
+    "sha256": "e692d5ae66bb96d1890f5de3f8e671924de6567ce75e0858c815d4b1e5069d63"
+  },
+  {
+    "path": "/user/tangchengxiang/workspace/infini-projects/.worktrees/mamba2-review-install/lib/libinfiniop.so",
+    "sha256": "9bca12c7df392d0becbfa19268349a96b4445b62015c50e57d7ead7edaf3793f"
+  },
+  {
+    "path": "/user/tangchengxiang/workspace/infini-projects/.worktrees/mamba2-review-install/lib/libinfinirt.so",
+    "sha256": "ff7f6c0d845ceaa6f5df138051e975a9553845a04e269ded6a3b9dad06f5d28a"
+  }
+]

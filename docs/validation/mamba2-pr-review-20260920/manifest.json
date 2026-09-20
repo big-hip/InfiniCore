@@ -1,0 +1,37 @@
+{
+  "packages": {
+    "torch": "2.9.0",
+    "numpy": "2.4.6",
+    "pytest": "8.4.2",
+    "transformers": "4.56.2",
+    "safetensors": "0.8.0"
+  },
+  "lm_head": "8a591cb1b920dd62fc7f7acf15a8fcdd8458974a",
+  "core_integration_head": "1f5331b84251818201efee2e827c9c007ce65ca2",
+  "core_tree": "aaf6c19603d5d517010d2e2dd35caa02d7d425b2",
+  "source_base": "InfiniLM-v0.2.9c",
+  "tf32": false,
+  "gpu_conditions": "Shared A6000 workstation; another user retains ~2.2 GiB on GPU0 and ~0.26 GiB on GPU1. Correctness tests only, no new throughput claim. After completion GPU0 rose to ~36 GiB / 87% utilization from unrelated work; no physical peak-memory or timing claim is made from this run.",
+  "results": {
+    "bf16_tp1": {
+      "passed": 43,
+      "seconds": 12.7
+    },
+    "bf16_tp2": {
+      "passed": 43,
+      "seconds": 18.78
+    },
+    "fp32_tp1_focused": {
+      "passed": 3,
+      "deselected": 35,
+      "seconds": 10.35
+    },
+    "ordinary_qwen_recapture_before": "failed: 127/128 logits outside original tolerance",
+    "ordinary_qwen_recapture_after": "passed; also included in each BF16 suite"
+  },
+  "build": {
+    "lm": "fresh build directory, current combined Core headers; linked against the newly installed combined Core runtime",
+    "core": "isolated combination of #1566 and #1562, compiled/installed with existing build cache; no source patch",
+    "cutlass": "087c84df83d254b5fb295a7a408f1a1d554085cf (same submodule revision as Core)"
+  }
+}
