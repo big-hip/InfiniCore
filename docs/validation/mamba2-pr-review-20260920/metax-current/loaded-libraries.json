@@ -1,0 +1,26 @@
+[
+  {
+    "path": "/data/mamba575-review/core/python/infinicore/lib/_infinicore.cpython-312-x86_64-linux-gnu.so",
+    "sha256": "c27d0322fe2afdfcc1f3e7ed1eabd558ba664471505a75b53f7162aaa8ff2209"
+  },
+  {
+    "path": "/data/mamba575-review/lm/python/infinilm/lib/_infinilm.cpython-312-x86_64-linux-gnu.so",
+    "sha256": "051e0b857dd18de14113f0346740fdbee581f5b7b1c82c88010477b29265b221"
+  },
+  {
+    "path": "/data/mamba575-review/runtime/lib/libinfiniccl.so",
+    "sha256": "f805c8e37b1700ac4193ab88f91138123f39cbe2bcab91512c6517820a7588ff"
+  },
+  {
+    "path": "/data/mamba575-review/runtime/lib/libinfinicore_cpp_api.so",
+    "sha256": "235887fc8ebd3aed3a5a48337822ee5a23f505f6928d1a0c0a5673dae8991b82"
+  },
+  {
+    "path": "/data/mamba575-review/runtime/lib/libinfiniop.so",
+    "sha256": "74e103f362f52a160681e83ed1312c0fe8e8b250d4b0a45c8a4cc35780e00760"
+  },
+  {
+    "path": "/data/mamba575-review/runtime/lib/libinfinirt.so",
+    "sha256": "6fc364631bfe04094d3e7e474aaba7a3567a1ebb011cc41a76425c1d6ccebee2"
+  }
+]

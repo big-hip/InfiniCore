@@ -1,0 +1,12 @@
+...                                                                      [100%]
+=============================== warnings summary ===============================
+test/models/mamba2/test_adaptation.py::test_prefill_continuation_and_decode
+  <frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+
+test/models/mamba2/test_adaptation.py::test_prefill_continuation_and_decode
+  <frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+--- generated xml file: /data/mamba575-review/evidence/fp16-tp1-focused.xml ----
+3 passed, 35 deselected, 2 warnings in 27.71s
+sys:1: DeprecationWarning: builtin type swigvarlink has no __module__ attribute

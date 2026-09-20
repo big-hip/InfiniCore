@@ -1,0 +1,906 @@
+[0m[38;5;2;1m[  1%]:[0m [38;5;5;1m<_infinicore>[0m cache compiling.release src/infinicore/pybind11/infinicore.cc[0m
+[0m[38;5;2;1m[  1%]:[0m [38;5;5;1m<_infinicore>[0m cache compiling.release src/infinicore/pybind11/from_list.cc[0m
+[0m[38;5;2;1m[  1%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/devices/handle.cc[0m
+[0m[38;5;2;1m[  1%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/topk/operator.cc[0m
+[0m[38;5;2;1m[  1%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/scaled_mm/operator.cc[0m
+[0m[38;5;2;1m[  1%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/mxfp4_dequantize/operator.cc[0m
+[0m[38;5;2;1m[  1%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/chunk_gated_delta_rule/operator.cc[0m
+[0m[38;5;2;1m[  1%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/topksoftmax/operator.cc[0m
+[0m[38;5;2;1m[  1%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/pad/operator.cc[0m
+[0m[38;5;2;1m[  1%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/erfinv/operator.cc[0m
+[0m[38;5;2;1m[  1%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/causal_conv1d/operator.cc[0m
+[0m[38;5;2;1m[  1%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/multi_margin_loss/operator.cc[0m
+[0m[38;5;2;1m[  1%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/causal_softmax/operator.cc[0m
+[0m[38;5;2;1m[  1%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/mul_scalar/operator.cc[0m
+[0m[38;5;2;1m[  1%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/gptq_qyblas_gemm/operator.cc[0m
+[0m[38;5;2;1m[  1%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/addr/operator.cc[0m
+[0m[38;5;2;1m[  2%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/masked_select/operator.cc[0m
+[0m[38;5;2;1m[  2%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/vander/operator.cc[0m
+[0m[38;5;2;1m[  2%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/blas_amax/operator.cc[0m
+[0m[38;5;2;1m[  2%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/dist/operator.cc[0m
+[0m[38;5;2;1m[  2%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/embedding/operator.cc[0m
+[0m[38;5;2;1m[  2%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/softsign/operator.cc[0m
+[0m[38;5;2;1m[  2%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/nsa_compress_paged_cache/operator.cc[0m
+[0m[38;5;2;1m[  2%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/log_softmax/operator.cc[0m
+[0m[38;5;2;1m[  2%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/relu/operator.cc[0m
+[0m[38;5;2;1m[  2%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/erfc/operator.cc[0m
+[0m[38;5;2;1m[  3%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/prepare_moe_input/operator.cc[0m
+[0m[38;5;2;1m[  3%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/asin/operator.cc[0m
+[0m[38;5;2;1m[  3%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/paged_attention/operator.cc[0m
+[0m[38;5;2;1m[  3%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/triplet_margin_with_distance_loss/operator.cc[0m
+[0m[38;5;2;1m[  3%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/logdet/operator.cc[0m
+[0m[38;5;2;1m[  3%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/floor/operator.cc[0m
+[0m[38;5;2;1m[  3%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/affine_grid/operator.cc[0m
+[0m[38;5;2;1m[  3%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/moe_fused_gate/operator.cc[0m
+[0m[38;5;2;1m[  3%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/zeros/operator.cc[0m
+[0m[38;5;2;1m[  3%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/dequantize_gptq/operator.cc[0m
+[0m[38;5;2;1m[  4%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/reciprocal/operator.cc[0m
+[0m[38;5;2;1m[  4%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/fused_ffn/operator.cc[0m
+[0m[38;5;2;1m[  4%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/fp8_sparse_mla/operator.cc[0m
+[0m[38;5;2;1m[  4%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/rearrange/operator.cc[0m
+[0m[38;5;2;1m[  4%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/inner/operator.cc[0m
+[0m[38;5;2;1m[  4%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/diff/operator.cc[0m
+[0m[38;5;2;1m[  4%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/log10/operator.cc[0m
+[0m[38;5;2;1m[  4%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/kron/operator.cc[0m
+[0m[38;5;2;1m[  4%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/hardswish/operator.cc[0m
+[0m[38;5;2;1m[  4%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/kv_caching/operator.cc[0m
+[0m[38;5;2;1m[  5%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/quickgelu/operator.cc[0m
+[0m[38;5;2;1m[  5%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/cross_entropy/operator.cc[0m
+[0m[38;5;2;1m[  5%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/rot/operator.cc[0m
+[0m[38;5;2;1m[  5%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/adaptive_avg_pool1d/operator.cc[0m
+[0m[38;5;2;1m[  5%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/sub/operator.cc[0m
+[0m[38;5;2;1m[  5%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/avg_pool1d/operator.cc[0m
+[0m[38;5;2;1m[  5%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/kimi_delta_attention/operator.cc[0m
+[0m[38;5;2;1m[  5%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/add_rms_norm/operator.cc[0m
+[0m[38;5;2;1m[  5%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/sum/operator.cc[0m
+[0m[38;5;2;1m[  5%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/asum/operator.cc[0m
+[0m[38;5;2;1m[  6%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/gelutanh/operator.cc[0m
+[0m[38;5;2;1m[  6%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/atanh/operator.cc[0m
+[0m[38;5;2;1m[  6%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/moe_topk_sigmoid/operator.cc[0m
+[0m[38;5;2;1m[  6%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/ones/operator.cc[0m
+[0m[38;5;2;1m[  6%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/index_add/operator.cc[0m
+[0m[38;5;2;1m[  6%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/acos/operator.cc[0m
+[0m[38;5;2;1m[  6%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/clip/operator.cc[0m
+[0m[38;5;2;1m[  6%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/linear_mxfp4/operator.cc[0m
+[0m[38;5;2;1m[  6%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/dot/operator.cc[0m
+[0m[38;5;2;1m[  6%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/moe_topk_softmax/operator.cc[0m
+[0m[38;5;2;1m[  7%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/swiglu/operator.cc[0m
+[0m[38;5;2;1m[  7%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/conv/operator.cc[0m
+[0m[38;5;2;1m[  7%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/histc/operator.cc[0m
+[0m[38;5;2;1m[  7%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/logcumsumexp/operator.cc[0m
+[0m[38;5;2;1m[  7%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/layer_norm/operator.cc[0m
+[0m[38;5;2;1m[  7%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/awq_marlin_repack/operator.cc[0m
+[0m[38;5;2;1m[  7%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/moe_align/operator.cc[0m
+[0m[38;5;2;1m[  7%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/mul/operator.cc[0m
+[0m[38;5;2;1m[  7%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/erf/operator.cc[0m
+[0m[38;5;2;1m[  7%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/softplus/operator.cc[0m
+[0m[38;5;2;1m[  8%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/tan/operator.cc[0m
+[0m[38;5;2;1m[  8%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/rotg/operator.cc[0m
+[0m[38;5;2;1m[  8%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/adaptive_avg_pool3d/operator.cc[0m
+[0m[38;5;2;1m[  8%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/dequantize_awq/operator.cc[0m
+[0m[38;5;2;1m[  8%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/argwhere/operator.cc[0m
+[0m[38;5;2;1m[  8%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/relu6/operator.cc[0m
+[0m[38;5;2;1m[  8%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/scatter/operator.cc[0m
+[0m[38;5;2;1m[  8%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/var/operator.cc[0m
+[0m[38;5;2;1m[  8%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/rotmg/operator.cc[0m
+[0m[38;5;2;1m[  8%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/nsa_paged_attention/operator.cc[0m
+[0m[38;5;2;1m[  9%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/addbmm/operator.cc[0m
+[0m[38;5;2;1m[  9%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/fused_moe_mxfp4/operator.cc[0m
+[0m[38;5;2;1m[  9%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/cdist/operator.cc[0m
+[0m[38;5;2;1m[  9%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/fmod/operator.cc[0m
+[0m[38;5;2;1m[  9%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/prelu/operator.cc[0m
+[0m[38;5;2;1m[  9%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/gptq_marlin_gemm/operator.cc[0m
+[0m[38;5;2;1m[  9%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/addcmul/operator.cc[0m
+[0m[38;5;2;1m[  9%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/recurrent_gated_delta_rule/operator.cc[0m
+[0m[38;5;2;1m[  9%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/swap/operator.cc[0m
+[0m[38;5;2;1m[  9%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/equal/operator.cc[0m
+[0m[38;5;2;1m[ 10%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/sinh/operator.cc[0m
+[0m[38;5;2;1m[ 10%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/floor_divide/operator.cc[0m
+[0m[38;5;2;1m[ 10%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/interpolate/operator.cc[0m
+[0m[38;5;2;1m[ 10%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/matrix_power/operator.cc[0m
+[0m[38;5;2;1m[ 10%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/gelu/operator.cc[0m
+[0m[38;5;2;1m[ 10%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/add/operator.cc[0m
+[0m[38;5;2;1m[ 10%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/hinge_embedding_loss/operator.cc[0m
+[0m[38;5;2;1m[ 10%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/gaussian_nll_loss/operator.cc[0m
+[0m[38;5;2;1m[ 10%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/deepseek_moe/operator.cc[0m
+[0m[38;5;2;1m[ 10%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/fused_moe/operator.cc[0m
+[0m[38;5;2;1m[ 11%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/hypot/operator.cc[0m
+[0m[38;5;2;1m[ 11%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/rotm/operator.cc[0m
+[0m[38;5;2;1m[ 11%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/take/operator.cc[0m
+[0m[38;5;2;1m[ 11%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/upsample_bilinear/operator.cc[0m
+[0m[38;5;2;1m[ 11%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/lerp/operator.cc[0m
+[0m[38;5;2;1m[ 11%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/rwkv5_wkv/operator.cc[0m
+[0m[38;5;2;1m[ 11%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/moe_sum/operator.cc[0m
+[0m[38;5;2;1m[ 11%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/awq_marlin_gemm/operator.cc[0m
+[0m[38;5;2;1m[ 11%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/fp8_indexer_quant/operator.cc[0m
+[0m[38;5;2;1m[ 11%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/log1p/operator.cc[0m
+[0m[38;5;2;1m[ 11%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/kthvalue/operator.cc[0m
+[0m[38;5;2;1m[ 12%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/upsample_nearest/operator.cc[0m
+[0m[38;5;2;1m[ 12%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/lp_norm/operator.cc[0m
+[0m[38;5;2;1m[ 12%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/huber_loss/operator.cc[0m
+[0m[38;5;2;1m[ 12%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/fused_gated_delta_net_gating/operator.cc[0m
+[0m[38;5;2;1m[ 12%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/logaddexp2/operator.cc[0m
+[0m[38;5;2;1m[ 12%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/paged_attention_prefill/operator.cc[0m
+[0m[38;5;2;1m[ 12%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/silu_and_mul/operator.cc[0m
+[0m[38;5;2;1m[ 12%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/pixel_shuffle/operator.cc[0m
+[0m[38;5;2;1m[ 12%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/random_sample/operator.cc[0m
+[0m[38;5;2;1m[ 12%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/topkrouter/operator.cc[0m
+[0m[38;5;2;1m[ 13%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/softmax/operator.cc[0m
+[0m[38;5;2;1m[ 13%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/all/operator.cc[0m
+[0m[38;5;2;1m[ 13%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/scal/operator.cc[0m
+[0m[38;5;2;1m[ 13%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/fp8_indexer_logits/operator.cc[0m
+[0m[38;5;2;1m[ 13%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/logaddexp/operator.cc[0m
+[0m[38;5;2;1m[ 13%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/fmin/operator.cc[0m
+[0m[38;5;2;1m[ 13%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/broadcast_to/operator.cc[0m
+[0m[38;5;2;1m[ 13%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/rms_norm/operator.cc[0m
+[0m[38;5;2;1m[ 13%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/smooth_l1_loss/operator.cc[0m
+[0m[38;5;2;1m[ 13%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/adaptive_max_pool1d/operator.cc[0m
+[0m[38;5;2;1m[ 14%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/fp8_mla_rmsnorm_cache/operator.cc[0m
+[0m[38;5;2;1m[ 14%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/flipud/operator.cc[0m
+[0m[38;5;2;1m[ 14%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/matmul_all_reduce/operator.cc[0m
+[0m[38;5;2;1m[ 14%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/digamma/operator.cc[0m
+[0m[38;5;2;1m[ 14%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/blas_dot/operator.cc[0m
+[0m[38;5;2;1m[ 14%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/nrm2/operator.cc[0m
+[0m[38;5;2;1m[ 14%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/avg_pool3d/operator.cc[0m
+[0m[38;5;2;1m[ 14%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/mrope/operator.cc[0m
+[0m[38;5;2;1m[ 14%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/sigmoid/operator.cc[0m
+[0m[38;5;2;1m[ 14%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/gptq_marlin_repack/operator.cc[0m
+[0m[38;5;2;1m[ 15%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/index_copy/operator.cc[0m
+[0m[38;5;2;1m[ 15%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/bitwise_right_shift/operator.cc[0m
+[0m[38;5;2;1m[ 15%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/tanh/operator.cc[0m
+[0m[38;5;2;1m[ 15%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/situ_and_mul/operator.cc[0m
+[0m[38;5;2;1m[ 15%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/attention/operator.cc[0m
+[0m[38;5;2;1m[ 15%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/ldexp/operator.cc[0m
+[0m[38;5;2;1m[ 15%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/block_diag/operator.cc[0m
+[0m[38;5;2;1m[ 15%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/tanhshrink/operator.cc[0m
+[0m[38;5;2;1m[ 15%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/flash_attention/operator.cc[0m
+[0m[38;5;2;1m[ 15%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/axpy/operator.cc[0m
+[0m[38;5;2;1m[ 16%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/mamba2_scan/operator.cc[0m
+[0m[38;5;2;1m[ 16%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/float_power/operator.cc[0m
+[0m[38;5;2;1m[ 16%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/unfold/operator.cc[0m
+[0m[38;5;2;1m[ 16%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/var_mean/operator.cc[0m
+[0m[38;5;2;1m[ 16%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/moe_fused_dense/operator.cc[0m
+[0m[38;5;2;1m[ 16%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/binary_cross_entropy_with_logits/operator.cc[0m
+[0m[38;5;2;1m[ 16%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/asinh/operator.cc[0m
+[0m[38;5;2;1m[ 16%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/mamba_selective_scan/operator.cc[0m
+[0m[38;5;2;1m[ 16%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/rope/operator.cc[0m
+[0m[38;5;2;1m[ 16%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/gemm/operator.cc[0m
+[0m[38;5;2;1m[ 17%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/blas_copy/operator.cc[0m
+[0m[38;5;2;1m[ 17%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/silu/operator.cc[0m
+[0m[38;5;2;1m[ 17%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/blas_amin/operator.cc[0m
+[0m[38;5;2;1m[ 17%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/triplet_margin_loss/operator.cc[0m
+[0m[38;5;2;1m[ 17%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/select_last_token_hidden/operator.cc[0m
+[0m[38;5;2;1m[ 17%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/selu/operator.cc[0m
+[0m[38;5;2;1m[ 17%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/paged_caching/operator.cc[0m
+[0m[38;5;2;1m[ 17%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/hardtanh/operator.cc[0m
+[0m[38;5;2;1m[ 17%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/dequant/per_tensor_dequant_int8/operator.cc[0m
+[0m[38;5;2;1m[ 17%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/quant/per_tensor_quant_int8/operator.cc[0m
+[0m[38;5;2;1m[ 18%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/ops/quant/per_channel_quant_int8/operator.cc[0m
+[0m[38;5;2;1m[ 18%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/operator_descriptor.cc[0m
+[0m[38;5;2;1m[ 18%]:[0m [38;5;5;1m<infiniop>[0m cache compiling.release src/infiniop/tensor_descriptor.cc[0m
+[0m[38;5;2;1m[ 18%]:[0m [38;5;5;1m<infinirt>[0m cache compiling.release src/infinirt/infinirt.cc[0m
+[0m[38;5;2;1m[ 18%]:[0m [38;5;5;1m<infinirt-cpu>[0m cache compiling.release src/infinirt/cpu/infinirt_cpu.cc[0m
+[0m[38;5;2;1m[ 18%]:[0m [38;5;5;1m<infini-utils>[0m cache compiling.release src/utils/rearrange.cc[0m
+[0m[38;5;2;1m[ 18%]:[0m [38;5;5;1m<infini-utils>[0m cache compiling.release src/utils/custom_types.cc[0m
+[0m[38;5;2;1m[ 18%]:[0m [38;5;5;1m<infinirt-metax>[0m cache compiling.release src/infinirt/metax/infinirt_metax.cc[0m
+[0m[38;5;2;1m[ 18%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/devices/cpu/common_cpu.cc[0m
+[0m[38;5;2;1m[ 18%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/devices/cpu/cpu_handle.cc[0m
+[0m[38;5;2;1m[ 19%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/mxfp4_dequantize/cpu/mxfp4_dequantize_cpu.cc[0m
+[0m[38;5;2;1m[ 19%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/topk/cpu/topk_cpu.cc[0m
+[0m[38;5;2;1m[ 19%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/topksoftmax/cpu/topksoftmax_cpu.cc[0m
+[0m[38;5;2;1m[ 19%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/pad/cpu/pad_cpu.cc[0m
+[0m[38;5;2;1m[ 19%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/erfinv/cpu/erfinv_cpu.cc[0m
+[0m[38;5;2;1m[ 19%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/multi_margin_loss/cpu/multi_margin_loss_cpu.cc[0m
+[0m[38;5;2;1m[ 19%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/causal_softmax/cpu/causal_softmax_cpu.cc[0m
+[0m[38;5;2;1m[ 19%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/mul_scalar/cpu/mul_scalar_cpu.cc[0m
+[0m[38;5;2;1m[ 19%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/addr/cpu/addr_cpu.cc[0m
+[0m[38;5;2;1m[ 19%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/masked_select/cpu/masked_select_cpu.cc[0m
+[0m[38;5;2;1m[ 20%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/vander/cpu/vander_cpu.cc[0m
+[0m[38;5;2;1m[ 20%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/blas_amax/cpu/blas_amax_cpu.cc[0m
+[0m[38;5;2;1m[ 20%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/dist/cpu/dist_cpu.cc[0m
+[0m[38;5;2;1m[ 20%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/embedding/cpu/embedding_cpu.cc[0m
+[0m[38;5;2;1m[ 20%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/softsign/cpu/softsign_cpu.cc[0m
+[0m[38;5;2;1m[ 20%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/log_softmax/cpu/log_softmax_cpu.cc[0m
+[0m[38;5;2;1m[ 20%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/relu/cpu/relu_cpu.cc[0m
+[0m[38;5;2;1m[ 20%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/erfc/cpu/erfc_cpu.cc[0m
+[0m[38;5;2;1m[ 20%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/asin/cpu/asin_cpu.cc[0m
+[0m[38;5;2;1m[ 20%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/triplet_margin_with_distance_loss/cpu/triplet_margin_with_distance_loss_cpu.cc[0m
+[0m[38;5;2;1m[ 21%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/logdet/cpu/logdet_cpu.cc[0m
+[0m[38;5;2;1m[ 21%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/floor/cpu/floor_cpu.cc[0m
+[0m[38;5;2;1m[ 21%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/affine_grid/cpu/affine_grid_cpu.cc[0m
+[0m[38;5;2;1m[ 21%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/zeros/cpu/zeros_cpu.cc[0m
+[0m[38;5;2;1m[ 21%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/reciprocal/cpu/reciprocal_cpu.cc[0m
+[0m[38;5;2;1m[ 21%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/fused_ffn/cpu/fused_ffn_cpu.cc[0m
+[0m[38;5;2;1m[ 21%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/rearrange/cpu/rearrange_cpu.cc[0m
+[0m[38;5;2;1m[ 21%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/inner/cpu/inner_cpu.cc[0m
+[0m[38;5;2;1m[ 21%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/diff/cpu/diff_cpu.cc[0m
+[0m[38;5;2;1m[ 21%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/log10/cpu/log10_cpu.cc[0m
+[0m[38;5;2;1m[ 22%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/kron/cpu/kron_cpu.cc[0m
+[0m[38;5;2;1m[ 22%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/hardswish/cpu/hardswish_cpu.cc[0m
+[0m[38;5;2;1m[ 22%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/quickgelu/cpu/quickgelu_cpu.cc[0m
+[0m[38;5;2;1m[ 22%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/cross_entropy/cpu/cross_entropy_cpu.cc[0m
+[0m[38;5;2;1m[ 22%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/rot/cpu/rot_cpu.cc[0m
+[0m[38;5;2;1m[ 22%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/adaptive_avg_pool1d/cpu/adaptive_avg_pool1d_cpu.cc[0m
+[0m[38;5;2;1m[ 22%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/sub/cpu/sub_cpu.cc[0m
+[0m[38;5;2;1m[ 22%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/avg_pool1d/cpu/avg_pool1d_cpu.cc[0m
+[0m[38;5;2;1m[ 22%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/add_rms_norm/cpu/add_rms_norm_cpu.cc[0m
+[0m[38;5;2;1m[ 22%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/sum/cpu/sum_cpu.cc[0m
+[0m[38;5;2;1m[ 23%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/asum/cpu/asum_cpu.cc[0m
+[0m[38;5;2;1m[ 23%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/gelutanh/cpu/gelutanh_cpu.cc[0m
+[0m[38;5;2;1m[ 23%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/atanh/cpu/atanh_cpu.cc[0m
+[0m[38;5;2;1m[ 23%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/ones/cpu/ones_cpu.cc[0m
+[0m[38;5;2;1m[ 23%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/index_add/cpu/index_add_cpu.cc[0m
+[0m[38;5;2;1m[ 23%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/acos/cpu/acos_cpu.cc[0m
+[0m[38;5;2;1m[ 23%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/clip/cpu/clip_cpu.cc[0m
+[0m[38;5;2;1m[ 23%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/linear_mxfp4/cpu/linear_mxfp4_cpu.cc[0m
+[0m[38;5;2;1m[ 23%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/dot/cpu/dot_cpu.cc[0m
+[0m[38;5;2;1m[ 23%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/swiglu/cpu/swiglu_cpu.cc[0m
+[0m[38;5;2;1m[ 23%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/conv/cpu/conv_cpu.cc[0m
+[0m[38;5;2;1m[ 24%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/histc/cpu/histc_cpu.cc[0m
+[0m[38;5;2;1m[ 24%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/logcumsumexp/cpu/logcumsumexp_cpu.cc[0m
+[0m[38;5;2;1m[ 24%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/layer_norm/cpu/layer_norm_cpu.cc[0m
+[0m[38;5;2;1m[ 24%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/mul/cpu/mul_cpu.cc[0m
+[0m[38;5;2;1m[ 24%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/erf/cpu/erf_cpu.cc[0m
+[0m[38;5;2;1m[ 24%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/softplus/cpu/softplus_cpu.cc[0m
+[0m[38;5;2;1m[ 24%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/tan/cpu/tan_cpu.cc[0m
+[0m[38;5;2;1m[ 24%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/rotg/cpu/rotg_cpu.cc[0m
+[0m[38;5;2;1m[ 24%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/adaptive_avg_pool3d/cpu/adaptive_avg_pool3d_cpu.cc[0m
+[0m[38;5;2;1m[ 24%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/argwhere/cpu/argwhere_cpu.cc[0m
+[0m[38;5;2;1m[ 25%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/relu6/cpu/relu6_cpu.cc[0m
+[0m[38;5;2;1m[ 25%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/scatter/cpu/scatter_cpu.cc[0m
+[0m[38;5;2;1m[ 25%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/var/cpu/var_cpu.cc[0m
+[0m[38;5;2;1m[ 25%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/rotmg/cpu/rotmg_cpu.cc[0m
+[0m[38;5;2;1m[ 25%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/addbmm/cpu/addbmm_cpu.cc[0m
+[0m[38;5;2;1m[ 25%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/fused_moe_mxfp4/cpu/fused_moe_mxfp4_cpu.cc[0m
+[0m[38;5;2;1m[ 25%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/cdist/cpu/cdist_cpu.cc[0m
+[0m[38;5;2;1m[ 25%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/fmod/cpu/fmod_cpu.cc[0m
+[0m[38;5;2;1m[ 25%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/prelu/cpu/prelu_cpu.cc[0m
+[0m[38;5;2;1m[ 25%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/addcmul/cpu/addcmul_cpu.cc[0m
+[0m[38;5;2;1m[ 26%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/swap/cpu/swap_cpu.cc[0m
+[0m[38;5;2;1m[ 26%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/equal/cpu/equal_cpu.cc[0m
+[0m[38;5;2;1m[ 26%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/sinh/cpu/sinh_cpu.cc[0m
+[0m[38;5;2;1m[ 26%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/floor_divide/cpu/floor_divide_cpu.cc[0m
+[0m[38;5;2;1m[ 26%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/interpolate/cpu/interpolate_cpu.cc[0m
+[0m[38;5;2;1m[ 26%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/matrix_power/cpu/matrix_power_cpu.cc[0m
+[0m[38;5;2;1m[ 26%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/gelu/cpu/gelu_cpu.cc[0m
+[0m[38;5;2;1m[ 26%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/add/cpu/add_cpu.cc[0m
+[0m[38;5;2;1m[ 26%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/hinge_embedding_loss/cpu/hinge_embedding_loss_cpu.cc[0m
+[0m[38;5;2;1m[ 26%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/gaussian_nll_loss/cpu/gaussian_nll_loss_cpu.cc[0m
+[0m[38;5;2;1m[ 27%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/hypot/cpu/hypot_cpu.cc[0m
+[0m[38;5;2;1m[ 27%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/rotm/cpu/rotm_cpu.cc[0m
+[0m[38;5;2;1m[ 27%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/take/cpu/take_cpu.cc[0m
+[0m[38;5;2;1m[ 27%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/upsample_bilinear/cpu/upsample_bilinear_cpu.cc[0m
+[0m[38;5;2;1m[ 27%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/lerp/cpu/lerp_cpu.cc[0m
+[0m[38;5;2;1m[ 27%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/log1p/cpu/log1p_cpu.cc[0m
+[0m[38;5;2;1m[ 27%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/kthvalue/cpu/kthvalue_cpu.cc[0m
+[0m[38;5;2;1m[ 27%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/upsample_nearest/cpu/upsample_nearest_cpu.cc[0m
+[0m[38;5;2;1m[ 27%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/huber_loss/cpu/huber_loss_cpu.cc[0m
+[0m[38;5;2;1m[ 27%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/logaddexp2/cpu/logaddexp2_cpu.cc[0m
+[0m[38;5;2;1m[ 28%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/pixel_shuffle/cpu/pixel_shuffle_cpu.cc[0m
+[0m[38;5;2;1m[ 28%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/random_sample/cpu/random_sample_cpu.cc[0m
+[0m[38;5;2;1m[ 28%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/topkrouter/cpu/topkrouter_cpu.cc[0m
+[0m[38;5;2;1m[ 28%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/all/cpu/all_cpu.cc[0m
+[0m[38;5;2;1m[ 28%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/scal/cpu/scal_cpu.cc[0m
+[0m[38;5;2;1m[ 28%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/logaddexp/cpu/logaddexp_cpu.cc[0m
+[0m[38;5;2;1m[ 28%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/fmin/cpu/fmin_cpu.cc[0m
+[0m[38;5;2;1m[ 28%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/broadcast_to/cpu/broadcast_to_cpu.cc[0m
+[0m[38;5;2;1m[ 28%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/rms_norm/cpu/rms_norm_cpu.cc[0m
+[0m[38;5;2;1m[ 28%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/smooth_l1_loss/cpu/smooth_l1_loss_cpu.cc[0m
+[0m[38;5;2;1m[ 29%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/adaptive_max_pool1d/cpu/adaptive_max_pool1d_cpu.cc[0m
+[0m[38;5;2;1m[ 29%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/flipud/cpu/flipud_cpu.cc[0m
+[0m[38;5;2;1m[ 29%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/digamma/cpu/digamma_cpu.cc[0m
+[0m[38;5;2;1m[ 29%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/blas_dot/cpu/blas_dot_cpu.cc[0m
+[0m[38;5;2;1m[ 29%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/nrm2/cpu/nrm2_cpu.cc[0m
+[0m[38;5;2;1m[ 29%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/avg_pool3d/cpu/avg_pool3d_cpu.cc[0m
+[0m[38;5;2;1m[ 29%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/sigmoid/cpu/sigmoid_cpu.cc[0m
+[0m[38;5;2;1m[ 29%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/index_copy/cpu/index_copy_cpu.cc[0m
+[0m[38;5;2;1m[ 29%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/bitwise_right_shift/cpu/bitwise_right_shift_cpu.cc[0m
+[0m[38;5;2;1m[ 29%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/tanh/cpu/tanh_cpu.cc[0m
+[0m[38;5;2;1m[ 30%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/ldexp/cpu/ldexp_cpu.cc[0m
+[0m[38;5;2;1m[ 30%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/block_diag/cpu/block_diag_cpu.cc[0m
+[0m[38;5;2;1m[ 30%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/tanhshrink/cpu/tanhshrink_cpu.cc[0m
+[0m[38;5;2;1m[ 30%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/axpy/cpu/axpy_cpu.cc[0m
+[0m[38;5;2;1m[ 30%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/float_power/cpu/float_power_cpu.cc[0m
+[0m[38;5;2;1m[ 30%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/unfold/cpu/unfold_cpu.cc[0m
+[0m[38;5;2;1m[ 30%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/var_mean/cpu/var_mean_cpu.cc[0m
+[0m[38;5;2;1m[ 30%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/binary_cross_entropy_with_logits/cpu/binary_cross_entropy_with_logits_cpu.cc[0m
+[0m[38;5;2;1m[ 30%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/asinh/cpu/asinh_cpu.cc[0m
+[0m[38;5;2;1m[ 30%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/rope/cpu/rope_cpu.cc[0m
+[0m[38;5;2;1m[ 31%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/gemm/cpu/gemm_cpu.cc[0m
+[0m[38;5;2;1m[ 31%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/blas_copy/cpu/blas_copy_cpu.cc[0m
+[0m[38;5;2;1m[ 31%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/silu/cpu/silu_cpu.cc[0m
+[0m[38;5;2;1m[ 31%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/blas_amin/cpu/blas_amin_cpu.cc[0m
+[0m[38;5;2;1m[ 31%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/triplet_margin_loss/cpu/triplet_margin_loss_cpu.cc[0m
+[0m[38;5;2;1m[ 31%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/select_last_token_hidden/cpu/select_last_token_hidden_cpu.cc[0m
+[0m[38;5;2;1m[ 31%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/selu/cpu/selu_cpu.cc[0m
+[0m[38;5;2;1m[ 31%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/ops/hardtanh/cpu/hardtanh_cpu.cc[0m
+[0m[38;5;2;1m[ 31%]:[0m [38;5;5;1m<infiniop-cpu>[0m cache compiling.release src/infiniop/reduce/cpu/reduce.cc[0m
+[0m[38;5;3;1mIn file included from src/infinicore/pybind11/ops.hpp:50,
+                 from src/infinicore/pybind11/infinicore.cc:11:
+src/infinicore/pybind11/ops/float_power.hpp: In function 'infinicore::Tensor infinicore::ops::unwrap(pybind11::handle)':
+src/infinicore/pybind11/ops/float_power.hpp:22:88: warning: 'pybind11::handle pybind11::detail::object_api<Derived>::get_type() const [with Derived = pybind11::handle]' is deprecated: Call py::type::handle_of(h) or py::type::of(h) instead of h.get_type() [-Wdeprecated-declarations]
+   22 |     throw py::type_error("Expected infinicore.Tensor, but got " + py::repr(obj.get_type()).cast<std::string>());
+      |                                                                            ~~~~~~~~~~~~^~
+In file included from /data/mamba575-review/xmake-packages/p/pybind11/v3.0.4/51aaece52c0a4fd8be0d27ab6ac97aa5/include/pybind11/detail/argument_vector.h:13,
+                 from /data/mamba575-review/xmake-packages/p/pybind11/v3.0.4/51aaece52c0a4fd8be0d27ab6ac97aa5/include/pybind11/cast.h:13,
+                 from /data/mamba575-review/xmake-packages/p/pybind11/v3.0.4/51aaece52c0a4fd8be0d27ab6ac97aa5/include/pybind11/attr.h:14,
+                 from /data/mamba575-review/xmake-packages/p/pybind11/v3.0.4/51aaece52c0a4fd8be0d27ab6ac97aa5/include/pybind11/detail/class.h:12,
+                 from /data/mamba575-review/xmake-packages/p/pybind11/v3.0.4/51aaece52c0a4fd8be0d27ab6ac97aa5/include/pybind11/pybind11.h:12,
+                 from src/infinicore/pybind11/infinicore.cc:1:
+/data/mamba575-review/xmake-packages/p/pybind11/v3.0.4/51aaece52c0a4fd8be0d27ab6ac97aa5/include/pybind11/pytypes.h:216:12: note: declared here
+  216 |     handle get_type() const;
+      |            ^~~~~~~~
+At global scope:[0m
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+[0m[38;5;2;1m[ 46%]:[0m [38;5;5;1m<infiniop-metax>[0m cache compiling.release src/infiniop/devices/metax/metax_handle.cc[0m
+[0m[38;5;2;1m[ 46%]:[0m [38;5;5;1m<infiniop-metax>[0m cache compiling.release src/infiniop/ops/blas_amax/metax/blas_amax_metax.cc[0m
+[0m[38;5;2;1m[ 46%]:[0m [38;5;5;1m<infiniop-metax>[0m cache compiling.release src/infiniop/ops/rot/metax/rot_metax.cc[0m
+[0m[38;5;2;1m[ 46%]:[0m [38;5;5;1m<infiniop-metax>[0m cache compiling.release src/infiniop/ops/asum/metax/asum_metax.cc[0m
+[0m[38;5;2;1m[ 46%]:[0m [38;5;5;1m<infiniop-metax>[0m cache compiling.release src/infiniop/ops/conv/metax/conv_metax.cc[0m
+[0m[38;5;2;1m[ 46%]:[0m [38;5;5;1m<infiniop-metax>[0m cache compiling.release src/infiniop/ops/rotg/metax/rotg_metax.cc[0m
+[0m[38;5;2;1m[ 46%]:[0m [38;5;5;1m<infiniop-metax>[0m cache compiling.release src/infiniop/ops/rotmg/metax/rotmg_metax.cc[0m
+[0m[38;5;2;1m[ 46%]:[0m [38;5;5;1m<infiniop-metax>[0m cache compiling.release src/infiniop/ops/swap/metax/swap_metax.cc[0m
+[0m[38;5;2;1m[ 47%]:[0m [38;5;5;1m<infiniop-metax>[0m cache compiling.release src/infiniop/ops/rotm/metax/rotm_metax.cc[0m
+[0m[38;5;2;1m[ 47%]:[0m [38;5;5;1m<infiniop-metax>[0m cache compiling.release src/infiniop/ops/scal/metax/scal_metax.cc[0m
+[0m[38;5;2;1m[ 47%]:[0m [38;5;5;1m<infiniop-metax>[0m cache compiling.release src/infiniop/ops/blas_dot/metax/blas_dot_metax.cc[0m
+[0m[38;5;2;1m[ 47%]:[0m [38;5;5;1m<infiniop-metax>[0m cache compiling.release src/infiniop/ops/nrm2/metax/nrm2_metax.cc[0m
+[0m[38;5;2;1m[ 47%]:[0m [38;5;5;1m<infiniop-metax>[0m cache compiling.release src/infiniop/ops/axpy/metax/axpy_metax.cc[0m
+[0m[38;5;2;1m[ 47%]:[0m [38;5;5;1m<infiniop-metax>[0m cache compiling.release src/infiniop/ops/gemm/metax/gemm_metax.cc[0m
+[0m[38;5;2;1m[ 47%]:[0m [38;5;5;1m<infiniop-metax>[0m cache compiling.release src/infiniop/ops/blas_copy/metax/blas_copy_metax.cc[0m
+[0m[38;5;2;1m[ 47%]:[0m [38;5;5;1m<infiniop-metax>[0m cache compiling.release src/infiniop/ops/blas_amin/metax/blas_amin_metax.cc[0m
+[0m[38;5;2;1m[ 47%]:[0m [38;5;5;1m<infiniccl>[0m cache compiling.release src/infiniccl/infiniccl.cc[0m
+[0m[38;5;2;1m[ 47%]:[0m [38;5;5;1m<infiniccl-metax>[0m cache compiling.release src/infiniccl/metax/infiniccl_metax.cc[0m
+[0m[38;5;2;1m[ 47%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/device_event.cc[0m
+[0m[38;5;2;1m[ 48%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/memory.cc[0m
+[0m[38;5;2;1m[ 48%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/dtype.cc[0m
+[0m[38;5;2;1m[ 48%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/device.cc[0m
+[0m[38;5;2;1m[ 48%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/io.cc[0m
+[0m[38;5;2;1m[ 48%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/adaptor/aten_adaptor.cc[0m
+[0m[38;5;2;1m[ 48%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/adaptor/iluvatar_vendor_adaptor.cc[0m
+[0m[38;5;2;1m[ 48%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/context/context_impl.cc[0m
+[0m[38;5;2;1m[ 48%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/context/allocators/stream_ordered_allocator.cc[0m
+[0m[38;5;2;1m[ 48%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/context/allocators/device_pinned_allocator.cc[0m
+[0m[38;5;2;1m[ 48%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/context/allocators/host_allocator.cc[0m
+[0m[38;5;2;1m[ 49%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/context/allocators/pinnable_block_allocator.cc[0m
+[0m[38;5;2;1m[ 49%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/context/runtime/runtime.cc[0m
+[0m[38;5;2;1m[ 49%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/tensor/debug.cc[0m
+[0m[38;5;2;1m[ 49%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/tensor/copy.cc[0m
+[0m[38;5;2;1m[ 49%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/tensor/view.cc[0m
+[0m[38;5;2;1m[ 49%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/tensor/tensor.cc[0m
+[0m[38;5;2;1m[ 49%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/graph/graph.cc[0m
+[0m[38;5;2;1m[ 49%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/nn/module.cc[0m
+[0m[38;5;2;1m[ 49%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/nn/embedding.cc[0m
+[0m[38;5;2;1m[ 49%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/nn/rmsnorm.cc[0m
+[0m[38;5;2;1m[ 50%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/nn/rope_scaling_configs.cc[0m
+[0m[38;5;2;1m[ 50%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/nn/layer_norm.cc[0m
+[0m[38;5;2;1m[ 50%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/nn/rope.cc[0m
+[0m[38;5;2;1m[ 50%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/nn/parameter.cc[0m
+[0m[38;5;2;1m[ 50%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/mxfp4_dequantize/mxfp4_dequantize_infiniop.cc[0m
+[0m[38;5;2;1m[ 50%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/mxfp4_dequantize/mxfp4_dequantize.cc[0m
+[0m[38;5;2;1m[ 50%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/matmul/matmul.cc[0m
+[0m[38;5;2;1m[ 50%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/topk/topk.cc[0m
+[0m[38;5;2;1m[ 50%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/topk/topk_infiniop.cc[0m
+[0m[38;5;2;1m[ 50%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/chunk_gated_delta_rule/chunk_gated_delta_rule.cc[0m
+[0m[38;5;2;1m[ 51%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/chunk_gated_delta_rule/chunk_gated_delta_rule_infiniop.cc[0m
+[0m[38;5;2;1m[ 51%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/multi_head_attention/mha.cc[0m
+[0m[38;5;2;1m[ 51%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/multi_head_attention/mha_flashattn.cc[0m
+[0m[38;5;2;1m[ 51%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/moe_argsort_bincount/moe_argsort_bincount.cc[0m
+[0m[38;5;2;1m[ 51%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/topksoftmax/topksoftmax.cc[0m
+[0m[38;5;2;1m[ 51%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/topksoftmax/topksoftmax_infiniop.cc[0m
+[0m[38;5;2;1m[ 51%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/topksoftmax/topksoftmax_infiniops.cc[0m
+[0m[38;5;2;1m[ 51%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/pad/pad_infiniop.cc[0m
+[0m[38;5;2;1m[ 51%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/pad/pad.cc[0m
+[0m[38;5;2;1m[ 51%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/causal_conv1d/causal_conv1d_infiniop.cc[0m
+[0m[38;5;2;1m[ 52%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/causal_conv1d/causal_conv1d.cc[0m
+[0m[38;5;2;1m[ 52%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/multi_margin_loss/multi_margin_loss_infiniop.cc[0m
+[0m[38;5;2;1m[ 52%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/multi_margin_loss/multi_margin_loss.cc[0m
+[0m[38;5;2;1m[ 52%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/causal_softmax/causal_softmax_infiniops.cc[0m
+[0m[38;5;2;1m[ 52%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/causal_softmax/causal_softmax_infiniop.cc[0m
+[0m[38;5;2;1m[ 52%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/causal_softmax/causal_softmax.cc[0m
+[0m[38;5;2;1m[ 52%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/mul_scalar/mul_scalar.cc[0m
+[0m[38;5;2;1m[ 52%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/mul_scalar/mul_scalar_infiniop.cc[0m
+[0m[38;5;2;1m[ 52%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/moe_expand_input/moe_expand_input.cc[0m
+[0m[38;5;2;1m[ 52%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/cast/cast.cc[0m
+[0m[38;5;2;1m[ 53%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/scaled_mm_i8/scaled_mm_i8_infiniop.cc[0m
+[0m[38;5;2;1m[ 53%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/scaled_mm_i8/scaled_mm_i8.cc[0m
+[0m[38;5;2;1m[ 53%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/w4a8_group_gemm/w4a8_group_gemm.cc[0m
+[0m[38;5;2;1m[ 53%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/addr/addr_infiniop.cc[0m
+[0m[38;5;2;1m[ 53%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/addr/addr.cc[0m
+[0m[38;5;2;1m[ 53%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/masked_select/masked_select.cc[0m
+[0m[38;5;2;1m[ 53%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/masked_select/masked_select_infiniop.cc[0m
+[0m[38;5;2;1m[ 53%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/vander/vander.cc[0m
+[0m[38;5;2;1m[ 53%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/vander/vander_infiniop.cc[0m
+[0m[38;5;2;1m[ 53%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/grouped_topk_vendor/grouped_topk_vendor.cc[0m
+[0m[38;5;2;1m[ 54%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/blas_amax/blas_amax.cc[0m
+[0m[38;5;2;1m[ 54%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/blas_amax/blas_amax_infiniop.cc[0m
+[0m[38;5;2;1m[ 54%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/scaled_mm_w4a8/scaled_mm_w4a8.cc[0m
+[0m[38;5;2;1m[ 54%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/dist/dist_infiniop.cc[0m
+[0m[38;5;2;1m[ 54%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/dist/dist.cc[0m
+[0m[38;5;2;1m[ 54%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/embedding/embedding.cc[0m
+[0m[38;5;2;1m[ 54%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/embedding/embedding_infiniop.cc[0m
+[0m[38;5;2;1m[ 54%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/embedding/embedding_infiniops.cc[0m
+[0m[38;5;2;1m[ 54%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/softsign/softsign.cc[0m
+[0m[38;5;2;1m[ 54%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/softsign/softsign_infiniop.cc[0m
+[0m[38;5;2;1m[ 55%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/nsa_compress_paged_cache/nsa_compress_paged_cache_infiniop.cc[0m
+[0m[38;5;2;1m[ 55%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/nsa_compress_paged_cache/nsa_compress_paged_cache.cc[0m
+[0m[38;5;2;1m[ 55%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/log_softmax/log_softmax_infiniop.cc[0m
+[0m[38;5;2;1m[ 55%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/log_softmax/log_softmax.cc[0m
+[0m[38;5;2;1m[ 55%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/relu/relu.cc[0m
+[0m[38;5;2;1m[ 55%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/relu/relu_infiniops.cc[0m
+[0m[38;5;2;1m[ 55%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/relu/relu_infiniop.cc[0m
+[0m[38;5;2;1m[ 55%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/linear_w4a16_gptq_qy/linear_w4a16_gptq_qy.cc[0m
+[0m[38;5;2;1m[ 55%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/prepare_moe_input/prepare_moe_input.cc[0m
+[0m[38;5;2;1m[ 55%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/prepare_moe_input/prepare_moe_input_infiniop.cc[0m
+[0m[38;5;2;1m[ 56%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/asin/asin_infiniop.cc[0m
+[0m[38;5;2;1m[ 56%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/asin/asin.cc[0m
+[0m[38;5;2;1m[ 56%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/bmm_strided/bmm_strided.cc[0m
+[0m[38;5;2;1m[ 56%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/paged_attention/paged_attention.cc[0m
+[0m[38;5;2;1m[ 56%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/paged_attention/paged_attention_infiniop.cc[0m
+[0m[38;5;2;1m[ 56%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/paged_attention/paged_attention_infiniops.cc[0m
+[0m[38;5;2;1m[ 56%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/linear_w4a16_awq/linear_w4a16_awq.cc[0m
+[0m[38;5;2;1m[ 56%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/triplet_margin_with_distance_loss/triplet_margin_with_distance_loss_infiniop.cc[0m
+[0m[38;5;2;1m[ 56%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/triplet_margin_with_distance_loss/triplet_margin_with_distance_loss.cc[0m
+[0m[38;5;2;1m[ 56%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/logdet/logdet_infiniop.cc[0m
+[0m[38;5;2;1m[ 57%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/logdet/logdet.cc[0m
+[0m[38;5;2;1m[ 57%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/linear_allreduce/linear_allreduce.cc[0m
+[0m[38;5;2;1m[ 57%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/linear_allreduce/linear_allreduce_infiniop.cc[0m
+[0m[38;5;2;1m[ 57%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/floor/floor.cc[0m
+[0m[38;5;2;1m[ 57%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/floor/floor_infiniop.cc[0m
+[0m[38;5;2;1m[ 57%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/affine_grid/affine_grid.cc[0m
+[0m[38;5;2;1m[ 57%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/affine_grid/affine_grid_infiniop.cc[0m
+[0m[38;5;2;1m[ 57%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/moe_fused_gate/moe_fused_gate.cc[0m
+[0m[38;5;2;1m[ 57%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/moe_fused_gate/moe_fused_gate_infiniop.cc[0m
+[0m[38;5;2;1m[ 57%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/zeros/zeros.cc[0m
+[0m[38;5;2;1m[ 58%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/zeros/zeros_infinirt.cc[0m
+[0m[38;5;2;1m[ 58%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/reciprocal/reciprocal_infiniop.cc[0m
+[0m[38;5;2;1m[ 58%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/reciprocal/reciprocal.cc[0m
+[0m[38;5;2;1m[ 58%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/fp8_sparse_mla/fp8_sparse_mla.cc[0m
+[0m[38;5;2;1m[ 58%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/fp8_sparse_mla/fp8_sparse_mla_infiniop.cc[0m
+[0m[38;5;2;1m[ 58%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/rearrange/rearrange.cc[0m
+[0m[38;5;2;1m[ 58%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/rearrange/rearrange_infiniop.cc[0m
+[0m[38;5;2;1m[ 58%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/rearrange/rearrange_infiniops.cc[0m
+[0m[38;5;2;1m[ 58%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/inner/inner.cc[0m
+[0m[38;5;2;1m[ 58%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/inner/inner_infiniop.cc[0m
+[0m[38;5;2;1m[ 59%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/diff/diff.cc[0m
+[0m[38;5;2;1m[ 59%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/diff/diff_infiniop.cc[0m
+[0m[38;5;2;1m[ 59%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/kron/kron.cc[0m
+[0m[38;5;2;1m[ 59%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/kron/kron_infiniop.cc[0m
+[0m[38;5;2;1m[ 59%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/hardswish/hardswish.cc[0m
+[0m[38;5;2;1m[ 59%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/hardswish/hardswish_infiniop.cc[0m
+[0m[38;5;2;1m[ 59%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/kv_caching/kv_caching_infiniop.cc[0m
+[0m[38;5;2;1m[ 59%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/kv_caching/kv_caching.cc[0m
+[0m[38;5;2;1m[ 59%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/quickgelu/quickgelu.cc[0m
+[0m[38;5;2;1m[ 59%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/quickgelu/quickgelu_infiniop.cc[0m
+[0m[38;5;2;1m[ 59%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/cross_entropy/cross_entropy.cc[0m
+[0m[38;5;2;1m[ 60%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/cross_entropy/cross_entropy_infiniop.cc[0m
+[0m[38;5;2;1m[ 60%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/rot/rot.cc[0m
+[0m[38;5;2;1m[ 60%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/rot/rot_infiniop.cc[0m
+[0m[38;5;2;1m[ 60%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/adaptive_avg_pool1d/adaptive_avg_pool1d_infiniop.cc[0m
+[0m[38;5;2;1m[ 60%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/adaptive_avg_pool1d/adaptive_avg_pool1d.cc[0m
+[0m[38;5;2;1m[ 60%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/scaled_mm_w4a16_gptq_qy/scaled_mm_w4a16_gptq_qy.cc[0m
+[0m[38;5;2;1m[ 60%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/scaled_mm_w4a16_gptq_qy/scaled_mm_w4a16_gptq_qy_infiniop.cc[0m
+[0m[38;5;2;1m[ 60%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/avg_pool1d/avg_pool1d.cc[0m
+[0m[38;5;2;1m[ 60%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/avg_pool1d/avg_pool1d_infiniop.cc[0m
+[0m[38;5;2;1m[ 60%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/kimi_delta_attention/kimi_delta_attention.cc[0m
+[0m[38;5;2;1m[ 61%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/kimi_delta_attention/kimi_delta_attention_infiniop.cc[0m
+[0m[38;5;2;1m[ 61%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/add_rms_norm/add_rms_norm_infiniop.cc[0m
+[0m[38;5;2;1m[ 61%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/add_rms_norm/add_rms_norm.cc[0m
+[0m[38;5;2;1m[ 61%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/add_rms_norm/add_rms_norm_infiniops.cc[0m
+[0m[38;5;2;1m[ 61%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/sum/sum_infiniop.cc[0m
+[0m[38;5;2;1m[ 61%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/sum/sum.cc[0m
+[0m[38;5;2;1m[ 61%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/asum/asum_infiniop.cc[0m
+[0m[38;5;2;1m[ 61%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/asum/asum.cc[0m
+[0m[38;5;2;1m[ 61%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/gelutanh/gelutanh.cc[0m
+[0m[38;5;2;1m[ 61%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/gelutanh/gelutanh_infiniop.cc[0m
+[0m[38;5;2;1m[ 62%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/gelutanh/gelutanh_infiniops.cc[0m
+[0m[38;5;2;1m[ 62%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/atanh/atanh_infiniop.cc[0m
+[0m[38;5;2;1m[ 62%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/atanh/atanh.cc[0m
+[0m[38;5;2;1m[ 62%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/moe_topk_sigmoid/moe_topk_sigmoid_infiniop.cc[0m
+[0m[38;5;2;1m[ 62%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/moe_topk_sigmoid/moe_topk_sigmoid.cc[0m
+[0m[38;5;2;1m[ 62%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/ones/ones_infiniop.cc[0m
+[0m[38;5;2;1m[ 62%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/ones/ones.cc[0m
+[0m[38;5;2;1m[ 62%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/concat_and_cache_mla_int8/concat_and_cache_mla_int8.cc[0m
+[0m[38;5;2;1m[ 62%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/index_add/index_add.cc[0m
+[0m[38;5;2;1m[ 62%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/index_add/index_add_infiniop.cc[0m
+[0m[38;5;2;1m[ 63%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/logical_not/logical_not.cc[0m
+[0m[38;5;2;1m[ 63%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/logical_not/logical_not_cpu.cc[0m
+[0m[38;5;2;1m[ 63%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/acos/acos_infiniop.cc[0m
+[0m[38;5;2;1m[ 63%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/acos/acos.cc[0m
+[0m[38;5;2;1m[ 63%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/baddbmm/baddbmm.cc[0m
+[0m[38;5;2;1m[ 63%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/linear_mxfp4/linear_mxfp4.cc[0m
+[0m[38;5;2;1m[ 63%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/linear_mxfp4/linear_mxfp4_infiniop.cc[0m
+[0m[38;5;2;1m[ 63%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/moe_topk_softmax/moe_topk_softmax_infiniop.cc[0m
+[0m[38;5;2;1m[ 63%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/moe_topk_softmax/moe_topk_softmax.cc[0m
+[0m[38;5;2;1m[ 63%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/swiglu/swiglu.cc[0m
+[0m[38;5;2;1m[ 64%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/swiglu/swiglu_infiniops.cc[0m
+[0m[38;5;2;1m[ 64%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/swiglu/swiglu_infiniop.cc[0m
+[0m[38;5;2;1m[ 64%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/linear/linear.cc[0m
+[0m[38;5;2;1m[ 64%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/logcumsumexp/logcumsumexp_infiniop.cc[0m
+[0m[38;5;2;1m[ 64%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/logcumsumexp/logcumsumexp.cc[0m
+[0m[38;5;2;1m[ 64%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/layer_norm/layer_norm_infiniop.cc[0m
+[0m[38;5;2;1m[ 64%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/layer_norm/layer_norm.cc[0m
+[0m[38;5;2;1m[ 64%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/moe_align/moe_align.cc[0m
+[0m[38;5;2;1m[ 64%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/moe_align/moe_align_infiniop.cc[0m
+[0m[38;5;2;1m[ 64%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/mul/mul_infiniop.cc[0m
+[0m[38;5;2;1m[ 65%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/mul/mul.cc[0m
+[0m[38;5;2;1m[ 65%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/softplus/softplus_infiniop.cc[0m
+[0m[38;5;2;1m[ 65%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/softplus/softplus.cc[0m
+[0m[38;5;2;1m[ 65%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/tan/tan_infiniop.cc[0m
+[0m[38;5;2;1m[ 65%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/tan/tan.cc[0m
+[0m[38;5;2;1m[ 65%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/rotg/rotg_infiniop.cc[0m
+[0m[38;5;2;1m[ 65%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/rotg/rotg.cc[0m
+[0m[38;5;2;1m[ 65%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/adaptive_avg_pool3d/adaptive_avg_pool3d.cc[0m
+[0m[38;5;2;1m[ 65%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/adaptive_avg_pool3d/adaptive_avg_pool3d_infiniop.cc[0m
+[0m[38;5;2;1m[ 65%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/dequantize_awq/dequantize_awq_infiniop.cc[0m
+[0m[38;5;2;1m[ 66%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/dequantize_awq/dequantize_awq.cc[0m
+[0m[38;5;2;1m[ 66%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/argwhere/argwhere_infiniop.cc[0m
+[0m[38;5;2;1m[ 66%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/argwhere/argwhere.cc[0m
+[0m[38;5;2;1m[ 66%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/relu6/relu6.cc[0m
+[0m[38;5;2;1m[ 66%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/relu6/relu6_infiniop.cc[0m
+[0m[38;5;2;1m[ 66%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/scatter/scatter.cc[0m
+[0m[38;5;2;1m[ 66%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/scatter/scatter_infiniop.cc[0m
+[0m[38;5;2;1m[ 66%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/var/var.cc[0m
+[0m[38;5;2;1m[ 66%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/var/var_infiniop.cc[0m
+[0m[38;5;2;1m[ 66%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/rotmg/rotmg.cc[0m
+[0m[38;5;2;1m[ 67%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/rotmg/rotmg_infiniop.cc[0m
+[0m[38;5;2;1m[ 67%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/nsa_paged_attention/nsa_paged_attention.cc[0m
+[0m[38;5;2;1m[ 67%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/nsa_paged_attention/nsa_paged_attention_infiniop.cc[0m
+[0m[38;5;2;1m[ 67%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/addbmm/addbmm_infiniop.cc[0m
+[0m[38;5;2;1m[ 67%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/addbmm/addbmm.cc[0m
+[0m[38;5;2;1m[ 67%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/fused_moe_mxfp4/fused_moe_mxfp4_infiniop.cc[0m
+[0m[38;5;2;1m[ 67%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/fused_moe_mxfp4/fused_moe_mxfp4.cc[0m
+[0m[38;5;2;1m[ 67%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/cdist/cdist.cc[0m
+[0m[38;5;2;1m[ 67%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/cdist/cdist_infiniop.cc[0m
+[0m[38;5;2;1m[ 67%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/fmod/fmod.cc[0m
+[0m[38;5;2;1m[ 68%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/fmod/fmod_infiniop.cc[0m
+[0m[38;5;2;1m[ 68%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/prelu/prelu_infiniop.cc[0m
+[0m[38;5;2;1m[ 68%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/prelu/prelu.cc[0m
+[0m[38;5;2;1m[ 68%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/gptq_marlin_gemm/gptq_marlin_gemm_infiniop.cc[0m
+[0m[38;5;2;1m[ 68%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/gptq_marlin_gemm/gptq_marlin_gemm.cc[0m
+[0m[38;5;2;1m[ 68%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/moe_sum_vendor/moe_sum_vendor.cc[0m
+[0m[38;5;2;1m[ 68%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/addcmul/addcmul_infiniop.cc[0m
+[0m[38;5;2;1m[ 68%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/addcmul/addcmul.cc[0m
+[0m[38;5;2;1m[ 68%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/recurrent_gated_delta_rule/recurrent_gated_delta_rule.cc[0m
+[0m[38;5;2;1m[ 68%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/recurrent_gated_delta_rule/recurrent_gated_delta_rule_infiniop.cc[0m
+[0m[38;5;2;1m[ 69%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/swap/swap_infiniop.cc[0m
+[0m[38;5;2;1m[ 69%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/swap/swap.cc[0m
+[0m[38;5;2;1m[ 69%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/equal/equal_infiniop.cc[0m
+[0m[38;5;2;1m[ 69%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/equal/equal.cc[0m
+[0m[38;5;2;1m[ 69%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/sinh/sinh.cc[0m
+[0m[38;5;2;1m[ 69%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/sinh/sinh_infiniop.cc[0m
+[0m[38;5;2;1m[ 69%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/floor_divide/floor_divide_infiniop.cc[0m
+[0m[38;5;2;1m[ 69%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/floor_divide/floor_divide.cc[0m
+[0m[38;5;2;1m[ 69%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/interpolate/interpolate.cc[0m
+[0m[38;5;2;1m[ 69%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/interpolate/interpolate_infiniop.cc[0m
+[0m[38;5;2;1m[ 70%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/gelu/gelu.cc[0m
+[0m[38;5;2;1m[ 70%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/gelu/gelu_infiniops.cc[0m
+[0m[38;5;2;1m[ 70%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/gelu/gelu_infiniop.cc[0m
+[0m[38;5;2;1m[ 70%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/vendor_ops/vendor_ops_dispatch.cc[0m
+[0m[38;5;2;1m[ 70%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/add/add_infiniops.cc[0m
+[0m[38;5;2;1m[ 70%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/add/add_infiniop.cc[0m
+[0m[38;5;2;1m[ 70%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/add/add.cc[0m
+[0m[38;5;2;1m[ 70%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/hinge_embedding_loss/hinge_embedding_loss.cc[0m
+[0m[38;5;2;1m[ 70%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/hinge_embedding_loss/hinge_embedding_loss_infiniop.cc[0m
+[0m[38;5;2;1m[ 70%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/w8a8_group_gemm/w8a8_group_gemm.cc[0m
+[0m[38;5;2;1m[ 71%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/gaussian_nll_loss/gaussian_nll_loss_infiniop.cc[0m
+[0m[38;5;2;1m[ 71%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/gaussian_nll_loss/gaussian_nll_loss.cc[0m
+[0m[38;5;2;1m[ 71%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/deepseek_moe/deepseek_moe_infiniop.cc[0m
+[0m[38;5;2;1m[ 71%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/deepseek_moe/deepseek_moe.cc[0m
+[0m[38;5;2;1m[ 71%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/fused_moe/fused_moe_infiniop.cc[0m
+[0m[38;5;2;1m[ 71%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/fused_moe/fused_moe.cc[0m
+[0m[38;5;2;1m[ 71%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/hypot/hypot_infiniop.cc[0m
+[0m[38;5;2;1m[ 71%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/hypot/hypot.cc[0m
+[0m[38;5;2;1m[ 71%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/rotm/rotm.cc[0m
+[0m[38;5;2;1m[ 71%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/rotm/rotm_infiniop.cc[0m
+[0m[38;5;2;1m[ 71%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/take/take.cc[0m
+[0m[38;5;2;1m[ 72%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/take/take_infiniop.cc[0m
+[0m[38;5;2;1m[ 72%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/upsample_bilinear/upsample_bilinear_infiniopo.cc[0m
+[0m[38;5;2;1m[ 72%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/upsample_bilinear/upsample_bilinear.cc[0m
+[0m[38;5;2;1m[ 72%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/lerp/lerp.cc[0m
+[0m[38;5;2;1m[ 72%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/lerp/lerp_infiniop.cc[0m
+[0m[38;5;2;1m[ 72%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/concat_mla_q/concat_mla_q.cc[0m
+[0m[38;5;2;1m[ 72%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/rwkv5_wkv/rwkv5_wkv_infiniop.cc[0m
+[0m[38;5;2;1m[ 72%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/rwkv5_wkv/rwkv5_wkv.cc[0m
+[0m[38;5;2;1m[ 72%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/moe_sum/moe_sum.cc[0m
+[0m[38;5;2;1m[ 72%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/moe_sum/moe_sum_infiniop.cc[0m
+[0m[38;5;2;1m[ 73%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/w16a16_group_gemm/w16a16_group_gemm.cc[0m
+[0m[38;5;2;1m[ 73%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/awq_marlin_gemm/awq_marlin_gemm_infiniop.cc[0m
+[0m[38;5;2;1m[ 73%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/awq_marlin_gemm/awq_marlin_gemm.cc[0m
+[0m[38;5;2;1m[ 73%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/fp8_indexer_quant/fp8_indexer_quant.cc[0m
+[0m[38;5;2;1m[ 73%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/fp8_indexer_quant/fused_fp8_indexer_infiniop.cc[0m
+[0m[38;5;2;1m[ 73%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/fp8_indexer_quant/fused_fp8_indexer.cc[0m
+[0m[38;5;2;1m[ 73%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/fp8_indexer_quant/fp8_indexer_quant_infiniop.cc[0m
+[0m[38;5;2;1m[ 73%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/kthvalue/kthvalue_infiniop.cc[0m
+[0m[38;5;2;1m[ 73%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/kthvalue/kthvalue.cc[0m
+[0m[38;5;2;1m[ 73%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/upsample_nearest/upsample_nearest.cc[0m
+[0m[38;5;2;1m[ 74%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/upsample_nearest/upsample_nearest_infiniop.cc[0m
+[0m[38;5;2;1m[ 74%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/vocab_parallel_embedding/vocab_parallel_embedding.cc[0m
+[0m[38;5;2;1m[ 74%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/huber_loss/huber_loss_infiniop.cc[0m
+[0m[38;5;2;1m[ 74%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/huber_loss/huber_loss.cc[0m
+[0m[38;5;2;1m[ 74%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/fused_gated_delta_net_gating/fused_gated_delta_net_gating_infiniop.cc[0m
+[0m[38;5;2;1m[ 74%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/fused_gated_delta_net_gating/fused_gated_delta_net_gating.cc[0m
+[0m[38;5;2;1m[ 74%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/logaddexp2/logaddxep2.cc[0m
+[0m[38;5;2;1m[ 74%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/logaddexp2/logaddxep2_infiniop.cc[0m
+[0m[38;5;2;1m[ 74%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/moe_topk_vendor/moe_topk_vendor.cc[0m
+[0m[38;5;2;1m[ 74%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/paged_attention_prefill/paged_attention_prefill.cc[0m
+[0m[38;5;2;1m[ 75%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/paged_attention_prefill/paged_attention_prefill_infiniop.cc[0m
+[0m[38;5;2;1m[ 75%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/silu_and_mul/silu_and_mul_infiniop.cc[0m
+[0m[38;5;2;1m[ 75%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/silu_and_mul/silu_and_mul.cc[0m
+[0m[38;5;2;1m[ 75%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/silu_and_mul/silu_and_mul_infiniops.cc[0m
+[0m[38;5;2;1m[ 75%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/random_sample/random_sample_infiniop.cc[0m
+[0m[38;5;2;1m[ 75%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/random_sample/random_sample.cc[0m
+[0m[38;5;2;1m[ 75%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/paged_attention_mla/paged_attention_mla.cc[0m
+[0m[38;5;2;1m[ 75%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/softmax/softmax_infiniops.cc[0m
+[0m[38;5;2;1m[ 75%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/softmax/softmax.cc[0m
+[0m[38;5;2;1m[ 75%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/softmax/softmax_infiniop.cc[0m
+[0m[38;5;2;1m[ 76%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/all/all_infiniop.cc[0m
+[0m[38;5;2;1m[ 76%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/all/all.cc[0m
+[0m[38;5;2;1m[ 76%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/scal/scal.cc[0m
+[0m[38;5;2;1m[ 76%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/scal/scal_infiniop.cc[0m
+[0m[38;5;2;1m[ 76%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/fp8_indexer_logits/fp8_indexer_logits.cc[0m
+[0m[38;5;2;1m[ 76%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/fp8_indexer_logits/fp8_indexer_logits_infiniop.cc[0m
+[0m[38;5;2;1m[ 76%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/logaddexp/logaddexp_infiniop.cc[0m
+[0m[38;5;2;1m[ 76%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/logaddexp/logaddexp.cc[0m
+[0m[38;5;2;1m[ 76%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/fmin/fmin_infiniop.cc[0m
+[0m[38;5;2;1m[ 76%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/fmin/fmin.cc[0m
+[0m[38;5;2;1m[ 77%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/broadcast_to/broadcast_to_infiniop.cc[0m
+[0m[38;5;2;1m[ 77%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/broadcast_to/broadcast_to.cc[0m
+[0m[38;5;2;1m[ 77%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/rms_norm/rms_norm_infiniop.cc[0m
+[0m[38;5;2;1m[ 77%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/rms_norm/rms_norm_infiniops.cc[0m
+[0m[38;5;2;1m[ 77%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/rms_norm/rms_norm.cc[0m
+[0m[38;5;2;1m[ 77%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/smooth_l1_loss/smooth_l1_loss.cc[0m
+[0m[38;5;2;1m[ 77%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/smooth_l1_loss/smooth_l1_loss_infiniop.cc[0m
+[0m[38;5;2;1m[ 77%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/adaptive_max_pool1d/adaptive_max_pool1d_infiniop.cc[0m
+[0m[38;5;2;1m[ 77%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/adaptive_max_pool1d/adaptive_max_pool1d.cc[0m
+[0m[38;5;2;1m[ 77%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/fp8_mla_rmsnorm_cache/fp8_mla_rmsnorm_cache.cc[0m
+[0m[38;5;2;1m[ 78%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/fp8_mla_rmsnorm_cache/fp8_mla_rmsnorm_cache_infiniop.cc[0m
+[0m[38;5;2;1m[ 78%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/flipud/flipud.cc[0m
+[0m[38;5;2;1m[ 78%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/flipud/flipud_infiniop.cc[0m
+[0m[38;5;2;1m[ 78%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/linear_w8a8i8/linear_w8a8i8.cc[0m
+[0m[38;5;2;1m[ 78%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/moe_silu_and_mul_quant/moe_silu_and_mul_quant.cc[0m
+[0m[38;5;2;1m[ 78%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/fused_rotary_embedding/fused_rotary_embedding.cc[0m
+[0m[38;5;2;1m[ 78%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/digamma/digamma.cc[0m
+[0m[38;5;2;1m[ 78%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/digamma/digamma_infiniop.cc[0m
+[0m[38;5;2;1m[ 78%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/blas_dot/blas_dot.cc[0m
+[0m[38;5;2;1m[ 78%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/blas_dot/blas_dot_infiniop.cc[0m
+[0m[38;5;2;1m[ 79%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/distributed/broadcast.cc[0m
+[0m[38;5;2;1m[ 79%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/distributed/send_recv.cc[0m
+[0m[38;5;2;1m[ 79%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/distributed/reduce_scatter.cc[0m
+[0m[38;5;2;1m[ 79%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/distributed/allreduce.cc[0m
+[0m[38;5;2;1m[ 79%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/distributed/allgather.cc[0m
+[0m[38;5;2;1m[ 79%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/nrm2/nrm2.cc[0m
+[0m[38;5;2;1m[ 79%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/nrm2/nrm2_infiniop.cc[0m
+[0m[38;5;2;1m[ 79%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/mrope/mrope.cc[0m
+[0m[38;5;2;1m[ 79%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/mrope/mrope_infiniop.cc[0m
+[0m[38;5;2;1m[ 79%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/sigmoid/sigmoid_infiniop.cc[0m
+[0m[38;5;2;1m[ 80%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/sigmoid/sigmoid.cc[0m
+[0m[38;5;2;1m[ 80%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/sigmoid/sigmoid_infiniops.cc[0m
+[0m[38;5;2;1m[ 80%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/bilinear/bilinear.cc[0m
+[0m[38;5;2;1m[ 80%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/multi_head_attention_varlen/mha_varlen.cc[0m
+[0m[38;5;2;1m[ 80%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/multi_head_attention_varlen/mha_varlen_flashattn.cc[0m
+[0m[38;5;2;1m[ 80%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/index_copy/index_copy_infiniop.cc[0m
+[0m[38;5;2;1m[ 80%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/index_copy/index_copy.cc[0m
+[0m[38;5;2;1m[ 80%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/mha_kvcache/mha_kvcache_flashattn.cc[0m
+[0m[38;5;2;1m[ 80%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/mha_kvcache/mha_kvcache.cc[0m
+[0m[38;5;2;1m[ 80%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/bitwise_right_shift/bitwise_right_shift_infiniop.cc[0m
+[0m[38;5;2;1m[ 81%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/bitwise_right_shift/bitwise_right_shift.cc[0m
+[0m[38;5;2;1m[ 81%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/tanh/tanh_infiniop.cc[0m
+[0m[38;5;2;1m[ 81%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/tanh/tanh.cc[0m
+[0m[38;5;2;1m[ 81%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/situ_and_mul/situ_and_mul_infiniop.cc[0m
+[0m[38;5;2;1m[ 81%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/situ_and_mul/situ_and_mul.cc[0m
+[0m[38;5;2;1m[ 81%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/cat/cat.cc[0m
+[0m[38;5;2;1m[ 81%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/attention/attention.cc[0m
+[0m[38;5;2;1m[ 81%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/attention/attention_infiniop.cc[0m
+[0m[38;5;2;1m[ 81%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/scaled_mm_w8a8/scaled_mm_w8a8.cc[0m
+[0m[38;5;2;1m[ 81%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/rotary_embedding/rotary_embedding.cc[0m
+[0m[38;5;2;1m[ 82%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/rotary_embedding/rotary_embedding_infiniops.cc[0m
+[0m[38;5;2;1m[ 82%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/conv2d/conv2d_infiniops.cc[0m
+[0m[38;5;2;1m[ 82%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/conv2d/conv2d.cc[0m
+[0m[38;5;2;1m[ 82%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/conv2d/conv2d_infiniop.cc[0m
+[0m[38;5;2;1m[ 82%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/ldexp/ldexp_infiniop.cc[0m
+[0m[38;5;2;1m[ 82%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/ldexp/ldexp.cc[0m
+[0m[38;5;2;1m[ 82%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/block_diag/block_diag_infiniop.cc[0m
+[0m[38;5;2;1m[ 82%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/block_diag/block_diag.cc[0m
+[0m[38;5;2;1m[ 82%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/tanhshrink/tanhshrink.cc[0m
+[0m[38;5;2;1m[ 82%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/tanhshrink/tanhshrink_infiniop.cc[0m
+[0m[38;5;2;1m[ 83%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/flash_attention/flash_attention_infiniop.cc[0m
+[0m[38;5;2;1m[ 83%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/flash_attention/flash_attention.cc[0m
+[0m[38;5;2;1m[ 83%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/per_channel_quant_i8/per_channel_quant_i8.cc[0m
+[0m[38;5;2;1m[ 83%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/per_channel_quant_i8/per_channel_quant_i8_infiniop.cc[0m
+[0m[38;5;2;1m[ 83%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/concat_and_cache_mla/concat_and_cache_mla.cc[0m
+[0m[38;5;2;1m[ 83%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/axpy/axpy_infiniop.cc[0m
+[0m[38;5;2;1m[ 83%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/axpy/axpy.cc[0m
+[0m[38;5;2;1m[ 83%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/mamba2_scan/mamba2_scan.cc[0m
+[0m[38;5;2;1m[ 83%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/mamba2_scan/mamba2_scan_infiniop.cc[0m
+[0m[38;5;2;1m[ 83%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/float_power/float_power_infiniop.cc[0m
+[0m[38;5;2;1m[ 83%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/float_power/float_power.cc[0m
+[0m[38;5;2;1m[ 84%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/unfold/unfold.cc[0m
+[0m[38;5;2;1m[ 84%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/unfold/unfold_infiniop.cc[0m
+[0m[38;5;2;1m[ 84%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/logical_and/logical_and.cc[0m
+[0m[38;5;2;1m[ 84%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/logical_and/logical_and_cpu.cc[0m
+[0m[38;5;2;1m[ 84%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/var_mean/var_mean.cc[0m
+[0m[38;5;2;1m[ 84%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/var_mean/var_mean_infiniop.cc[0m
+[0m[38;5;2;1m[ 84%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/moe_fused_dense/moe_fused_dense_infiniop.cc[0m
+[0m[38;5;2;1m[ 84%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/moe_fused_dense/moe_fused_dense.cc[0m
+[0m[38;5;2;1m[ 84%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/binary_cross_entropy_with_logits/binary_cross_entropy_with_logits.cc[0m
+[0m[38;5;2;1m[ 84%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/binary_cross_entropy_with_logits/binary_cross_entropy_with_logits_infiniop.cc[0m
+[0m[38;5;2;1m[ 85%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/asinh/asinh.cc[0m
+[0m[38;5;2;1m[ 85%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/asinh/asinh_infiniop.cc[0m
+[0m[38;5;2;1m[ 85%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/mamba_selective_scan/mamba_selective_scan_infiniop.cc[0m
+[0m[38;5;2;1m[ 85%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/mamba_selective_scan/mamba_selective_scan.cc[0m
+[0m[38;5;2;1m[ 85%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/rope/rope_infiniop.cc[0m
+[0m[38;5;2;1m[ 85%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/rope/rope.cc[0m
+[0m[38;5;2;1m[ 85%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/dsa/dsa.cc[0m
+[0m[38;5;2;1m[ 85%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/gemm/gemm.cc[0m
+[0m[38;5;2;1m[ 85%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/gemm/gemm_infiniops.cc[0m
+[0m[38;5;2;1m[ 85%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/gemm/gemm_infiniop.cc[0m
+[0m[38;5;2;1m[ 86%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/blas_copy/blas_copy.cc[0m
+[0m[38;5;2;1m[ 86%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/blas_copy/blas_copy_infiniop.cc[0m
+[0m[38;5;2;1m[ 86%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/silu/silu.cc[0m
+[0m[38;5;2;1m[ 86%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/silu/silu_infiniops.cc[0m
+[0m[38;5;2;1m[ 86%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/silu/silu_infiniop.cc[0m
+[0m[38;5;2;1m[ 86%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/blas_amin/blas_amin.cc[0m
+[0m[38;5;2;1m[ 86%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/blas_amin/blas_amin_infiniop.cc[0m
+[0m[38;5;2;1m[ 86%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/triplet_margin_loss/triplet_margin_loss_infiniop.cc[0m
+[0m[38;5;2;1m[ 86%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/triplet_margin_loss/triplet_margin_loss.cc[0m
+[0m[38;5;2;1m[ 86%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/select_last_token_hidden/select_last_token_hidden_infiniop.cc[0m
+[0m[38;5;2;1m[ 87%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/select_last_token_hidden/select_last_token_hidden.cc[0m
+[0m[38;5;2;1m[ 87%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/select_last_token_hidden/select_last_token_hidden_infiniops.cc[0m
+[0m[38;5;2;1m[ 87%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/selu/selu.cc[0m
+[0m[38;5;2;1m[ 87%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/selu/selu_infiniop.cc[0m
+[0m[38;5;2;1m[ 87%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/paged_caching/paged_caching_infiniops.cc[0m
+[0m[38;5;2;1m[ 87%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/paged_caching/paged_caching.cc[0m
+[0m[38;5;2;1m[ 87%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/paged_caching/paged_caching_infiniop.cc[0m
+[0m[38;5;2;1m[ 87%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/hardtanh/hardtanh_infiniop.cc[0m
+[0m[38;5;2;1m[ 87%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/hardtanh/hardtanh.cc[0m
+[0m[38;5;2;1m[ 87%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/multi_head_attention/moore/mha_flashattn_moore.cc[0m
+[0m[38;5;2;1m[ 88%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/multi_head_attention/iluvatar/mha_flashattn_iluvatar.cc[0m
+[0m[38;5;2;1m[ 88%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/multi_head_attention/cambricon/mha_flashattn_cambricon.cc[0m
+[0m[38;5;2;1m[ 88%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/multi_head_attention/ascend/mha_flashattn_ascend.cc[0m
+[0m[38;5;2;1m[ 88%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/multi_head_attention/ali/mha_flashattn_ali.cc[0m
+[0m[38;5;2;1m[ 88%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/moe_argsort_bincount/iluvatar/moe_argsort_bincount_iluvatar.cc[0m
+[0m[38;5;2;1m[ 88%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/moe_expand_input/iluvatar/moe_expand_input_iluvatar.cc[0m
+[0m[38;5;2;1m[ 88%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/w4a8_group_gemm/iluvatar/w4a8_group_gemm_iluvatar.cc[0m
+[0m[38;5;2;1m[ 88%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/grouped_topk_vendor/iluvatar/grouped_topk_vendor_iluvatar.cc[0m
+[0m[38;5;2;1m[ 88%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/scaled_mm_w4a8/iluvatar/scaled_mm_w4a8_iluvatar.cc[0m
+[0m[38;5;2;1m[ 88%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/add_rms_norm/iluvatar/add_rms_norm_vendor_iluvatar.cc[0m
+[0m[38;5;2;1m[ 89%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/concat_and_cache_mla_int8/iluvatar/concat_and_cache_mla_int8_iluvatar.cc[0m
+[0m[38;5;2;1m[ 89%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/dequant/per_tensor_dequant_int8/per_tensor_quant_int8_infiniop.cc[0m
+[0m[38;5;2;1m[ 89%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/dequant/per_tensor_dequant_int8/per_tensor_quant_int8.cc[0m
+[0m[38;5;2;1m[ 89%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/moe_sum_vendor/iluvatar/moe_sum_vendor_iluvatar.cc[0m
+[0m[38;5;2;1m[ 89%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/w8a8_group_gemm/iluvatar/w8a8_group_gemm_iluvatar.cc[0m
+[0m[38;5;2;1m[ 89%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/concat_mla_q/iluvatar/concat_mla_q_iluvatar.cc[0m
+[0m[38;5;2;1m[ 89%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/w16a16_group_gemm/iluvatar/w16a16_group_gemm_iluvatar.cc[0m
+[0m[38;5;2;1m[ 89%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/moe_topk_vendor/iluvatar/moe_topk_vendor_iluvatar.cc[0m
+[0m[38;5;2;1m[ 89%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/quant/dynamic_scaled_int8_quant/dynamic_scaled_int8_quant.cc[0m
+[0m[38;5;2;1m[ 89%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/quant/per_tensor_quant_int8/per_tensor_quant_int8_infiniop.cc[0m
+[0m[38;5;2;1m[ 90%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/quant/per_tensor_quant_int8/per_tensor_quant_int8.cc[0m
+[0m[38;5;2;1m[ 90%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/paged_attention_mla/iluvatar/paged_attention_mla_iluvatar.cc[0m
+[0m[38;5;2;1m[ 90%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/moe_silu_and_mul_quant/iluvatar/moe_silu_and_mul_quant_iluvatar.cc[0m
+[0m[38;5;2;1m[ 90%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/fused_rotary_embedding/iluvatar/fused_rotary_embedding_iluvatar.cc[0m
+[0m[38;5;2;1m[ 90%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/multi_head_attention_varlen/moore/mha_varlen_flashattn_moore.cc[0m
+[0m[38;5;2;1m[ 90%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/multi_head_attention_varlen/iluvatar/mha_varlen_flashattn_iluvatar.cc[0m
+[0m[38;5;2;1m[ 90%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/multi_head_attention_varlen/cambricon/mha_varlen_flashattn_cambricon.cc[0m
+[0m[38;5;2;1m[ 90%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/multi_head_attention_varlen/ascend/mha_varlen_flashattn_ascend.cc[0m
+[0m[38;5;2;1m[ 90%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/multi_head_attention_varlen/ali/mha_varlen_flashattn_ali.cc[0m
+[0m[38;5;2;1m[ 90%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/mha_kvcache/moore/mha_kvcache_flashattn_moore.cc[0m
+[0m[38;5;2;1m[ 91%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/mha_kvcache/iluvatar/mha_kvcache_flashattn_iluvatar.cc[0m
+[0m[38;5;2;1m[ 91%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/mha_kvcache/cambricon/mha_kvcache_flashattn_cambricon.cc[0m
+[0m[38;5;2;1m[ 91%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/mha_kvcache/ascend/mha_kvcache_flashattn_ascend.cc[0m
+[0m[38;5;2;1m[ 91%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/mha_kvcache/ali/mha_kvcache_flashattn_ali.cc[0m
+[0m[38;5;2;1m[ 91%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/scaled_mm_w8a8/iluvatar/scaled_mm_w8a8_iluvatar.cc[0m
+[0m[38;5;2;1m[ 91%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/concat_and_cache_mla/iluvatar/concat_and_cache_mla_iluvatar.cc[0m
+[0m[38;5;2;1m[ 91%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/dsa/iluvatar/dsa_iluvatar.cc[0m
+[0m[38;5;2;1m[ 91%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/infinicore/ops/quant/dynamic_scaled_int8_quant/iluvatar/dynamic_scaled_int8_quant_iluvatar.cc[0m
+[0m[38;5;2;1m[ 91%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/utils/rearrange.cc[0m
+[0m[38;5;2;1m[ 91%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m cache compiling.release src/utils/custom_types.cc[0m
+[0m[38;5;2;1m[ 92%]:[0m [38;5;5;1m<infini-utils>[0m [38;5;5;1marchiving.release libinfini-utils.a[0m
+[0m[38;5;2;1m[ 92%]:[0m [38;5;5;1m<infiniop-metax>[0m [38;5;5;1marchiving.release libinfiniop-metax.a[0m
+[0m[38;5;2;1m[ 92%]:[0m [38;5;5;1m<infinirt-cpu>[0m [38;5;5;1marchiving.release libinfinirt-cpu.a[0m
+[0m[38;5;2;1m[ 92%]:[0m [38;5;5;1m<infinirt-metax>[0m [38;5;5;1marchiving.release libinfinirt-metax.a[0m
+[0m[38;5;2;1m[ 92%]:[0m [38;5;5;1m<infiniop-cpu>[0m [38;5;5;1marchiving.release libinfiniop-cpu.a[0m
+[0m[38;5;2;1m[ 93%]:[0m [38;5;5;1m<infinirt>[0m [38;5;5;1mlinking.release libinfinirt.so[0m
+[0m[38;5;2;1m[ 93%]:[0m [38;5;5;1m<infiniop>[0m [38;5;5;1mlinking.release libinfiniop.so[0m
+[0m[38;5;2;1m[ 93%]:[0m [38;5;5;1m<infiniccl-metax>[0m [38;5;5;1marchiving.release libinfiniccl-metax.a[0m
+[0m[38;5;2;1m[ 93%]:[0m [38;5;5;1m<infiniccl>[0m [38;5;5;1mlinking.release libinfiniccl.so[0m
+[0m[38;5;2;1m[ 94%]:[0m [38;5;5;1m<infinicore_cpp_api>[0m [38;5;5;1mlinking.release libinfinicore_cpp_api.so[0m
+[0m[38;5;2;1m[ 94%]:[0m [38;5;5;1m<_infinicore>[0m [38;5;5;1mlinking.release _infinicore.cpython-312-x86_64-linux-gnu.so[0m
+[1;33m[Congratulations!] Now you can install the libraries with "xmake install"[0m
+[0m[38;5;2;1m[100%]:[0m [38;5;2;1mbuild ok, spent 528.694s[0m
+[0m[1;38;5;3;1mwarning: [38;5;3;1mdeprecated: please use add_rules("python.module") instead of add_rules("python.library")[0m
+[0m[1;38;5;3;1mwarning: [38;5;3;1madd -v for getting more warnings ..[0m

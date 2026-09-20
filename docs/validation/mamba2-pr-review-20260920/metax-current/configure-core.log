@@ -1,0 +1,5 @@
+[0mchecking for platform ... [38;5;2;1mlinux (x86_64)[0m
+[0mchecking for hygon-arch ... [38;5;1;1mno[0m
+[0mchecking for flash-attn ... [38;5;1;1mno[0m
+[0mchecking for cuda_arch ... [38;5;1;1mno[0m
+[0m[1;38;5;3;1mwarning: [38;5;3;1mdeprecated: please use add_rules("python.module") instead of add_rules("python.library")[0m

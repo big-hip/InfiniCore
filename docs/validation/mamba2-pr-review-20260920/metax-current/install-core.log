@@ -1,0 +1,20 @@
+installing infiniop ..
+installing infiniop to /data/mamba575-review/runtime ..
+[0m[38;5;2;1minstall ok![0m
+[0m[1;38;5;3;1mwarning: [38;5;3;1mdeprecated: please use add_rules("python.module") instead of add_rules("python.library")[0m
+installing infinirt ..
+installing infinirt to /data/mamba575-review/runtime ..
+[0m[38;5;2;1minstall ok![0m
+[0m[1;38;5;3;1mwarning: [38;5;3;1mdeprecated: please use add_rules("python.module") instead of add_rules("python.library")[0m
+installing infiniccl ..
+installing infiniccl to /data/mamba575-review/runtime ..
+[0m[38;5;2;1minstall ok![0m
+[0m[1;38;5;3;1mwarning: [38;5;3;1mdeprecated: please use add_rules("python.module") instead of add_rules("python.library")[0m
+installing infinicore_cpp_api ..
+installing infinicore_cpp_api to /data/mamba575-review/runtime ..
+[0m[38;5;2;1minstall ok![0m
+[0m[1;38;5;3;1mwarning: [38;5;3;1mdeprecated: please use add_rules("python.module") instead of add_rules("python.library")[0m
+installing _infinicore ..
+installing _infinicore to python/infinicore ..
+[0m[38;5;2;1minstall ok![0m
+[0m[1;38;5;3;1mwarning: [38;5;3;1mdeprecated: please use add_rules("python.module") instead of add_rules("python.library")[0m

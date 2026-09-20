@@ -1,0 +1,39 @@
+{
+  "eager": {
+    "measured_runs": 6,
+    "median_output_tokens_per_second": 120.45382666565706,
+    "median_mean_itl_ms": 8.217756561274957,
+    "min_output_tps": 117.97448226338136,
+    "max_output_tps": 121.94006112205157,
+    "pairs": [
+      {
+        "run": "first",
+        "median_tps": 121.7416689875842
+      },
+      {
+        "run": "reverse_order",
+        "median_tps": 119.07541407019868
+      }
+    ]
+  },
+  "graph": {
+    "measured_runs": 6,
+    "median_output_tokens_per_second": 117.64062368341793,
+    "median_mean_itl_ms": 8.421139140782042,
+    "min_output_tps": 116.76731941131743,
+    "max_output_tps": 118.83450587939427,
+    "pairs": [
+      {
+        "run": "first",
+        "median_tps": 117.0998987059845
+      },
+      {
+        "run": "reverse_order",
+        "median_tps": 118.55184674340012
+      }
+    ]
+  },
+  "all_12_output_hashes_match": true,
+  "graph_output_rate_change_percent": -2.335503204931566,
+  "scope": "Two process pairs in eager/graph then graph/eager order; 3 measured repetitions per process, 16-token warmup, BF16 TP1, batch=1, 128 input and 128 output tokens. Prefill eager in both. Capture/loading/tokenization excluded. No measured throughput improvement on this runtime; no process peak-memory claim."
+}

@@ -104,8 +104,8 @@ These were build-environment sequencing issues, not source-code fixes.
 
 The former draft blocker of building the current model with its consolidated
 dependencies and running it on an accelerator is resolved. Code review is
-complete within the stated scope. Fresh MetaX verification of the capture-only
-follow-up and upstream required CI remain explicit merge-review limitations.
+complete within the stated scope. Fresh MetaX verification was subsequently
+completed as recorded below. Upstream required CI remains a merge requirement.
 
 ## Fork CPU CI follow-up
 
@@ -124,7 +124,23 @@ and service-preflight checks, not accelerator inference. The successful run's
 Core tree matches the local integration exactly:
 `aaf6c19603d5d517010d2e2dd35caa02d7d425b2`.
 
-The newly offered MetaX instance was reachable at the SSH transport layer, but
-authentication was rejected. No command executed on that instance, so its
-hardware, runtime and current-source test results remain unverified. Credentials
-and connection details are deliberately excluded from this public evidence.
+## Fresh MetaX follow-up
+
+Access was restored and both projects built without source changes on a single
+C500 64 GiB, MACA 3.7.0.38, PyTorch 2.8.0+metax3.7.0.7 and Python 3.12.11.
+The current head passed 43 BF16 model/service/shared-Qwen checks, plus three
+FP32 and three FP16 focused checks. Core passed 54 scan comparisons and 17
+additional descriptor/precision/graph tests. There were no failures or skips;
+35 tests were intentionally deselected in each focused dtype run. Standard
+text inference with Decode graphs also completed. See `metax-current/README.md`
+for commands, build provenance, raw results and the exact scope.
+
+The bounded new-runtime benchmark does not show a graph speedup: median
+finite-request output rate was 120.45 token/s eager versus 117.64 with Decode
+graphs; all 12 measured output hashes matched. The existing eager default
+is appropriate for this measured setup. Archived MACA 3.5.3 slice speedups
+remain historical results, not a prediction for this new runtime.
+
+This resolves the former missing MetaX verification item within the PR's
+claimed scope. Upstream CI approval and Core prerequisites are still required
+before merging. No extra production changes or tests were added to #575.

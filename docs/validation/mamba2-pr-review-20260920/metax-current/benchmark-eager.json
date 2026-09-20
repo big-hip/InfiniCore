@@ -1,0 +1,45 @@
+{
+  "device": "C500, full device, 65536 MiB",
+  "tp": 1,
+  "activation_dtype": "bfloat16",
+  "state_dtype": "float32",
+  "decode_graph": false,
+  "timing": "Wall time through CPU availability of every greedy token; excludes tokenization, loading and graph capture.",
+  "load_and_capture_seconds": 0.2997653721831739,
+  "device_free_bytes_after_cases": 65610743808,
+  "device_total_bytes": 68283269120,
+  "memory_note": "Device-wide free memory, not a process allocation peak.",
+  "records": [
+    {
+      "prompt": 128,
+      "output": 128,
+      "batch": 1,
+      "measurements": [
+        {
+          "repeat": 0,
+          "ttft_ms": 18.873614259064198,
+          "mean_itl_ms": 8.303182731257884,
+          "total_ms": 1073.3778211288154,
+          "output_tokens_per_second": 119.24971569227048,
+          "output_sha256": "73b43c3d3d86eab345a289696ca20eef1afa1272c4ac4c938a4a4a56f2797afe"
+        },
+        {
+          "repeat": 1,
+          "ttft_ms": 19.28569609299302,
+          "mean_itl_ms": 8.312309659489497,
+          "total_ms": 1074.949022848159,
+          "output_tokens_per_second": 119.07541407019868,
+          "output_sha256": "73b43c3d3d86eab345a289696ca20eef1afa1272c4ac4c938a4a4a56f2797afe"
+        },
+        {
+          "repeat": 2,
+          "ttft_ms": 19.301712047308683,
+          "mean_itl_ms": 8.39117070747994,
+          "total_ms": 1084.9803918972611,
+          "output_tokens_per_second": 117.97448226338136,
+          "output_sha256": "73b43c3d3d86eab345a289696ca20eef1afa1272c4ac4c938a4a4a56f2797afe"
+        }
+      ]
+    }
+  ]
+}

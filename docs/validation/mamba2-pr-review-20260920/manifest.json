@@ -57,5 +57,96 @@
       "seconds": 3.597
     },
     "scope": "CPU configuration, loading and service-preflight contracts; not GPU inference"
+  },
+  "metax_current": {
+    "environment": {
+      "source": {
+        "core": {
+          "head": "1f5331b84251818201efee2e827c9c007ce65ca2",
+          "tree": "aaf6c19603d5d517010d2e2dd35caa02d7d425b2"
+        },
+        "lm": {
+          "head": "8a591cb1b920dd62fc7f7acf15a8fcdd8458974a",
+          "tree": "5d629ee2996970a1b54b2c46ccaaf270428703b0"
+        }
+      },
+      "python": "3.12.11",
+      "packages": {
+        "torch": "2.8.0+metax3.7.0.7",
+        "transformers": "4.56.2",
+        "numpy": "1.26.4",
+        "pytest": "8.4.1",
+        "safetensors": "0.7.0",
+        "janus": "2.0.0"
+      },
+      "device": {
+        "name": "MetaX C500",
+        "total_memory_bytes": 68283269120,
+        "count": 1,
+        "scope": "Single C500 64 GiB, TP1; no TP2 claim."
+      },
+      "sdk": "MACA 3.7.0.38",
+      "driver": "3.8.30",
+      "cxx11_abi": true,
+      "strict_fp32": true,
+      "model_sha256": "411e705b0edd14a0244e09fd27290e8d40226a47d91a26e5700fa034de949cd3",
+      "build_dependencies": {
+        "boost": "1.90.0",
+        "pybind11": "3.0.4"
+      },
+      "build": "Fresh Core and LM build directories; cached Boost/pybind11 packages. No project source changes.",
+      "source_files_match_archive": true
+    },
+    "results": {
+      "bf16_tp1": 43,
+      "fp32_tp1_focused": 3,
+      "fp16_tp1_focused": 3,
+      "scan_cases": 54,
+      "core_regressions": 17,
+      "failures": 0,
+      "skipped": 0,
+      "focused_deselected_per_dtype": 35,
+      "standard_text_entrypoint": "passed"
+    },
+    "benchmark": {
+      "eager": {
+        "measured_runs": 6,
+        "median_output_tokens_per_second": 120.45382666565706,
+        "median_mean_itl_ms": 8.217756561274957,
+        "min_output_tps": 117.97448226338136,
+        "max_output_tps": 121.94006112205157,
+        "pairs": [
+          {
+            "run": "first",
+            "median_tps": 121.7416689875842
+          },
+          {
+            "run": "reverse_order",
+            "median_tps": 119.07541407019868
+          }
+        ]
+      },
+      "graph": {
+        "measured_runs": 6,
+        "median_output_tokens_per_second": 117.64062368341793,
+        "median_mean_itl_ms": 8.421139140782042,
+        "min_output_tps": 116.76731941131743,
+        "max_output_tps": 118.83450587939427,
+        "pairs": [
+          {
+            "run": "first",
+            "median_tps": 117.0998987059845
+          },
+          {
+            "run": "reverse_order",
+            "median_tps": 118.55184674340012
+          }
+        ]
+      },
+      "all_12_output_hashes_match": true,
+      "graph_output_rate_change_percent": -2.335503204931566,
+      "scope": "Two process pairs in eager/graph then graph/eager order; 3 measured repetitions per process, 16-token warmup, BF16 TP1, batch=1, 128 input and 128 output tokens. Prefill eager in both. Capture/loading/tokenization excluded. No measured throughput improvement on this runtime; no process peak-memory claim."
+    },
+    "evidence": "metax-current/README.md"
   }
 }

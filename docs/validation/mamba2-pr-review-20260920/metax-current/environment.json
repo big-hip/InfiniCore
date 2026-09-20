@@ -1,0 +1,38 @@
+{
+  "source": {
+    "core": {
+      "head": "1f5331b84251818201efee2e827c9c007ce65ca2",
+      "tree": "aaf6c19603d5d517010d2e2dd35caa02d7d425b2"
+    },
+    "lm": {
+      "head": "8a591cb1b920dd62fc7f7acf15a8fcdd8458974a",
+      "tree": "5d629ee2996970a1b54b2c46ccaaf270428703b0"
+    }
+  },
+  "python": "3.12.11",
+  "packages": {
+    "torch": "2.8.0+metax3.7.0.7",
+    "transformers": "4.56.2",
+    "numpy": "1.26.4",
+    "pytest": "8.4.1",
+    "safetensors": "0.7.0",
+    "janus": "2.0.0"
+  },
+  "device": {
+    "name": "MetaX C500",
+    "total_memory_bytes": 68283269120,
+    "count": 1,
+    "scope": "Single C500 64 GiB, TP1; no TP2 claim."
+  },
+  "sdk": "MACA 3.7.0.38",
+  "driver": "3.8.30",
+  "cxx11_abi": true,
+  "strict_fp32": true,
+  "model_sha256": "411e705b0edd14a0244e09fd27290e8d40226a47d91a26e5700fa034de949cd3",
+  "build_dependencies": {
+    "boost": "1.90.0",
+    "pybind11": "3.0.4"
+  },
+  "build": "Fresh Core and LM build directories; cached Boost/pybind11 packages. No project source changes.",
+  "source_files_match_archive": true
+}
