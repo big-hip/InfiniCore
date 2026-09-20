@@ -39,5 +39,23 @@
     "dtype": "float16",
     "tp": 1,
     "included_in_both_mamba_suites": true
+  },
+  "fork_cpu_ci": {
+    "run_id": 35510643478,
+    "url": "https://github.com/big-hip/InfiniLM/actions/runs/35510643478",
+    "workflow_head": "7bfa515c55da224f26c3f815ec3e5fd8915b3762",
+    "lm_head": "8a591cb1b920dd62fc7f7acf15a8fcdd8458974a",
+    "core_tree": "aaf6c19603d5d517010d2e2dd35caa02d7d425b2",
+    "conclusion": "success",
+    "core_build": "passed",
+    "lm_build": "passed",
+    "contracts": {
+      "passed": 33,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 3.597
+    },
+    "scope": "CPU configuration, loading and service-preflight contracts; not GPU inference"
   }
 }

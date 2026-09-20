@@ -116,7 +116,15 @@ The missing dependency was added on the separate CI branch. An optional xmake
 cache configuration then failed because this workflow checks projects out to
 subdirectories rather than the workspace root; that cache configuration was
 removed in `7bfa515c`. Production source and test assertions are unchanged.
-[Current retry 35510643478](https://github.com/big-hip/InfiniLM/actions/runs/35510643478)
-is running at publication and is not counted as a pass. The initial CI
-artifact's Core tree matches the local integration exactly:
+[Corrected run 35510643478](https://github.com/big-hip/InfiniLM/actions/runs/35510643478)
+completed successfully. Both Core and LM builds passed, followed by **33 passed,
+zero failed, zero skipped** CPU contracts in 3.597 seconds. The downloaded
+JUnit artifact is `cpu-contracts-passed.xml`; these are configuration, loading
+and service-preflight checks, not accelerator inference. The successful run's
+Core tree matches the local integration exactly:
 `aaf6c19603d5d517010d2e2dd35caa02d7d425b2`.
+
+The newly offered MetaX instance was reachable at the SSH transport layer, but
+authentication was rejected. No command executed on that instance, so its
+hardware, runtime and current-source test results remain unverified. Credentials
+and connection details are deliberately excluded from this public evidence.
