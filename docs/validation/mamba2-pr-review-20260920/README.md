@@ -87,7 +87,8 @@ separately; a CPU green check never implies Mamba GPU inference passed.
 - A6000 BF16 TP1: **43 passed** (12.70 s).
 - A6000 BF16 TP2: **43 passed** (18.78 s).
 - A6000 FP32 TP1 continuation, live graph recapture and state-pool rebuild:
-  **3 passed**, 35 intentionally deselected (10.35 s). No skips in these runs.
+  **3 passed**, 35 intentionally deselected (10.35 s). No skips in these runs. The TP/dtype labels refer to Mamba; the ordinary
+  synthetic Qwen2 compatibility fixture is FP16 TP1 in both suites.
 - Model fixtures exercise eager Prefill and both eager/graph Decode; repeated
   capture preserves active states, and batch five exercises graph fallback.
 - Loaded library paths and SHA256 hashes are in `loaded-libraries.json`.
@@ -105,3 +106,14 @@ The former draft blocker of building the current model with its consolidated
 dependencies and running it on an accelerator is resolved. Code review is
 complete within the stated scope. Fresh MetaX verification of the capture-only
 follow-up and upstream required CI remain explicit merge-review limitations.
+
+## Fork CPU CI follow-up
+
+The first run, [35508794639](https://github.com/big-hip/InfiniLM/actions/runs/35508794639),
+passed both Core and LM builds. The final contracts stage had 14 passed and
+19 failed because the new workflow omitted the existing `xxhash` dependency.
+The workflow was corrected on the separate CI branch (`4d27be6a`); production
+source and assertions are unchanged. [Retry 35510538578](https://github.com/big-hip/InfiniLM/actions/runs/35510538578)
+is still running at publication and is not counted as a pass. The first CI
+artifact's Core tree matches the local integration exactly:
+`aaf6c19603d5d517010d2e2dd35caa02d7d425b2`.

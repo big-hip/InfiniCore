@@ -33,5 +33,11 @@
     "lm": "fresh build directory, current combined Core headers; linked against the newly installed combined Core runtime",
     "core": "isolated combination of #1566 and #1562, compiled/installed with existing build cache; no source patch",
     "cutlass": "087c84df83d254b5fb295a7a408f1a1d554085cf (same submodule revision as Core)"
+  },
+  "ordinary_qwen_compatibility": {
+    "model": "synthetic Qwen2",
+    "dtype": "float16",
+    "tp": 1,
+    "included_in_both_mamba_suites": true
   }
 }

@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="19" skipped="0" tests="33" time="3.742" timestamp="2026-09-20T12:21:01.284120+00:00" hostname="runnervmlun5p"><testcase classname="test.models.mamba2.test_adaptation" name="test_native_checkpoint_contract" time="1.818" /><testcase classname="test.models.mamba2.test_adaptation" name="test_unsupported_variants_are_rejected[changes0]" time="0.001" /><testcase classname="test.models.mamba2.test_adaptation" name="test_unsupported_variants_are_rejected[changes1]" time="0.001" /><testcase classname="test.models.mamba2.test_adaptation" name="test_unsupported_variants_are_rejected[changes2]" time="0.001" /><testcase classname="test.models.mamba2.test_adaptation" name="test_unsupported_variants_are_rejected[changes3]" time="0.001" /><testcase classname="test.models.mamba2.test_adaptation" name="test_unsupported_variants_are_rejected[changes4]" time="0.001" /><testcase classname="test.models.mamba2.test_adaptation" name="test_unsupported_variants_are_rejected[changes5]" time="0.001" /><testcase classname="test.models.mamba2.test_adaptation" name="test_unsupported_variants_are_rejected[changes6]" time="0.001" /><testcase classname="test.models.mamba2.test_adaptation" name="test_unsupported_variants_are_rejected[changes7]" time="0.001" /><testcase classname="test.models.mamba2.test_adaptation" name="test_unsupported_variants_are_rejected[changes8]" time="0.001" /><testcase classname="test.models.mamba2.test_adaptation" name="test_unsupported_variants_are_rejected[changes9]" time="0.001" /><testcase classname="test.models.mamba2.test_adaptation" name="test_unsupported_variants_are_rejected[changes10]" time="0.001" /><testcase classname="test.models.mamba2.test_adaptation" name="test_unsupported_variants_are_rejected[changes11]" time="0.001" /><testcase classname="test.models.mamba2.test_adaptation" name="test_zero_padding_token_is_preserved" time="0.001" /><testcase classname="test.models.mamba2.test_adaptation" name="test_weight_mapping_preserves_state_parameters" time="0.120"><failure message="ModuleNotFoundError: No module named 'xxhash'">def test_weight_mapping_preserves_state_parameters():
+&gt;       from infinilm.modeling_utils import _remap_mamba2
+
+test/models/mamba2/test_adaptation.py:89: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/infinilm/__init__.py:4: in &lt;module&gt;
+    from . import llm
+python/infinilm/llm/__init__.py:6: in &lt;module&gt;
+    from infinilm.llm.request import (
+python/infinilm/llm/request.py:15: in &lt;module&gt;
+    from infinilm.llm.prefix_cache import (
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    """Prefix-cache block hashing utilities."""
+    
+    from collections.abc import Sequence
+    
+    import numpy as np
+&gt;   import xxhash
+E   ModuleNotFoundError: No module named 'xxhash'
+
+python/infinilm/llm/prefix_cache.py:6: ModuleNotFoundError</failure></testcase><testcase classname="test.models.mamba2.test_adaptation" name="test_projection_remap_preserves_each_heads_inputs" time="0.002"><failure message="ModuleNotFoundError: No module named 'xxhash'">def test_projection_remap_preserves_each_heads_inputs():
+&gt;       from infinilm.modeling_utils import _remap_mamba2
+
+test/models/mamba2/test_adaptation.py:261: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/infinilm/__init__.py:4: in &lt;module&gt;
+    from . import llm
+python/infinilm/llm/__init__.py:6: in &lt;module&gt;
+    from infinilm.llm.request import (
+python/infinilm/llm/request.py:15: in &lt;module&gt;
+    from infinilm.llm.prefix_cache import (
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    """Prefix-cache block hashing utilities."""
+    
+    from collections.abc import Sequence
+    
+    import numpy as np
+&gt;   import xxhash
+E   ModuleNotFoundError: No module named 'xxhash'
+
+python/infinilm/llm/prefix_cache.py:6: ModuleNotFoundError</failure></testcase><testcase classname="test.models.mamba2.test_adaptation" name="test_cpp_rejects_unsupported_config_before_model_creation[changes0]" time="0.002"><failure message="ModuleNotFoundError: No module named 'xxhash'">preparation = &lt;module 'prepare_mamba2' from '/home/runner/work/InfiniLM/InfiniLM/lm/scripts/prepare_mamba2_checkpoint.py'&gt;
+tmp_path = PosixPath('/tmp/pytest-of-runner/pytest-0/test_cpp_rejects_unsupported_c0')
+changes = {'rms_norm': False}
+
+    @pytest.mark.parametrize(
+        "changes",
+        [
+            {"rms_norm": False},
+            {"rmsnorm": False},
+            {"D_has_hdim": True},
+            {"d_ssm": 128},
+            {"d_intermediate": 128},
+            {"attn_layer_idx": [1]},
+            {"quantization_config": {"quant_method": "unsupported"}},
+            {"dt_limit": [0, 1]},
+            {"time_step_limit": [0, 1]},
+            {"layer_norm_epsilon": 0},
+            {"layer_norm_epsilon": -1e-5},
+        ],
+    )
+    def test_cpp_rejects_unsupported_config_before_model_creation(
+        preparation, tmp_path, changes
+    ):
+        import infinicore
+&gt;       from infinilm.infer_engine import InferEngine
+
+test/models/mamba2/test_adaptation.py:231: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/infinilm/__init__.py:4: in &lt;module&gt;
+    from . import llm
+python/infinilm/llm/__init__.py:6: in &lt;module&gt;
+    from infinilm.llm.request import (
+python/infinilm/llm/request.py:15: in &lt;module&gt;
+    from infinilm.llm.prefix_cache import (
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    """Prefix-cache block hashing utilities."""
+    
+    from collections.abc import Sequence
+    
+    import numpy as np
+&gt;   import xxhash
+E   ModuleNotFoundError: No module named 'xxhash'
+
+python/infinilm/llm/prefix_cache.py:6: ModuleNotFoundError</failure></testcase><testcase classname="test.models.mamba2.test_adaptation" name="test_cpp_rejects_unsupported_config_before_model_creation[changes1]" time="0.002"><failure message="ModuleNotFoundError: No module named 'xxhash'">preparation = &lt;module 'prepare_mamba2' from '/home/runner/work/InfiniLM/InfiniLM/lm/scripts/prepare_mamba2_checkpoint.py'&gt;
+tmp_path = PosixPath('/tmp/pytest-of-runner/pytest-0/test_cpp_rejects_unsupported_c1')
+changes = {'rmsnorm': False}
+
+    @pytest.mark.parametrize(
+        "changes",
+        [
+            {"rms_norm": False},
+            {"rmsnorm": False},
+            {"D_has_hdim": True},
+            {"d_ssm": 128},
+            {"d_intermediate": 128},
+            {"attn_layer_idx": [1]},
+            {"quantization_config": {"quant_method": "unsupported"}},
+            {"dt_limit": [0, 1]},
+            {"time_step_limit": [0, 1]},
+            {"layer_norm_epsilon": 0},
+            {"layer_norm_epsilon": -1e-5},
+        ],
+    )
+    def test_cpp_rejects_unsupported_config_before_model_creation(
+        preparation, tmp_path, changes
+    ):
+        import infinicore
+&gt;       from infinilm.infer_engine import InferEngine
+
+test/models/mamba2/test_adaptation.py:231: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/infinilm/__init__.py:4: in &lt;module&gt;
+    from . import llm
+python/infinilm/llm/__init__.py:6: in &lt;module&gt;
+    from infinilm.llm.request import (
+python/infinilm/llm/request.py:15: in &lt;module&gt;
+    from infinilm.llm.prefix_cache import (
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    """Prefix-cache block hashing utilities."""
+    
+    from collections.abc import Sequence
+    
+    import numpy as np
+&gt;   import xxhash
+E   ModuleNotFoundError: No module named 'xxhash'
+
+python/infinilm/llm/prefix_cache.py:6: ModuleNotFoundError</failure></testcase><testcase classname="test.models.mamba2.test_adaptation" name="test_cpp_rejects_unsupported_config_before_model_creation[changes2]" time="0.002"><failure message="ModuleNotFoundError: No module named 'xxhash'">preparation = &lt;module 'prepare_mamba2' from '/home/runner/work/InfiniLM/InfiniLM/lm/scripts/prepare_mamba2_checkpoint.py'&gt;
+tmp_path = PosixPath('/tmp/pytest-of-runner/pytest-0/test_cpp_rejects_unsupported_c2')
+changes = {'D_has_hdim': True}
+
+    @pytest.mark.parametrize(
+        "changes",
+        [
+            {"rms_norm": False},
+            {"rmsnorm": False},
+            {"D_has_hdim": True},
+            {"d_ssm": 128},
+            {"d_intermediate": 128},
+            {"attn_layer_idx": [1]},
+            {"quantization_config": {"quant_method": "unsupported"}},
+            {"dt_limit": [0, 1]},
+            {"time_step_limit": [0, 1]},
+            {"layer_norm_epsilon": 0},
+            {"layer_norm_epsilon": -1e-5},
+        ],
+    )
+    def test_cpp_rejects_unsupported_config_before_model_creation(
+        preparation, tmp_path, changes
+    ):
+        import infinicore
+&gt;       from infinilm.infer_engine import InferEngine
+
+test/models/mamba2/test_adaptation.py:231: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/infinilm/__init__.py:4: in &lt;module&gt;
+    from . import llm
+python/infinilm/llm/__init__.py:6: in &lt;module&gt;
+    from infinilm.llm.request import (
+python/infinilm/llm/request.py:15: in &lt;module&gt;
+    from infinilm.llm.prefix_cache import (
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    """Prefix-cache block hashing utilities."""
+    
+    from collections.abc import Sequence
+    
+    import numpy as np
+&gt;   import xxhash
+E   ModuleNotFoundError: No module named 'xxhash'
+
+python/infinilm/llm/prefix_cache.py:6: ModuleNotFoundError</failure></testcase><testcase classname="test.models.mamba2.test_adaptation" name="test_cpp_rejects_unsupported_config_before_model_creation[changes3]" time="0.002"><failure message="ModuleNotFoundError: No module named 'xxhash'">preparation = &lt;module 'prepare_mamba2' from '/home/runner/work/InfiniLM/InfiniLM/lm/scripts/prepare_mamba2_checkpoint.py'&gt;
+tmp_path = PosixPath('/tmp/pytest-of-runner/pytest-0/test_cpp_rejects_unsupported_c3')
+changes = {'d_ssm': 128}
+
+    @pytest.mark.parametrize(
+        "changes",
+        [
+            {"rms_norm": False},
+            {"rmsnorm": False},
+            {"D_has_hdim": True},
+            {"d_ssm": 128},
+            {"d_intermediate": 128},
+            {"attn_layer_idx": [1]},
+            {"quantization_config": {"quant_method": "unsupported"}},
+            {"dt_limit": [0, 1]},
+            {"time_step_limit": [0, 1]},
+            {"layer_norm_epsilon": 0},
+            {"layer_norm_epsilon": -1e-5},
+        ],
+    )
+    def test_cpp_rejects_unsupported_config_before_model_creation(
+        preparation, tmp_path, changes
+    ):
+        import infinicore
+&gt;       from infinilm.infer_engine import InferEngine
+
+test/models/mamba2/test_adaptation.py:231: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/infinilm/__init__.py:4: in &lt;module&gt;
+    from . import llm
+python/infinilm/llm/__init__.py:6: in &lt;module&gt;
+    from infinilm.llm.request import (
+python/infinilm/llm/request.py:15: in &lt;module&gt;
+    from infinilm.llm.prefix_cache import (
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    """Prefix-cache block hashing utilities."""
+    
+    from collections.abc import Sequence
+    
+    import numpy as np
+&gt;   import xxhash
+E   ModuleNotFoundError: No module named 'xxhash'
+
+python/infinilm/llm/prefix_cache.py:6: ModuleNotFoundError</failure></testcase><testcase classname="test.models.mamba2.test_adaptation" name="test_cpp_rejects_unsupported_config_before_model_creation[changes4]" time="0.002"><failure message="ModuleNotFoundError: No module named 'xxhash'">preparation = &lt;module 'prepare_mamba2' from '/home/runner/work/InfiniLM/InfiniLM/lm/scripts/prepare_mamba2_checkpoint.py'&gt;
+tmp_path = PosixPath('/tmp/pytest-of-runner/pytest-0/test_cpp_rejects_unsupported_c4')
+changes = {'d_intermediate': 128}
+
+    @pytest.mark.parametrize(
+        "changes",
+        [
+            {"rms_norm": False},
+            {"rmsnorm": False},
+            {"D_has_hdim": True},
+            {"d_ssm": 128},
+            {"d_intermediate": 128},
+            {"attn_layer_idx": [1]},
+            {"quantization_config": {"quant_method": "unsupported"}},
+            {"dt_limit": [0, 1]},
+            {"time_step_limit": [0, 1]},
+            {"layer_norm_epsilon": 0},
+            {"layer_norm_epsilon": -1e-5},
+        ],
+    )
+    def test_cpp_rejects_unsupported_config_before_model_creation(
+        preparation, tmp_path, changes
+    ):
+        import infinicore
+&gt;       from infinilm.infer_engine import InferEngine
+
+test/models/mamba2/test_adaptation.py:231: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/infinilm/__init__.py:4: in &lt;module&gt;
+    from . import llm
+python/infinilm/llm/__init__.py:6: in &lt;module&gt;
+    from infinilm.llm.request import (
+python/infinilm/llm/request.py:15: in &lt;module&gt;
+    from infinilm.llm.prefix_cache import (
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    """Prefix-cache block hashing utilities."""
+    
+    from collections.abc import Sequence
+    
+    import numpy as np
+&gt;   import xxhash
+E   ModuleNotFoundError: No module named 'xxhash'
+
+python/infinilm/llm/prefix_cache.py:6: ModuleNotFoundError</failure></testcase><testcase classname="test.models.mamba2.test_adaptation" name="test_cpp_rejects_unsupported_config_before_model_creation[changes5]" time="0.002"><failure message="ModuleNotFoundError: No module named 'xxhash'">preparation = &lt;module 'prepare_mamba2' from '/home/runner/work/InfiniLM/InfiniLM/lm/scripts/prepare_mamba2_checkpoint.py'&gt;
+tmp_path = PosixPath('/tmp/pytest-of-runner/pytest-0/test_cpp_rejects_unsupported_c5')
+changes = {'attn_layer_idx': [1]}
+
+    @pytest.mark.parametrize(
+        "changes",
+        [
+            {"rms_norm": False},
+            {"rmsnorm": False},
+            {"D_has_hdim": True},
+            {"d_ssm": 128},
+            {"d_intermediate": 128},
+            {"attn_layer_idx": [1]},
+            {"quantization_config": {"quant_method": "unsupported"}},
+            {"dt_limit": [0, 1]},
+            {"time_step_limit": [0, 1]},
+            {"layer_norm_epsilon": 0},
+            {"layer_norm_epsilon": -1e-5},
+        ],
+    )
+    def test_cpp_rejects_unsupported_config_before_model_creation(
+        preparation, tmp_path, changes
+    ):
+        import infinicore
+&gt;       from infinilm.infer_engine import InferEngine
+
+test/models/mamba2/test_adaptation.py:231: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/infinilm/__init__.py:4: in &lt;module&gt;
+    from . import llm
+python/infinilm/llm/__init__.py:6: in &lt;module&gt;
+    from infinilm.llm.request import (
+python/infinilm/llm/request.py:15: in &lt;module&gt;
+    from infinilm.llm.prefix_cache import (
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    """Prefix-cache block hashing utilities."""
+    
+    from collections.abc import Sequence
+    
+    import numpy as np
+&gt;   import xxhash
+E   ModuleNotFoundError: No module named 'xxhash'
+
+python/infinilm/llm/prefix_cache.py:6: ModuleNotFoundError</failure></testcase><testcase classname="test.models.mamba2.test_adaptation" name="test_cpp_rejects_unsupported_config_before_model_creation[changes6]" time="0.002"><failure message="ModuleNotFoundError: No module named 'xxhash'">preparation = &lt;module 'prepare_mamba2' from '/home/runner/work/InfiniLM/InfiniLM/lm/scripts/prepare_mamba2_checkpoint.py'&gt;
+tmp_path = PosixPath('/tmp/pytest-of-runner/pytest-0/test_cpp_rejects_unsupported_c6')
+changes = {'quantization_config': {'quant_method': 'unsupported'}}
+
+    @pytest.mark.parametrize(
+        "changes",
+        [
+            {"rms_norm": False},
+            {"rmsnorm": False},
+            {"D_has_hdim": True},
+            {"d_ssm": 128},
+            {"d_intermediate": 128},
+            {"attn_layer_idx": [1]},
+            {"quantization_config": {"quant_method": "unsupported"}},
+            {"dt_limit": [0, 1]},
+            {"time_step_limit": [0, 1]},
+            {"layer_norm_epsilon": 0},
+            {"layer_norm_epsilon": -1e-5},
+        ],
+    )
+    def test_cpp_rejects_unsupported_config_before_model_creation(
+        preparation, tmp_path, changes
+    ):
+        import infinicore
+&gt;       from infinilm.infer_engine import InferEngine
+
+test/models/mamba2/test_adaptation.py:231: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/infinilm/__init__.py:4: in &lt;module&gt;
+    from . import llm
+python/infinilm/llm/__init__.py:6: in &lt;module&gt;
+    from infinilm.llm.request import (
+python/infinilm/llm/request.py:15: in &lt;module&gt;
+    from infinilm.llm.prefix_cache import (
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    """Prefix-cache block hashing utilities."""
+    
+    from collections.abc import Sequence
+    
+    import numpy as np
+&gt;   import xxhash
+E   ModuleNotFoundError: No module named 'xxhash'
+
+python/infinilm/llm/prefix_cache.py:6: ModuleNotFoundError</failure></testcase><testcase classname="test.models.mamba2.test_adaptation" name="test_cpp_rejects_unsupported_config_before_model_creation[changes7]" time="0.002"><failure message="ModuleNotFoundError: No module named 'xxhash'">preparation = &lt;module 'prepare_mamba2' from '/home/runner/work/InfiniLM/InfiniLM/lm/scripts/prepare_mamba2_checkpoint.py'&gt;
+tmp_path = PosixPath('/tmp/pytest-of-runner/pytest-0/test_cpp_rejects_unsupported_c7')
+changes = {'dt_limit': [0, 1]}
+
+    @pytest.mark.parametrize(
+        "changes",
+        [
+            {"rms_norm": False},
+            {"rmsnorm": False},
+            {"D_has_hdim": True},
+            {"d_ssm": 128},
+            {"d_intermediate": 128},
+            {"attn_layer_idx": [1]},
+            {"quantization_config": {"quant_method": "unsupported"}},
+            {"dt_limit": [0, 1]},
+            {"time_step_limit": [0, 1]},
+            {"layer_norm_epsilon": 0},
+            {"layer_norm_epsilon": -1e-5},
+        ],
+    )
+    def test_cpp_rejects_unsupported_config_before_model_creation(
+        preparation, tmp_path, changes
+    ):
+        import infinicore
+&gt;       from infinilm.infer_engine import InferEngine
+
+test/models/mamba2/test_adaptation.py:231: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/infinilm/__init__.py:4: in &lt;module&gt;
+    from . import llm
+python/infinilm/llm/__init__.py:6: in &lt;module&gt;
+    from infinilm.llm.request import (
+python/infinilm/llm/request.py:15: in &lt;module&gt;
+    from infinilm.llm.prefix_cache import (
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    """Prefix-cache block hashing utilities."""
+    
+    from collections.abc import Sequence
+    
+    import numpy as np
+&gt;   import xxhash
+E   ModuleNotFoundError: No module named 'xxhash'
+
+python/infinilm/llm/prefix_cache.py:6: ModuleNotFoundError</failure></testcase><testcase classname="test.models.mamba2.test_adaptation" name="test_cpp_rejects_unsupported_config_before_model_creation[changes8]" time="0.002"><failure message="ModuleNotFoundError: No module named 'xxhash'">preparation = &lt;module 'prepare_mamba2' from '/home/runner/work/InfiniLM/InfiniLM/lm/scripts/prepare_mamba2_checkpoint.py'&gt;
+tmp_path = PosixPath('/tmp/pytest-of-runner/pytest-0/test_cpp_rejects_unsupported_c8')
+changes = {'time_step_limit': [0, 1]}
+
+    @pytest.mark.parametrize(
+        "changes",
+        [
+            {"rms_norm": False},
+            {"rmsnorm": False},
+            {"D_has_hdim": True},
+            {"d_ssm": 128},
+            {"d_intermediate": 128},
+            {"attn_layer_idx": [1]},
+            {"quantization_config": {"quant_method": "unsupported"}},
+            {"dt_limit": [0, 1]},
+            {"time_step_limit": [0, 1]},
+            {"layer_norm_epsilon": 0},
+            {"layer_norm_epsilon": -1e-5},
+        ],
+    )
+    def test_cpp_rejects_unsupported_config_before_model_creation(
+        preparation, tmp_path, changes
+    ):
+        import infinicore
+&gt;       from infinilm.infer_engine import InferEngine
+
+test/models/mamba2/test_adaptation.py:231: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/infinilm/__init__.py:4: in &lt;module&gt;
+    from . import llm
+python/infinilm/llm/__init__.py:6: in &lt;module&gt;
+    from infinilm.llm.request import (
+python/infinilm/llm/request.py:15: in &lt;module&gt;
+    from infinilm.llm.prefix_cache import (
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    """Prefix-cache block hashing utilities."""
+    
+    from collections.abc import Sequence
+    
+    import numpy as np
+&gt;   import xxhash
+E   ModuleNotFoundError: No module named 'xxhash'
+
+python/infinilm/llm/prefix_cache.py:6: ModuleNotFoundError</failure></testcase><testcase classname="test.models.mamba2.test_adaptation" name="test_cpp_rejects_unsupported_config_before_model_creation[changes9]" time="0.002"><failure message="ModuleNotFoundError: No module named 'xxhash'">preparation = &lt;module 'prepare_mamba2' from '/home/runner/work/InfiniLM/InfiniLM/lm/scripts/prepare_mamba2_checkpoint.py'&gt;
+tmp_path = PosixPath('/tmp/pytest-of-runner/pytest-0/test_cpp_rejects_unsupported_c9')
+changes = {'layer_norm_epsilon': 0}
+
+    @pytest.mark.parametrize(
+        "changes",
+        [
+            {"rms_norm": False},
+            {"rmsnorm": False},
+            {"D_has_hdim": True},
+            {"d_ssm": 128},
+            {"d_intermediate": 128},
+            {"attn_layer_idx": [1]},
+            {"quantization_config": {"quant_method": "unsupported"}},
+            {"dt_limit": [0, 1]},
+            {"time_step_limit": [0, 1]},
+            {"layer_norm_epsilon": 0},
+            {"layer_norm_epsilon": -1e-5},
+        ],
+    )
+    def test_cpp_rejects_unsupported_config_before_model_creation(
+        preparation, tmp_path, changes
+    ):
+        import infinicore
+&gt;       from infinilm.infer_engine import InferEngine
+
+test/models/mamba2/test_adaptation.py:231: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/infinilm/__init__.py:4: in &lt;module&gt;
+    from . import llm
+python/infinilm/llm/__init__.py:6: in &lt;module&gt;
+    from infinilm.llm.request import (
+python/infinilm/llm/request.py:15: in &lt;module&gt;
+    from infinilm.llm.prefix_cache import (
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    """Prefix-cache block hashing utilities."""
+    
+    from collections.abc import Sequence
+    
+    import numpy as np
+&gt;   import xxhash
+E   ModuleNotFoundError: No module named 'xxhash'
+
+python/infinilm/llm/prefix_cache.py:6: ModuleNotFoundError</failure></testcase><testcase classname="test.models.mamba2.test_adaptation" name="test_cpp_rejects_unsupported_config_before_model_creation[changes10]" time="0.002"><failure message="ModuleNotFoundError: No module named 'xxhash'">preparation = &lt;module 'prepare_mamba2' from '/home/runner/work/InfiniLM/InfiniLM/lm/scripts/prepare_mamba2_checkpoint.py'&gt;
+tmp_path = PosixPath('/tmp/pytest-of-runner/pytest-0/test_cpp_rejects_unsupported_c10')
+changes = {'layer_norm_epsilon': -1e-05}
+
+    @pytest.mark.parametrize(
+        "changes",
+        [
+            {"rms_norm": False},
+            {"rmsnorm": False},
+            {"D_has_hdim": True},
+            {"d_ssm": 128},
+            {"d_intermediate": 128},
+            {"attn_layer_idx": [1]},
+            {"quantization_config": {"quant_method": "unsupported"}},
+            {"dt_limit": [0, 1]},
+            {"time_step_limit": [0, 1]},
+            {"layer_norm_epsilon": 0},
+            {"layer_norm_epsilon": -1e-5},
+        ],
+    )
+    def test_cpp_rejects_unsupported_config_before_model_creation(
+        preparation, tmp_path, changes
+    ):
+        import infinicore
+&gt;       from infinilm.infer_engine import InferEngine
+
+test/models/mamba2/test_adaptation.py:231: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/infinilm/__init__.py:4: in &lt;module&gt;
+    from . import llm
+python/infinilm/llm/__init__.py:6: in &lt;module&gt;
+    from infinilm.llm.request import (
+python/infinilm/llm/request.py:15: in &lt;module&gt;
+    from infinilm.llm.prefix_cache import (
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    """Prefix-cache block hashing utilities."""
+    
+    from collections.abc import Sequence
+    
+    import numpy as np
+&gt;   import xxhash
+E   ModuleNotFoundError: No module named 'xxhash'
+
+python/infinilm/llm/prefix_cache.py:6: ModuleNotFoundError</failure></testcase><testcase classname="test.models.mamba2.test_adaptation" name="test_processor_rejects_shared_writable_slots" time="0.001"><failure message="ModuleNotFoundError: No module named 'xxhash'">def test_processor_rejects_shared_writable_slots():
+        from unittest.mock import patch
+    
+&gt;       from infinilm.processors.mamba2_processor import Mamba2Processor
+
+test/models/mamba2/test_adaptation.py:338: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/infinilm/__init__.py:4: in &lt;module&gt;
+    from . import llm
+python/infinilm/llm/__init__.py:6: in &lt;module&gt;
+    from infinilm.llm.request import (
+python/infinilm/llm/request.py:15: in &lt;module&gt;
+    from infinilm.llm.prefix_cache import (
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    """Prefix-cache block hashing utilities."""
+    
+    from collections.abc import Sequence
+    
+    import numpy as np
+&gt;   import xxhash
+E   ModuleNotFoundError: No module named 'xxhash'
+
+python/infinilm/llm/prefix_cache.py:6: ModuleNotFoundError</failure></testcase><testcase classname="test.models.mamba2.test_adaptation" name="test_unsupported_service_combinations_fail_before_loading[options0-paged request-state]" time="0.002"><failure message="ModuleNotFoundError: No module named 'xxhash'">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7fa09a156fd0&gt;
+options = {'cache_type': 'static'}, message = 'paged request-state'
+
+    @pytest.mark.parametrize(
+        "options, message",
+        [
+            ({"cache_type": "static"}, "paged request-state"),
+            ({"pipeline_parallel_size": 2}, "pipeline_parallel_size"),
+            ({"draft_model_path": "unused-draft"}, "rollback"),
+            (
+                {"kv_transfer_config": SimpleNamespace(kv_connector="unused-connector")},
+                "state transfer",
+            ),
+            ({"enable_prefix_caching": True}, "Prefix caching"),
+        ],
+    )
+    def test_unsupported_service_combinations_fail_before_loading(
+        monkeypatch, options, message
+    ):
+&gt;       from infinilm.config.engine_config import EngineConfig
+
+test/models/mamba2/test_adaptation.py:364: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/infinilm/__init__.py:4: in &lt;module&gt;
+    from . import llm
+python/infinilm/llm/__init__.py:6: in &lt;module&gt;
+    from infinilm.llm.request import (
+python/infinilm/llm/request.py:15: in &lt;module&gt;
+    from infinilm.llm.prefix_cache import (
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    """Prefix-cache block hashing utilities."""
+    
+    from collections.abc import Sequence
+    
+    import numpy as np
+&gt;   import xxhash
+E   ModuleNotFoundError: No module named 'xxhash'
+
+python/infinilm/llm/prefix_cache.py:6: ModuleNotFoundError</failure></testcase><testcase classname="test.models.mamba2.test_adaptation" name="test_unsupported_service_combinations_fail_before_loading[options1-pipeline_parallel_size]" time="0.002"><failure message="ModuleNotFoundError: No module named 'xxhash'">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7fa09c13dd90&gt;
+options = {'pipeline_parallel_size': 2}, message = 'pipeline_parallel_size'
+
+    @pytest.mark.parametrize(
+        "options, message",
+        [
+            ({"cache_type": "static"}, "paged request-state"),
+            ({"pipeline_parallel_size": 2}, "pipeline_parallel_size"),
+            ({"draft_model_path": "unused-draft"}, "rollback"),
+            (
+                {"kv_transfer_config": SimpleNamespace(kv_connector="unused-connector")},
+                "state transfer",
+            ),
+            ({"enable_prefix_caching": True}, "Prefix caching"),
+        ],
+    )
+    def test_unsupported_service_combinations_fail_before_loading(
+        monkeypatch, options, message
+    ):
+&gt;       from infinilm.config.engine_config import EngineConfig
+
+test/models/mamba2/test_adaptation.py:364: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/infinilm/__init__.py:4: in &lt;module&gt;
+    from . import llm
+python/infinilm/llm/__init__.py:6: in &lt;module&gt;
+    from infinilm.llm.request import (
+python/infinilm/llm/request.py:15: in &lt;module&gt;
+    from infinilm.llm.prefix_cache import (
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    """Prefix-cache block hashing utilities."""
+    
+    from collections.abc import Sequence
+    
+    import numpy as np
+&gt;   import xxhash
+E   ModuleNotFoundError: No module named 'xxhash'
+
+python/infinilm/llm/prefix_cache.py:6: ModuleNotFoundError</failure></testcase><testcase classname="test.models.mamba2.test_adaptation" name="test_unsupported_service_combinations_fail_before_loading[options2-rollback]" time="0.002"><failure message="ModuleNotFoundError: No module named 'xxhash'">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7fa09a198b10&gt;
+options = {'draft_model_path': 'unused-draft'}, message = 'rollback'
+
+    @pytest.mark.parametrize(
+        "options, message",
+        [
+            ({"cache_type": "static"}, "paged request-state"),
+            ({"pipeline_parallel_size": 2}, "pipeline_parallel_size"),
+            ({"draft_model_path": "unused-draft"}, "rollback"),
+            (
+                {"kv_transfer_config": SimpleNamespace(kv_connector="unused-connector")},
+                "state transfer",
+            ),
+            ({"enable_prefix_caching": True}, "Prefix caching"),
+        ],
+    )
+    def test_unsupported_service_combinations_fail_before_loading(
+        monkeypatch, options, message
+    ):
+&gt;       from infinilm.config.engine_config import EngineConfig
+
+test/models/mamba2/test_adaptation.py:364: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/infinilm/__init__.py:4: in &lt;module&gt;
+    from . import llm
+python/infinilm/llm/__init__.py:6: in &lt;module&gt;
+    from infinilm.llm.request import (
+python/infinilm/llm/request.py:15: in &lt;module&gt;
+    from infinilm.llm.prefix_cache import (
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    """Prefix-cache block hashing utilities."""
+    
+    from collections.abc import Sequence
+    
+    import numpy as np
+&gt;   import xxhash
+E   ModuleNotFoundError: No module named 'xxhash'
+
+python/infinilm/llm/prefix_cache.py:6: ModuleNotFoundError</failure></testcase><testcase classname="test.models.mamba2.test_adaptation" name="test_unsupported_service_combinations_fail_before_loading[options3-state transfer]" time="0.002"><failure message="ModuleNotFoundError: No module named 'xxhash'">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7fa09a195b50&gt;
+options = {'kv_transfer_config': namespace(kv_connector='unused-connector')}
+message = 'state transfer'
+
+    @pytest.mark.parametrize(
+        "options, message",
+        [
+            ({"cache_type": "static"}, "paged request-state"),
+            ({"pipeline_parallel_size": 2}, "pipeline_parallel_size"),
+            ({"draft_model_path": "unused-draft"}, "rollback"),
+            (
+                {"kv_transfer_config": SimpleNamespace(kv_connector="unused-connector")},
+                "state transfer",
+            ),
+            ({"enable_prefix_caching": True}, "Prefix caching"),
+        ],
+    )
+    def test_unsupported_service_combinations_fail_before_loading(
+        monkeypatch, options, message
+    ):
+&gt;       from infinilm.config.engine_config import EngineConfig
+
+test/models/mamba2/test_adaptation.py:364: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/infinilm/__init__.py:4: in &lt;module&gt;
+    from . import llm
+python/infinilm/llm/__init__.py:6: in &lt;module&gt;
+    from infinilm.llm.request import (
+python/infinilm/llm/request.py:15: in &lt;module&gt;
+    from infinilm.llm.prefix_cache import (
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    """Prefix-cache block hashing utilities."""
+    
+    from collections.abc import Sequence
+    
+    import numpy as np
+&gt;   import xxhash
+E   ModuleNotFoundError: No module named 'xxhash'
+
+python/infinilm/llm/prefix_cache.py:6: ModuleNotFoundError</failure></testcase><testcase classname="test.models.mamba2.test_adaptation" name="test_unsupported_service_combinations_fail_before_loading[options4-Prefix caching]" time="0.002"><failure message="ModuleNotFoundError: No module named 'xxhash'">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7fa09a1c1d90&gt;
+options = {'enable_prefix_caching': True}, message = 'Prefix caching'
+
+    @pytest.mark.parametrize(
+        "options, message",
+        [
+            ({"cache_type": "static"}, "paged request-state"),
+            ({"pipeline_parallel_size": 2}, "pipeline_parallel_size"),
+            ({"draft_model_path": "unused-draft"}, "rollback"),
+            (
+                {"kv_transfer_config": SimpleNamespace(kv_connector="unused-connector")},
+                "state transfer",
+            ),
+            ({"enable_prefix_caching": True}, "Prefix caching"),
+        ],
+    )
+    def test_unsupported_service_combinations_fail_before_loading(
+        monkeypatch, options, message
+    ):
+&gt;       from infinilm.config.engine_config import EngineConfig
+
+test/models/mamba2/test_adaptation.py:364: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/infinilm/__init__.py:4: in &lt;module&gt;
+    from . import llm
+python/infinilm/llm/__init__.py:6: in &lt;module&gt;
+    from infinilm.llm.request import (
+python/infinilm/llm/request.py:15: in &lt;module&gt;
+    from infinilm.llm.prefix_cache import (
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    """Prefix-cache block hashing utilities."""
+    
+    from collections.abc import Sequence
+    
+    import numpy as np
+&gt;   import xxhash
+E   ModuleNotFoundError: No module named 'xxhash'
+
+python/infinilm/llm/prefix_cache.py:6: ModuleNotFoundError</failure></testcase></testsuite></testsuites>
