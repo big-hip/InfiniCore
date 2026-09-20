@@ -112,8 +112,11 @@ follow-up and upstream required CI remain explicit merge-review limitations.
 The first run, [35508794639](https://github.com/big-hip/InfiniLM/actions/runs/35508794639),
 passed both Core and LM builds. The final contracts stage had 14 passed and
 19 failed because the new workflow omitted the existing `xxhash` dependency.
-The workflow was corrected on the separate CI branch (`4d27be6a`); production
-source and assertions are unchanged. [Retry 35510538578](https://github.com/big-hip/InfiniLM/actions/runs/35510538578)
-is still running at publication and is not counted as a pass. The first CI
+The missing dependency was added on the separate CI branch. An optional xmake
+cache configuration then failed because this workflow checks projects out to
+subdirectories rather than the workspace root; that cache configuration was
+removed in `7bfa515c`. Production source and test assertions are unchanged.
+[Current retry 35510643478](https://github.com/big-hip/InfiniLM/actions/runs/35510643478)
+is running at publication and is not counted as a pass. The initial CI
 artifact's Core tree matches the local integration exactly:
 `aaf6c19603d5d517010d2e2dd35caa02d7d425b2`.
