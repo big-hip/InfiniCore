@@ -1,5 +1,9 @@
 # Qwen MTP on two RTX 5090 GPUs — 2026-09-20
 
+**Follow-up:** the InfiniLM dynamic-batch failure recorded below was reproduced
+and fixed in `78d19f74`; see the [2026-09-21 validation](../qwen-mtp-dynamic-batch-20260921/README.md).
+The historical results and the separate unresolved vLLM diagnostic are preserved.
+
 Single-request greedy generation passed exact output checks and showed useful
 MTP throughput gains. **Dynamic cancellation/re-admission did not pass exact
 output equivalence.** Resource reclamation passed; the numerical failure remains

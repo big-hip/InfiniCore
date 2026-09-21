@@ -1,0 +1,15 @@
+{
+  "baseline_lm_commit": "86208ae1f200bae769fdf0a07bf2f1e4092fcc2b",
+  "modified_source_sha256": {
+    "README.md": "b7247d3955110b11bf6039ec6b9fb1833e8a13e8f0674e0ad38f07d1d569cec4",
+    "csrc/engine/infer_engine.cpp": "7842d88aaef2e67dc67802bb6b8c61b0783eb9ecfac7126e5c6edfb46e1770c6",
+    "csrc/global_state/forward_context.hpp": "989e0bc61f0c2ec857ed2fb07becc1ca79c9b262c1fd6cd4602420ac1bf8aad0",
+    "csrc/models/qwen3_next/qwen3_next_gated_deltanet.cpp": "a2a90408a89917c3e64d2087debcaa7b66c6655948d127a3fa3bb32b18b0b7cf",
+    "test/models/qwen3_5/test_mtp_execution.py": "ce4c636477db7dff13e3b636be3ec25e7e7202bb111bd69822305cb2554e012c"
+  },
+  "remote_native_before_sha256": "036834c0e687459623459d81c794e3dc0d95dd6bae0b3f933a74bbcac041f558",
+  "remote_native_after_sha256": "4dbcc3b74e58df4c5ccaea0bd58fe5073e423ce4aeb511c589159627a092f5a2",
+  "remote_source_matches_local": true,
+  "runtime": "Persisted Core runtime from 2026-09-20 validation; same source/overlay, no Core changes in this fix.",
+  "fixed_lm_commit": "78d19f74ca5507f895e8760c01466dd62e5aa353"
+}

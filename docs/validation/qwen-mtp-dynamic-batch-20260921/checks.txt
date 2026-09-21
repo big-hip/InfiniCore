@@ -1,0 +1,23 @@
+===== tp1-regression.log =====
+
+...s...............................................................      [100%]
+66 passed, 1 skipped in 25.90s
+
+===== fix20260921-tp2.log =====
+
+...................................................................      [100%]
+=============================== warnings summary ===============================
+<frozen importlib._bootstrap>:488
+  <frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+
+<frozen importlib._bootstrap>:488
+  <frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+67 passed, 2 warnings in 29.77s
+sys:1: DeprecationWarning: builtin type swigvarlink has no __module__ attribute
+
+===== format-final.log =====
+
+[32mFormatting files in [PosixPath('csrc/models/qwen3_next/qwen3_next_gated_deltanet.cpp')].[0m
+[36mFormatted: csrc/models/qwen3_next/qwen3_next_gated_deltanet.cpp[0m
