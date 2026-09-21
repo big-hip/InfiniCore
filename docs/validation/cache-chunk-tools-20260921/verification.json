@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-21",
+  "changes": {
+    "573": {
+      "production_source": "cb243d9a8599c9b7ce8ce41c9f3f6a395040f4fe",
+      "production_unchanged": true,
+      "files": [
+        "test/llm/README.md",
+        "test/llm/check_chunk_output.py",
+        "test/llm/check_chunk_tp.py",
+        "test/llm/graph_counter.cc",
+        "test/llm/test_chunk_execution.py",
+        "test/llm/test_chunk_output.py",
+        "test/llm/test_engine_config.py"
+      ],
+      "added": 257,
+      "deleted": 679,
+      "net_reduction": 422,
+      "sha256": {
+        "test/llm/check_chunk_output.py": "b3aee4814b6d8fc180d41e458072922721e70a89b867ad9bc91ca6d7ca6428ce",
+        "test/llm/test_chunk_execution.py": "bcc539f7bd130a8e76ed12e6f44b7507190fe483597a4a285880f3b17f7767c5",
+        "test/llm/test_engine_config.py": "596cf35ef3449924a6de46d12c60bebbf5712eb606e427e674d7fa2ded44ecc9"
+      }
+    },
+    "575": {
+      "production_source": "8a591cb1b920dd62fc7f7acf15a8fcdd8458974a",
+      "production_unchanged": true,
+      "files": [
+        "test/layers/test_pre_transpose.py"
+      ],
+      "added": 23,
+      "deleted": 28,
+      "net_reduction": 5,
+      "sha256": {
+        "test/layers/test_pre_transpose.py": "42d9b3355d297402309a1aff248fca195201d12fe688e9311f935cef63908b09"
+      }
+    },
+    "584": {
+      "production_source": "78d19f74ca5507f895e8760c01466dd62e5aa353",
+      "production_unchanged": true,
+      "files": [
+        "README.md",
+        "test/layers/test_pre_transpose.py"
+      ],
+      "added": 26,
+      "deleted": 31,
+      "net_reduction": 5,
+      "sha256": {
+        "test/layers/test_pre_transpose.py": "42d9b3355d297402309a1aff248fca195201d12fe688e9311f935cef63908b09"
+      }
+    }
+  },
+  "results": {
+    "chunk-cpu-before.log": {
+      "log_sha256": "77e4449617540672c2a7995eabcddd96c6d73b2b682e8fdbd38a40071fe34a90",
+      "result_lines": [
+        "Ran 83 tests in 0.254s",
+        "OK"
+      ]
+    },
+    "chunk-cpu-final.log": {
+      "log_sha256": "1ceec036028047ff598006981ef918013c7a9bf90dc628a763665e460c27403e",
+      "result_lines": [
+        "Ran 83 tests in 0.245s",
+        "OK"
+      ]
+    },
+    "mamba-cpu-visible-runtime.log": {
+      "log_sha256": "a1e965b637e6fafda9d90725187d02a8e7fb6d89e01c5eec59d997f6155433d5",
+      "result_lines": [
+        "33 passed, 9 skipped in 4.34s"
+      ]
+    },
+    "chunk-tp1.log": {
+      "log_sha256": "b233aa61c532c471a202d62e306cb9ac68f99e154f60b10e63e0925a6d3b3d45",
+      "result_lines": [
+        "Native chunk output, prefix reuse, cancellation and reclamation passed."
+      ]
+    },
+    "chunk-tp2-graph.log": {
+      "log_sha256": "12381b5cae7eb1e7928dc421511b3c693cde46c860913bf689cf1b759f620a51",
+      "result_lines": [
+        "Native chunk output, prefix reuse, cancellation and reclamation passed."
+      ]
+    },
+    "common-layout.log": {
+      "log_sha256": "fdee523c6ea979ff4fb817f7a61d443fb2a80571181992d1799c64be4ee237ac",
+      "result_lines": [
+        "1 passed, 2 warnings in 14.11s"
+      ]
+    }
+  },
+  "runtime_fingerprints": [
+    "4dbcc3b74e58df4c5ccaea0bd58fe5073e423ce4aeb511c589159627a092f5a2  InfiniLM/python/infinilm/lib/_infinilm.cpython-312-x86_64-linux-gnu.so",
+    "6ba349cd05179a0e42cc207f0d025a0d4cb32fd6c28cbf683b8bb3a170010b81  review-test-cleanup/InfiniLM-chunk/python/infinilm/lib/_infinilm.cpython-312-x86_64-linux-gnu.so",
+    "e4bc931099ab1b1f656635c836195f63a90248a58d9def9e20d376fa1d2100a4  runtime/lib/libinfiniop.so",
+    "f079799dd9683d8930c0506bd25a220f259c2ec94b8736c7f69d85bd4e97d2b6  runtime/lib/libinfinirt.so",
+    "NVIDIA GeForce RTX 5090, 610.43.02, 32607 MiB",
+    "NVIDIA GeForce RTX 5090, 610.43.02, 32607 MiB",
+    "3.12.3 (main, Mar 23 2026, 19:04:32) [GCC 13.3.0]",
+    "2.13.0a0+8145d630e8.nv26.06"
+  ]
+}
