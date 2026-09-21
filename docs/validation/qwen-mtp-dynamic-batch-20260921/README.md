@@ -52,7 +52,7 @@ across all kernels, precisions and models.
 | Cancel after shared packed Prefill; keep `summary`, admit `code` | Remaining request differs at index 20; new request matches | Both match ordinary token-for-token |
 | Same controlled lifecycle with K1 and K4 | Not rerun before | Both pass |
 | KV references and recurrent rows after completion/cancel/close | Reclaimed in the failing reproducer | Reclaimed for K1/K2/K4; active/queued close also passes |
-| TP2 same-state verification vs ordinary first-token Decode | See TP1 ablation below | 384/384 Conv/GDN tensors and both hidden vectors bitwise identical |
+| TP2 same-state verification vs ordinary first-token Decode | See TP1 ablation below | 384/384 Conv/GDN tensors and both hidden vectors exactly equal |
 | Tiny MTP + ordinary linear-layout regression | Previously 65+skip / 66 | A6000 TP1: 66 passed, 1 TP2-only skip; 5090 TP2: 67 passed |
 | Single-request ordinary graph vs K2 | Historical pass | 3 prompts x 3 repeats x 64 tokens, exact outputs |
 
@@ -146,3 +146,12 @@ Supported scope remains dense greedy text, one MTP layer, PP1, NVIDIA TP1/TP2.
 This resolves the reported controlled dynamic-batch failure; it does not establish
 random sampling, multimodal/MoE/PP, multi-layer MTP, other accelerator support,
 all possible arrival schedules, or a validated comparison against vLLM MTP.
+
+## CI on the fixed revision
+
+For `78d19f74`, fork [format](https://github.com/big-hip/InfiniLM/actions/runs/35556613781)
+and [Ruff](https://github.com/big-hip/InfiniLM/actions/runs/35556612958) passed.
+The fork push workflow skips its hardware job; A6000/5090 results above are direct
+hardware runs. Upstream [CI](https://github.com/InfiniTensor/InfiniLM/actions/runs/35556617222)
+and [Ruff](https://github.com/InfiniTensor/InfiniLM/actions/runs/35556616469) require
+maintainer approval (`action_required`). Neither branch was merged.
