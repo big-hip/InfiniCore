@@ -1,0 +1,44 @@
+{
+  "lm_head": "31ef429044a114bd8b4bfb1d290edcc06342a2c6",
+  "core_head": "a3ac4df44fc902fe223b441e0255631cc6b73a71",
+  "hardware": "2x RTX A6000 48 GiB",
+  "driver": "580.105.08",
+  "shared_environment": true,
+  "results": {
+    "tp1": {
+      "last_log_line": "66 passed, 1 skipped in 26.04s",
+      "sampled_peak_mib_per_device": [
+        370
+      ],
+      "sampling_interval_seconds": 0.5
+    },
+    "tp2": {
+      "last_log_line": "67 passed in 32.51s",
+      "sampled_peak_mib_per_device": [
+        468,
+        468
+      ],
+      "sampling_interval_seconds": 0.5
+    },
+    "core-graph-casts": {
+      "last_log_line": "13 passed in 8.11s",
+      "sampled_peak_mib_per_device": [
+        322
+      ],
+      "sampling_interval_seconds": 0.5
+    },
+    "core-prefill": {
+      "passed": 88,
+      "failed": 0
+    }
+  },
+  "real_27b_rerun": false,
+  "throughput_benchmark": false,
+  "sha256": {
+    "_infinilm.cpython-311-x86_64-linux-gnu.so": "42f79a000ddb8749100b24ceb90d1c4b2bf680c23d2141ab42a850d2dd98a08c",
+    "libinfinicore_cpp_api.so": "eaeaa9d1b9f025fb4dc5e7b8ce46cf414e134e180c8b884c9cce1487997c7cde",
+    "libinfiniop.so": "4300a74e6288f87dba44156ad62eb40031bc84687ee3e746da9b1a2c3db70824",
+    "config.json": "f6c221e5ec3589c91c1ed0128ff488769193ca7def5296bf9ee5ddd0d79d0180",
+    "model.safetensors": "ea33010d837442e29a2106b803d1eabd4c1697b6ef40318ecd5a8e9a05c3dfd4"
+  }
+}
